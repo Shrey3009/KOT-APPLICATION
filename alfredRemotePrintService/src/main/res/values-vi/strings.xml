@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">Hóa đơn số</string>
+    <string name="emp">Con</string>
+    <string name="groupnum">Nhóm số</string>
+    <string name="pos">POS</string>
+    <string name="date">Ngày</string>
+    <string name="total_">Toàn bộ :</string>
+    <string name="rounding_print">Làm tròn số:</string>
+    <string name="promotion_print">Khuyến mãi:</string>
+    <string name="mastercard">Thẻ MasterCard</string>
+    <string name="unionpay">Liên minh</string>
+    <string name="visa">THỊ THỰC</string>
+    <string name="amex_">Amex</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">Bữa tối</string>
+    <string name="hold_bill">Giữ hóa đơn</string>
+    <string name="com_credits">Tín dụng công ty</string>
+    <string name="house_charge">Phí nhà</string>
+    <string name="ent">ENT</string>
+    <string name="nets">Mạng</string>
+    <string name="alipay">ALIPAY</string>
+    <string name="weixin">Liên kết EZ</string>
+    <string name="paypal">Ứng dụng bữa tối</string>
+    <string name="stored_card_use">Sử dụng thẻ lưu trữ</string>
+    <string name="deliveroo">Giao hàng tận nơi</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Thức ăn</string>
+    <string name="stored_card_charge">Phí lưu trữ thẻ</string>
+    <string name="card_no">Không có thẻ</string>
+    <string name="check_closed"> Kiểm tra đóng</string>
+    <string name="thank_you_and_see_you">Cảm ơn và hẹn gặp lại!</string>
+    <string name="powered_by_alfred">Phục vụByAlfred</string>
+    <string name="kg">KILÔGAM</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">Mục bán hàng</string>
+    <string name="stored_card_sales">Bán thẻ lưu trữ</string>
+    <string name="ent_items">Mục ENT</string>
+    <string name="ent_bills">Hóa đơn ENT</string>
+    <string name="void_items">Vật phẩm trống</string>
+    <string name="void_bills">Hóa đơn</string>
+    <string name="refund_bills">Hóa đơn hoàn tiền</string>
+    <string name="refund_taxes">Hoàn thuế</string>
+    <string name="total_refund">Tổng số tiền hoàn lại</string>
+    <string name="discount_on_per">Giảm giá%</string>
+    <string name="discount_on_pri">Giảm giá trên $</string>
+    <string name="take_away_sales">Bán hàng</string>
+    <string name="take_away_tax">Thuế mua</string>
+    <string name="take_away_qty">Vật phẩm mang đi</string>
+    <string name="total_tax">Thuế độc quyền</string>
+    <string name="rounding">Làm tròn</string>
+    <string name="promotion">Chương trình khuyến mãi</string>
+
+    <string name="gross_total">Tổng doanh thu</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">Bữa tối</string>
+    <string name="boh">Ơ</string>
+    <string name="total_card">TỔNG THẺ</string>
+    <string name="total_nets">TỔNG MẠNG</string>
+    <string name="total_cash">TỔNG SỐ TIỀN</string>
+    <string name="total_boh">TỔNG HỢP</string>
+    <string name="total_ent">TỔNG ENT</string>
+    <string name="vr_summary">TÓM TẮT / HOÀN LẠI</string>
+    <string name="total_void">Tổng số trống</string>
+    <string name="disc_summary">KHÁM PHÁ TÓM TẮT</string>
+    <string name="tax_svc">THUẾ / SVC</string>
+    <string name="drawer">NGĂN KÉO</string>
+    <string name="expected_in_drawer">Dự kiến ​​trong ngăn kéo</string>
+    <string name="difference">Sự khác biệt</string>
+    <string name="inclusive_tax">Thuế đã bao gồm</string>
+    <string name="total_taxsvc">Tổng thuế / SVC</string>
+    <string name="variance">Phương sai</string>
+    <string name="total_of_bills">Tổng hóa đơn</string>
+    <string name="total_of_paxs">Tổng số Pax</string>
+    <string name="avg_bills">Hóa đơn trung bình</string>
+    <string name="avg_paxs">Paxs trung bình</string>
+    <string name="monthly_sales">Báo cáo bán hàng hàng tháng</string>
+    <string name="monthly_plu">Báo cáo PLU hàng tháng</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">Phân tích sửa đổi</string>
+    <string name="op">Op</string>
+    <string name="report_no_">Báo cáo số.</string>
+    <string name="plu_name">Tên PLU</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">Bán hàng hàng giờ</string>
+    <string name="promotion_sales">Khuyến mại</string>
+    <string name="promotion_name">Khuyến mãi</string>
+    <string name="hour">Giờ</string>
+    <string name="tran">Trần</string>
+    <!-- Void PLU -->
+    <string name="item_name">Tên mục</string>
+    <!-- KOT -->
+    <string name="kot_no_">KOT số:</string>
+    <string name="date_">Ngày:</string>
+    <string name="void_">*** NÓI ***</string>
+    <string name="kot_copy">SAO CHÉP</string>
+    <string name="table_name">Tên bảng:</string>
+    <string name="table_num">Bảng số:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">Kết nối máy in WIFI thành công</string>
+    <string name="wifi_printer_disconnect_success">Ngắt kết nối máy in WIFI thành công</string>
+    <string name="wifi_printer_send_failed">Gửi dữ liệu không thành công, vui lòng kết nối lại</string>
+    <string name="wifi_printer_connect_error">Lỗi kết nối máy in WIFI</string>
+    <string name="wifi_printer_nopaper">Máy in không có giấy</string>
+    <string name="print_order_summary"> - Tóm tắt theo thứ tự -</string>
+
+    <string name="monthly_start_date">Thời gian bắt đầu</string>
+    <string name="monthly_end_date">Thời gian kết thúc</string>
+</resources>

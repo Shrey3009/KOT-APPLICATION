@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_bar_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar" >
+
+        <RelativeLayout
+            android:id="@+id/ll_inst_content"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_margin="20dp" >
+
+            <EditText
+                android:id="@+id/et_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_instruction"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:hint="@string/instruction"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_b" />
+
+            <ListView
+                android:id="@+id/lv_item_inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/bg_inst_listview"
+                android:layout_below="@+id/et_instructions"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:paddingTop="3dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_inst_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_inst_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/instruction_save_selector"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_b" />
+
+        <ImageView
+            android:id="@+id/iv_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/shadow" />
+    </RelativeLayout>
+
+</RelativeLayout>

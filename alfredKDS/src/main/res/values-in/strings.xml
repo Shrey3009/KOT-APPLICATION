@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">Versi:</string>
+    <string name="exit_program">Silakan klik KEMBALI lagi untuk keluar</string>
+    <string name="revenue_center">Pusat Penghasilan</string>
+    <string name="loading">Memuat</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">Pindai kode QR dari POS pusat pendapatan untuk mendapatkan pasangan KDS tablet. \natau Geser ke kiri Dan \nHubungkan POS secara manual dengan IP</string>
+    <string name="ipaddr_tips">Penyandingan Perangkat \nSiapkan Alamat IP POS</string>
+    <string name="connect">Menghubungkan</string>
+    <string name="check_ip">Periksa alamat IP tidak benar</string>
+    <string name="pairing_fails">Pemasangan gagal, tidak ada izin</string>
+    <string name="employee_id">Perangkat dipasangkan \nMasukkan ID Karyawan Anda</string>
+    <string name="select_kitchen">KDS Dipasangkan \nSilahkan pilih dapur \nmilik KDS</string>
+    <string name="paired_failed">Perangkat KDS tidak dipasangkan dengan Alfred POS</string>
+    <string name="cashier_login_tips1">Masukkan ID Karyawan</string>
+    <string name="cashier_login_tips2">Masukkan kata kunci</string>
+    <string name="logining">Masuk</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">Pengiriman gagal!</string>
+    <string name="other_pos_data">MainPos lain mengirim data</string>
+    <string name="order_discarded">Pesanan telah dibuang oleh kasir.</string>
+    <string name="reconnect_pos">POS utama terputus. Sambungkan kembali?</string>
+    <string name="dine_in">Makan di tempat</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">Belum selesai</string>
+    <string name="be_doing">Sedang melakukan</string>
+    <string name="update">Memperbarui</string>
+
+    <string name="chargeback">Pengembalian beban</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">PosId</string>
+    <string name="item_complete">lengkap</string>
+    <string name="kitchen_name">Nama Dapur</string>
+    <string name="reconnect_pos_">Kirim Gagal, Anda dapat menghubungkan kembali Pos Utama</string>
+    <string name="kot_in_progress">sedang berlangsung</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">SEJARAH KOT</string>
+    <string name="kot_revert">kembali</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">Id pemesanan</string>
+    <string name="pos">POS</string>
+    <string name="data">Data</string>
+    <string name="dish">Hidangan</string>
+    <string name="undoing">Kehancuran</string>
+
+    <!-- Setting -->
+    <string name="reset">Semua data akan dihapus, \nAnda yakin mengatur ulang KDS?</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="ok">baik</string>
+    <string name="reset_kds">Setel ulang KDS</string>
+    <string name="switch_account">Ganti akun</string>
+    <string name="kot_history_">Sejarah Kot</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">Gagal mengirim KOT</string>
+    <string name="relogin_pos">POS telah menutup sesi saat ini. \nSilakan masuk kembali saat sesi berikutnya dimulai</string>
+
+    <!-- other -->
+    <string name="network_error">Kesalahan Fatal Jaringan</string>
+    <string name="finished_items_number">Silakan Masukkan Jumlah Hidangan Jadi</string>
+    <string name="max_number">Jumlah MAX adalah</string>
+    <string name="no_finished">TIDAK. SELESAI</string>
+    <string name="sending">Mengirim</string>
+    <string name="reconn_pos">Anda harus menghubungkan kembali pos!</string>
+    <string name="complete_all_item">Konfirmasikan semua pesanan sudah selesai?</string>
+    <string name="completed">Lengkap</string>
+    <string name="choose">Pilih</string>
+    <string name="please_choose_pos">Silakan pilih POS</string>
+</resources>

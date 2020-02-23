@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <title>Edit Order</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.62, user-scalable=1, minimum-scale=0.62, maximum-scale=0.62"> -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>  
+    <link rel='stylesheet' href='./css/settings.css' type='text/css'/>  
+      
+    <!--jquery-->
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+
+</head>
+<style>
+	@font-face{
+	   font-family:'Trajan Pro';
+	   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+	}
+	.headbar {
+	  position:relative!important;
+	}
+</style>
+<body>
+<div id="window">
+
+    <div id="orderListContent">
+        <div id="orderListBar" class="headbar">
+          <div class="col-md-2">
+             <div id="backBtn" ></div>
+          </div>
+          <div class="col-md-10">
+	       <div id="wintitle" class="title col-md-8">Edit Order</div>
+
+            <div style="float: right;" id="orderRight">
+                <ul>
+                    <li >
+                        <button type="button" id="todayOrderListBut" class="btn btn-default">
+                            <span>Today</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" id="allOrderListBut" class="btn btn-default">
+                            <span>All</span>
+                        </button>
+                    </li>
+                    <li>
+                        <input type="text" style="width: 150px"  class="form-control searchbox" id="searchContent" placeholder="Order Id">
+                    </li>
+                </ul>
+            </div>
+           </div> 
+        </div>
+
+        <div id="billTables" class="maxCol">
+            <div id="header">
+                <div class="row">
+                    <div class="col-md-2">Order</div>
+                    <div class="col-md-2 ">KOT</div>
+                    <div class="col-md-2">location</div>
+                    <div class="col-md-2 showCol">Table</div>
+                    <div class="col-md-2 showCol">Waiter</div>
+                    <div class="col-md-2 showCol">Cashier</div>
+                </div>
+            </div>
+            <div id="tableswrapper">
+                <div id="tablesscroller">
+                    <ul id="orderli">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="orderDetailsContent">
+        <div class="headbar">
+            <div class="col-md-3" style="height: 100%; border-left: 1px solid #fff;">
+                <div id="closeBtn" style="padding-top: 16px; font-size: 24px">
+                    Close
+                </div>
+            </div>
+            <div class="col-md-3 pull-right" style="height: 100%;">
+                <div id="saveOrderBtn" style="float:right;padding-top: 16px; font-size: 24px">
+                    Save Order
+                </div>
+            </div>
+        </div>
+    <div id="billDetails">
+        <div id="detailsHeader">
+            <div class="col-md-2">Product</div>
+            <div class="col-md-1">Price</div>
+            <div class="col-md-1">Qty</div>
+            <div class="col-md-2">Subtotal</div>
+            <div class="col-md-1">Disc.</div>
+            <div class="col-md-2">Total</div>
+            <div class="col-md-1">Modifier</div>
+            <div class="col-md-1">Remark</div>
+            <div class="col-md-1"></div>
+        </div>
+        <div id="tablesdetailswrapper">
+            <div id="tablesdetailsscroller">
+                <ul id="listdetails">
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/template" id="orderListItem-template">
+        <div class="row " data="<%=tableId %>">
+            <div class="col-md-2"><%=orderNo %></div>
+            <div class="col-md-2"><%=orderOriginId %></div>
+            <div class="col-md-2"><%=revenueId %></div>
+            <div class="col-md-2 showCol"><%=tableId %></div>
+            <div class="col-md-2 showCol"><%=userId %></div>
+            <div class="col-md-2 showCol"><%=userId %></div>
+        </div>
+</script>
+<script type="text/template" id="orderdetailsItem-template">
+        <div class="row">
+            <div class="col-md-2"><%=name %></div>
+            <div class="col-md-1">$<%=price%></div>
+            <div class="col-md-1"><span class="badge qty"><%=itemNum %></span></div>
+            <div class="col-md-2">$<%=subTotal %></div>
+            <div class="col-md-1">$<%=discountPrice %></div>
+            <div class="col-md-2">$<%=total %></div>
+            <div class="col-md-1"><i class="glyphicon glyphicon-edit"></i></div>
+            <div class="col-md-1"><i class="glyphicon glyphicon-edit"></i></div>
+            <div class="col-md-1"><i class="glyphicon glyphicon-trash"></i></div>
+        </div>
+</script>
+<!--
+<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+<script type="text/javascript" src='./js/app/models/editorderlist_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/editorderlist_collection.js'></script>
+<script type="text/javascript" src='./js/app/models/editorderdetails_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/editorderdetails_collection.js'></script>
+<script type="text/javascript" src='./js/app/views/editorderlist_view.js'></script>
+<script type="text/javascript" src='./js/app/views/editorderdetails_view.js'></script>
+</body>
+</html>

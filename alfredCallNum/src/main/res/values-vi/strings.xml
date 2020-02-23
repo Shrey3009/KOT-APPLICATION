@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">Gọi số</string>
+    <string name="version">Phiên bản:</string>
+    <string name="exit_program">Vui lòng nhấp lại lần nữa để thoát</string>
+    <string name="revenue_center">Trung tâm doanh thu</string>
+    <string name="warn">CẢNH BÁO</string>
+    <string name="loading">Tải</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">Quét mã QR từ POS của trung tâm \nrevenue để ghép nối máy tính bảng KDS. \nHo Trượt sang trái và \nKết nối POS bằng IP theo cách thủ công</string>
+    <string name="set_ipaddr">Ghép nối thiết bị \nThiết lập địa chỉ IP POS</string>
+    <string name="connect">Kết nối</string>
+    <string name="invalid_ip">Thiết bị hoặc IP POS chính không hợp lệ không nằm trong cùng một mạng. Hãy kiểm tra</string>
+    <string name="invalid_ip_">Địa chỉ IP không hợp lệ do bạn đặt</string>
+    <string name="link">Phải liên kết</string>
+    <string name="select_revenue_center">Bạn đủ điều kiện để phục vụ \nin các trung tâm doanh thu</string>
+    <string name="logining">Đăng nhập</string>
+    <string name="waiter_login_tips1">Thiết bị được ghép nối \nNhập ID nhân viên bồi bàn</string>
+    <string name="waiter_login_tips2">\nNhập mật khẩu</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">Chức vụ</string>
+    <string name="menu">Thực đơn</string>
+    <string name="detail">Chi tiết</string>
+    <string name="add_item">Vui lòng thêm mục trước</string>
+    <string name="item_name">Tên mục</string>
+    <string name="modifier">bổ nghĩa</string>
+    <string name="add_modifier">Thêm công cụ sửa đổi</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">Đặt hàng thành công</string>
+    <string name="place_failed">Không thể đặt hàng</string>
+    <string name="print_bill_succ">In hóa đơn thành công</string>
+    <string name="print_bill_failed">Không thể in hóa đơn</string>
+    <string name="network_errors">Không thể nhận được hóa đơn in tại thời điểm này: Lỗi mạng</string>
+    <string name="order_closed">Đơn hàng đã đóng, vui lòng chọn bảng và thay thế lại thứ tự.</string>
+    <string name="order_not_edited">Thứ tự không thể được chỉnh sửa khi theo quy trình. Vui lòng liên hệ với thủ quỹ để thử lại.</string>
+    <string name="order_split_settled">Việc phân chia đơn hàng được giải quyết</string>
+    <string name="order_split">Sự phân chia thứ tự</string>
+    <string name="settled"> được giải quyết</string>
+    <string name="item_count">Số mặt hàng:</string>
+    <string name="discount_">Giảm giá:-</string>
+    <string name="group_all">Nhóm: Tất cả</string>
+    <string name="print_bill">Hóa đơn in</string>
+
+    <!-- Setting -->
+    <string name="system_reset">Thiết lập lại hệ thống</string>
+    <string name="clean_data">Bạn có chắc chắn để làm sạch tất cả dữ liệu?</string>
+    <string name="logout_title">Đăng ký bồi bàn</string>
+    <string name="logout_content">Bạn có chắc chắn để đăng xuất?</string>
+    <string name="history">lịch sử đơn hàng</string>
+    <string name="bump_mobile">Bump với ứng dụng di động tiêu dùng</string>
+    <string name="connect_pos">Kết nối với máy chủ POS</string>
+    <string name="data_sync">Đồng bộ dữ liệu</string>
+    <string name="kot_notification">Thông báo KOT</string>
+    <string name="zone_notification">Thông báo khu vực</string>
+    <string name="reset">Cài lại</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="version_">Phiên bản</string>
+    <string name="lock_screen">Màn hình khóa</string>
+
+    <!-- other -->
+    <string name="relogin_pos">POS đã đóng cửa phiên hiện tại. \nVui lòng đăng nhập lại khi phiên tiếp theo bắt đầu</string>
+    <string name="pairing_failed">Ghép nối không thành công: Lỗi mạng</string>
+    <string name="empty_invalid">Giá trị trống không hợp lệ</string>
+    <string name="number_people">Vui lòng nhập số người</string>
+    <string name="note">CHÚ THÍCH</string>
+    <string name="transfer_">  đã được chuyển sang Bảng:</string>
+    <string name="order_belong">Chọn người đặt hàng \nbelongs</string>
+    <string name="clear">Thông thoáng</string>
+    <string name="enter">Đi vào</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="check">Kiểm tra</string>
+    <string name="up_one_level">Lên một cấp</string>
+    <string name="exit_filed">Trường thoát</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Xin chào mảnh trống</string>
+    <string name="check_ip">Địa chỉ IP không chính xác, vui lòng kiểm tra địa chỉ IP của bạn</string>
+</resources>

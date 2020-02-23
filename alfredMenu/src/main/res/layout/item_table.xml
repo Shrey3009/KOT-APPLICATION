@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <GridView
+        android:id="@+id/gv_tables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:horizontalSpacing="15dp"
+        android:listSelector="@null"
+        android:numColumns="6"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+</RelativeLayout>

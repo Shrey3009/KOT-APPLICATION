@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_kitchen_name" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kot_history"
+            android:textSize="@dimen/text_size_xb"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_kot_record"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/kot_id"/>
+        <TextView
+            android:id="@+id/tv_order_n"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/order_id"/>
+        <TextView
+            android:id="@+id/tv_table_name" 
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/table"/>
+        <TextView 
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/pos"/>
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black" 
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/data"/>
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/time"/>
+        <TextView 
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m"
+			android:text="@string/dish"/>
+            
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_kot_record"
+        android:orientation="vertical">
+        <ListView 
+            android:id="@+id/lv_kot_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

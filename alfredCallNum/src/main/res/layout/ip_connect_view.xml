@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_ipaddr_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/set_ipaddr"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_b" 
+                android:lineSpacingExtra="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" 
+                android:background="@drawable/login_header">
+
+                <EditText
+                    android:id="@+id/et_ip1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip4"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+            </LinearLayout>
+
+            <com.alfredbase.view.Numerickeyboard
+                android:id="@+id/ipkeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" >
+            </com.alfredbase.view.Numerickeyboard>
+        </LinearLayout>
+      <LinearLayout 
+            android:layout_height="wrap_content"
+            android:id="@+id/llversion"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+	        <TextView
+	            android:id="@+id/tv_connect"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/connect"
+	            android:gravity="center"
+	            android:layout_marginBottom="20dp"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/text_size_b" />             
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_s"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

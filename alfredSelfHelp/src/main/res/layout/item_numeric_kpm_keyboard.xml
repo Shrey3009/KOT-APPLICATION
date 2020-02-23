@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp70"
+    android:layout_height="@dimen/dp70" >
+
+    <TextView
+        android:id="@+id/tv_num_text"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp70"
+        android:background="@drawable/box_key_number_selector"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/text_color_selector"
+        android:textSize="@dimen/text_size_m" />
+
+</RelativeLayout>

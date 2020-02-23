@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">เลขที่บิล</string>
+    <string name="emp">Emp</string>
+    <string name="groupnum">จำนวนกลุ่ม</string>
+    <string name="pos">POS</string>
+    <string name="date">วันที่</string>
+    <string name="total_">รวม:</string>
+    <string name="rounding_print">การปัดเศษ:</string>
+    <string name="promotion_print">โปรโมชั่น:</string>
+    <string name="mastercard">มาสเตอร์การ์ด</string>
+    <string name="unionpay">UnionPay</string>
+    <string name="visa">วีซ่า</string>
+    <string name="amex_">Amex</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">งานเลี้ยงอาหารค่ำ</string>
+    <string name="hold_bill">ถือบิล</string>
+    <string name="com_credits">เครดิต บริษัท</string>
+    <string name="house_charge">ค่าบ้าน</string>
+    <string name="ent">หูคอจมูก</string>
+    <string name="nets">อวน</string>
+    <string name="alipay">Alipay</string>
+    <string name="weixin">EZ-Link</string>
+    <string name="paypal">แอพ Diner</string>
+    <string name="stored_card_use">การใช้บัตรที่เก็บไว้</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">การเรียกเก็บเงินบัตร</string>
+    <string name="card_no">หมายเลขบัตร</string>
+    <string name="check_closed"> ตรวจสอบปิด</string>
+    <string name="thank_you_and_see_you">ขอบคุณและพบกันใหม่!</string>
+    <string name="powered_by_alfred">ServedByAlfred</string>
+    <string name="kg">กิโลกรัม</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">ขายสินค้า</string>
+    <string name="stored_card_sales">การขายบัตร</string>
+    <string name="ent_items">รายการ ENT</string>
+    <string name="ent_bills">ตั๋วเงิน ENT</string>
+    <string name="void_items">รายการโมฆะ</string>
+    <string name="void_bills">ตั๋วเงินเป็นโมฆะ</string>
+    <string name="refund_bills">ตั๋วเงินคืน</string>
+    <string name="refund_taxes">ภาษีคืนเงิน</string>
+    <string name="total_refund">การคืนเงินทั้งหมด</string>
+    <string name="discount_on_per">ส่วนลด%</string>
+    <string name="discount_on_pri">ส่วนลดจาก $</string>
+    <string name="take_away_sales">ขายของกลับบ้าน</string>
+    <string name="take_away_tax">ภาษีซื้อกลับบ้าน</string>
+    <string name="take_away_qty">จำนวนสินค้า Takeaway</string>
+    <string name="total_tax">ภาษีพิเศษ</string>
+    <string name="rounding">การล้อม</string>
+    <string name="promotion">โปรโมชั่น</string>
+
+    <string name="gross_total">ยอดขายรวม</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">เหลา</string>
+    <string name="boh">BOH</string>
+    <string name="total_card">บัตรทั้งหมด</string>
+    <string name="total_nets">เครือข่ายรวม</string>
+    <string name="total_cash">เงินสดทั้งหมด</string>
+    <string name="total_boh">รวมทั้งสิ้น</string>
+    <string name="total_ent">รวม ENT</string>
+    <string name="vr_summary">ข้อมูลสรุปเป็นโมฆะ / คืนเงิน</string>
+    <string name="total_void">โมฆะทั้งหมด</string>
+    <string name="disc_summary">สรุปส่วนลด</string>
+    <string name="tax_svc">ภาษี / SVC</string>
+    <string name="drawer">ลิ้นชัก</string>
+    <string name="expected_in_drawer">คาดว่าจะอยู่ในลิ้นชัก</string>
+    <string name="difference">ข้อแตกต่าง</string>
+    <string name="inclusive_tax">รวมภาษี</string>
+    <string name="total_taxsvc">รวมภาษี / SVC</string>
+    <string name="variance">ความแปรปรวน</string>
+    <string name="total_of_bills">รวมตั๋วเงิน</string>
+    <string name="total_of_paxs">จำนวนผู้โดยสารทั้งหมด</string>
+    <string name="avg_bills">ตั๋วเงินเฉลี่ย</string>
+    <string name="avg_paxs">Pax เฉลี่ย</string>
+    <string name="monthly_sales">รายงานการขายรายเดือน</string>
+    <string name="monthly_plu">รายงาน PLU รายเดือน</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">การวิเคราะห์ตัวปรับ</string>
+    <string name="op">แย้มยิ้ม</string>
+    <string name="report_no_">หมายเลขรายงาน</string>
+    <string name="plu_name">ชื่อพลู</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">ขายรายชั่วโมง</string>
+    <string name="promotion_sales">การส่งเสริมการขาย</string>
+    <string name="promotion_name">การส่งเสริม</string>
+    <string name="hour">ชั่วโมง</string>
+    <string name="tran">Tran</string>
+    <!-- Void PLU -->
+    <string name="item_name">ชื่อรายการ</string>
+    <!-- KOT -->
+    <string name="kot_no_">ไม่มี KOT:</string>
+    <string name="date_">วันที่:</string>
+    <string name="void_">*** เป็นโมฆะ ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">ชื่อตาราง:</string>
+    <string name="table_num">ตารางที่:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">เชื่อมต่อเครื่องพิมพ์ WIFI สำเร็จ</string>
+    <string name="wifi_printer_disconnect_success">ยกเลิกการเชื่อมต่อเครื่องพิมพ์ WIFI สำเร็จ</string>
+    <string name="wifi_printer_send_failed">ส่งข้อมูลล้มเหลวโปรดเชื่อมต่อใหม่</string>
+    <string name="wifi_printer_connect_error">เชื่อมต่อข้อผิดพลาดเครื่องพิมพ์ WIFI</string>
+    <string name="wifi_printer_nopaper">เครื่องพิมพ์ไม่มีกระดาษ</string>
+    <string name="print_order_summary"> - สรุปคำสั่งซื้อ -</string>
+
+    <string name="monthly_start_date">เวลาเริ่มต้น</string>
+    <string name="monthly_end_date">เวลาสิ้นสุด</string>
+</resources>

@@ -1,0 +1,134 @@
+ body {
+    height: 100%;
+    font: normal 100% Helvetica, Arial, sans-serif;
+     background-color: #fff;
+}
+
+#windows {
+    width: 100%;
+    height: 100%;
+
+}
+.homepage{
+    text-align: center;
+    margin: 0px auto;
+}
+.container{
+    width: 100%;
+
+}
+#backBtn {
+  background:url('../image/backbtn_icon.png');
+  width: 48px;
+  height:60px;
+  margin-left: 5px;
+}
+
+#refBut {
+  background:url('../image/refreshbtn_icon.png');
+  width: 48px;
+  height:60px;
+  margin-right: 5px;
+}
+
+ .locationlist li {
+     height:80px;
+     border-bottom: 1px solid #fefefe;
+     color:#000;
+ }
+
+ .selected {
+     background-color: #000!important;
+     color:#fff;
+ }
+ .name {
+     font-size: 32px;
+     margin-top: 20px;
+ }
+
+.number {
+     width: 60px;
+     height: 60px;
+     float: right;
+     margin: 10px 10px 0px 30px;
+     background-color: #aaa;
+     color: #fff;
+     border-radius: 3px;
+     text-align: center;
+     line-height: 60px;
+ }
+
+ ul {
+     list-style: none;
+     margin: 0px 0px;
+     padding: 0px 0px;
+ }
+ .rowright{
+     margin-right: 0px;
+ }
+ 
+ .itemrow {
+     height: 158px;
+     float: left;
+ }
+
+#tableApp .itembox {
+     width: 180px;
+     height: 180px;
+     color:#000;
+     border-radius: 3px;
+     text-align: center;
+     padding-right: 20px;
+     background:url('../image/tableempty_bg.png');
+}
+.pendingtbl .itembox {
+  background:url('../image/tablepending_bg.png')!important;
+}
+.billingtbl .itembox {
+  background:url('../image/tablebilling_bg.png')!important;
+}
+.noordertbl .itembox {
+  background:url('../image/tablepending_bg.png')!important;
+}
+.itembox .selecteditem {
+  width:160px;
+  height:160px;
+}
+.itembox .time {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -20px;
+	left:50px;
+	padding-top:4px;
+	font-size:18px;
+}
+.fixed-top {
+    position: fixed;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+}
+.itembox .timer {
+  background:url('../image/timer_icon.png');
+  width: 22px;
+  height:22px;
+  float:left;
+}
+.headbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height:60px;
+	background-color:#050505;
+	color:#fff;
+	font-size:24px;
+	overflow: hidden;
+	z-index: 999;
+}
+.headbar .title {
+  line-height:60px;
+  font-family: "Trajan Pro";
+  text-align:center;
+  font-weight: bold;
+}

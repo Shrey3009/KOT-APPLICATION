@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">比尔号</string>
+    <string name="emp">EMP</string>
+    <string name="groupnum">集团数量</string>
+    <string name="pos">POS</string>
+    <string name="date">日期</string>
+    <string name="total_">总计：</string>
+    <string name="rounding_print">舍入：</string>
+    <string name="promotion_print">促销：</string>
+    <string name="mastercard">万事达</string>
+    <string name="unionpay">银联</string>
+    <string name="visa">签证</string>
+    <string name="amex_">美国运通</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">晚餐</string>
+    <string name="hold_bill">抓住比尔</string>
+    <string name="com_credits">公司信用</string>
+    <string name="house_charge">房屋费用</string>
+    <string name="ent">耳鼻喉科</string>
+    <string name="nets">NETS</string>
+    <string name="alipay">支付宝</string>
+    <string name="weixin">EZ-Link的</string>
+    <string name="paypal">晚餐应用程序</string>
+    <string name="stored_card_use">存储卡使用</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">存储卡充电</string>
+    <string name="card_no">卡号</string>
+    <string name="check_closed"> 检查已关闭</string>
+    <string name="thank_you_and_see_you">谢谢你，再次见到你！</string>
+    <string name="powered_by_alfred">ServedByAlfred</string>
+    <string name="kg">公斤</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">物品销售</string>
+    <string name="stored_card_sales">存储卡销售</string>
+    <string name="ent_items">耳鼻喉科项目</string>
+    <string name="ent_bills">耳鼻喉科法案</string>
+    <string name="void_items">无效物品</string>
+    <string name="void_bills">无效票据</string>
+    <string name="refund_bills">退款票据</string>
+    <string name="refund_taxes">退税</string>
+    <string name="total_refund">退款总额</string>
+    <string name="discount_on_per">折扣％</string>
+    <string name="discount_on_pri">折扣$</string>
+    <string name="take_away_sales">外卖销售</string>
+    <string name="take_away_tax">外卖税</string>
+    <string name="take_away_qty">外卖商品数量</string>
+    <string name="total_tax">独家税</string>
+    <string name="rounding">四舍五入</string>
+    <string name="promotion">促销活动</string>
+
+    <string name="gross_total">总销售总额</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">餐车</string>
+    <string name="boh">BOH</string>
+    <string name="total_card">总卡</string>
+    <string name="total_nets">全网</string>
+    <string name="total_cash">总现金</string>
+    <string name="total_boh">总共有BOH</string>
+    <string name="total_ent">TOTAL ENT</string>
+    <string name="vr_summary">无效/退款摘要</string>
+    <string name="total_void">总空洞</string>
+    <string name="disc_summary">折扣摘要</string>
+    <string name="tax_svc">TAX / SVC</string>
+    <string name="drawer">抽屉</string>
+    <string name="expected_in_drawer">预期在抽屉里</string>
+    <string name="difference">区别</string>
+    <string name="inclusive_tax">包含税</string>
+    <string name="total_taxsvc">总税收/ SVC</string>
+    <string name="variance">方差</string>
+    <string name="total_of_bills">票据总数</string>
+    <string name="total_of_paxs">总人数</string>
+    <string name="avg_bills">平均账单</string>
+    <string name="avg_paxs">平均Paxs</string>
+    <string name="monthly_sales">每月销售报告</string>
+    <string name="monthly_plu">每月PLU报告</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">修饰分析</string>
+    <string name="op">欧普</string>
+    <string name="report_no_">报告编号</string>
+    <string name="plu_name">PLU名称</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">每小时销售</string>
+    <string name="promotion_sales">促销活动</string>
+    <string name="promotion_name">提升</string>
+    <string name="hour">小时</string>
+    <string name="tran">陈德良</string>
+    <!-- Void PLU -->
+    <string name="item_name">项目名称</string>
+    <!-- KOT -->
+    <string name="kot_no_">KOT号码：</string>
+    <string name="date_">日期：</string>
+    <string name="void_">*** VOID ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">表名：</string>
+    <string name="table_num">表号：</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">成功连接WIFI打印机</string>
+    <string name="wifi_printer_disconnect_success">断开WIFI打印机成功</string>
+    <string name="wifi_printer_send_failed">发送数据失败，请重新连接</string>
+    <string name="wifi_printer_connect_error">连接WIFI打印机错误</string>
+    <string name="wifi_printer_nopaper">打印机没有纸张</string>
+    <string name="print_order_summary">  - 订单摘要 - </string>
+
+    <string name="monthly_start_date">开始时间</string>
+    <string name="monthly_end_date">时间结束</string>
+</resources>

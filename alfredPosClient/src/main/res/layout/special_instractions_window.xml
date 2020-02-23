@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/dialog_bocop_loaing_bg"
+        android:orientation="vertical" 
+        android:gravity="center_horizontal">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:text="@string/instruction"
+			android:layout_marginTop="20dp"
+			android:textSize="@dimen/text_size_b"
+			android:textColor="@color/white"
+		    />
+        <EditText
+            android:id="@+id/et_special_instractions"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:inputType="textNoSuggestions"
+			android:textSize="@dimen/text_size_m_smail"
+
+			android:textColor="@color/black" />
+		<!--android:focusableInTouchMode="true"-->
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+		    <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" 
+            android:layout_marginRight="10dp"/>
+		    
+		    <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/save" />
+		</LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

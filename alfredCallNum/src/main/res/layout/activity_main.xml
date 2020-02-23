@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/tv_call_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_call_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_num_back_icon"
+            android:layout_centerInParent="true"
+
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <FrameLayout
+
+
+        android:id="@+id/one_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+      >
+    </FrameLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_call_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+</LinearLayout>

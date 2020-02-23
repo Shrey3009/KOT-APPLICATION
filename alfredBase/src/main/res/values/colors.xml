@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_bg">#88000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="bocop_dialog_bg">#77000000</color>
+    <color name="deep_gray">#ADADAD</color>
+    <color name="toast_bg">#f9bf35</color>
+    <color name="whitesmoke">#F5F5F5</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="bg_tabpageindi">#f5f5f5</color>
+    <color name="bg_press_tabpageindi">#987e54</color>
+
+    <color name="split_group1">#dc7578</color>
+    <color name="split_group2">#e68127</color>
+    <color name="split_group3">#2971b9</color>
+    <color name="split_group4">#9ec658</color>
+    <color name="split_group5">#fed055</color>
+    <color name="split_group6">#8957a1</color>
+    <color name="split_group7">#88abda</color>
+    <color name="split_group8">#becca7</color>
+    <color name="split_group9">#f6b1c3</color>
+    <color name="split_group10">#6a7e93</color>
+    <color name="split_group11">#7e6b5a</color>
+    <color name="split_group12">#005752</color>
+    <color name="split_group13">#26bcf1</color>
+    <color name="split_group14">#ea68a2</color>
+    <color name="split_group15">#8f82bc</color>
+    <color name="split_group16">#ad5472</color>
+    <color name="split_group17">#d1c0a5</color>
+    <color name="split_group18">#f289ff</color>
+    <color name="split_group19">#e5b96f</color>
+    <color name="split_group20">#f29b76</color>
+    <color name="split_group21">#16a086</color>
+
+    <color name="gray1">#535664</color>
+    <color name="gray2">#797b86</color>
+    <color name="gray3">#9fa1a9</color>
+    <color name="gray4">#f4f9fb</color>
+    <color name="gray5">#edf0f3</color>
+    <color name="gray6">#C5C6CB</color>
+    <color name="gray7">#9FA1A9</color>
+    <color name="gray8">#f5f6f6</color>
+    <color name="green">#27c06b</color>
+    <color name="green1">#27b858</color>
+
+    <color name="red">#ea68a2</color>
+    <color name="red1">#ec6189</color>
+    <color name="red2">#ff4949</color>
+
+    <color name="black1">#535664</color>
+    <color name="black2">#666773</color>
+
+
+    <color name="white1">#ebeced</color>
+
+
+</resources>

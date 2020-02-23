@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugsee'
+import com.android.build.gradle.api.BaseVariant
+
+bugsee {
+//    appToken 'f4eb9760-2327-4253-9f5b-533ee0e711c6'
+//    appToken '9290f896-1a2e-4b70-b1fa-46823bb4398c'
+
+    appToken { BaseVariant variant ->
+        switch (variant.buildType.name) {
+            case 'release': '855edcc3-0ec8-40f7-b3e8-31ef79540932'
+                break
+//            case 'debug': 'f4eb9760-2327-4253-9f5b-533ee0e711c6'
+            case 'debug': '855edcc3-0ec8-40f7-b3e8-31ef79540932'
+                break
+        }
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.alfred.callnum"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+        debug {
+        }
+    }
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                // 修改apk文件名
+//                def fileName = "waiter.apk"
+//                output.outputFile = new File(output.outputFile.parent, fileName)
+//            }
+//        }
+//    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+//    as3.0以上
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def flavor = variant.name
+            def versionName = variant.versionName
+            def date = new Date()
+            def formattedDate = date.format('yyyy-MM-dd')
+            if(variant.buildType.name == "release")
+            {
+                outputFileName = "C360EngageCallNum.apk"
+                flavor = versionName
+            }
+            else if(variant.buildType.name == "debug")
+            {
+                outputFileName = "CallNum_${flavor}_${versionName}_${formattedDate}.apk"
+                flavor = flavor + "_" + formattedDate
+            }
+            variant.outputs.each { output ->
+                output.versionNameOverride = flavor
+            }
+        }
+    }
+
+   // useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation project(':alfredBase')
+    //    implementation rootProject.ext.libSupportV4
+    //    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    //  implementation 'com.android.support:appcompat-v7:20.0.0'
+    //    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation files('libs/glide-3.6.0.jar')
+//    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+//    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+}

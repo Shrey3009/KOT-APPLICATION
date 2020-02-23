@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Devices</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>    
+	<script type="text/javascript"src="./js/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    
+	<script type="text/javascript" src="./js/lib/modernizr/modernizr.custom.js"></script>
+	<script type="text/javascript" src="./js/devicesetting/classie.js"></script>
+	<script type="text/javascript" src="./js/devicesetting/pushmenu.js"></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+    <script type="text/javascript" src='./js/lib/jquery.qrcode-0.7.0.min.js'></script>
+     
+    <style>
+		@font-face{
+		   font-family:'Trajan Pro';
+		   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+		}
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+            height: 100%;
+            background: #fff;
+        }
+        
+        .featuretitle {
+           font-family: "Trajan Pro";
+        }
+
+		.container {
+		    display: block;
+		    position:absolute;
+		    height:100%;
+		    width:100%!important;
+		    bottom:0;
+		    top:60px;
+		    left:0;
+		    right:0;
+		    background-color:#fefefe;
+		}
+		        
+		*,
+		*:after,
+		*::before {
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		
+		html, body, .container, .scroller {
+			height: 100%;
+			margin:0px 0px;
+		}
+		
+		.mp-pusher {
+			position: relative;
+			left: 0;
+			height: 100%;
+		}
+		
+		.mp-menu {
+			position: absolute; /* we can't use fixed here :( */
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 300px;
+			height: 100%;
+			-webkit-transform: translate3d(-100%, 0, 0);
+			-moz-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		}
+		
+		.mp-level {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #666;
+			-webkit-transform: translate3d(-100%, 0, 0);
+			-moz-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		}
+		
+		/* overlays for pusher and for level that gets covered */
+		.mp-pusher::after,
+		.mp-level::after,
+		.mp-level::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			content: '';
+			opacity: 0;
+		}
+		
+		.mp-level::after {
+			z-index: -1;
+		}
+
+		.mp-level.mp-level-overlay.mp-level::before {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			opacity: 1;
+		}
+		
+		.mp-pusher,
+		.mp-level {
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		
+		/* overlap */
+		.mp-overlap .mp-level.mp-level-open {
+			box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+			-webkit-transform: translate3d(-40px, 0, 0);
+			-moz-transform: translate3d(-40px, 0, 0);
+			transform: translate3d(-40px, 0, 0);
+		}
+		
+		/* First level */
+		.mp-menu > .mp-level,
+		.mp-menu > .mp-level.mp-level-open,
+		.mp-menu.mp-overlap > .mp-level,
+		.mp-menu.mp-overlap > .mp-level.mp-level-open {
+			box-shadow: none;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		
+		/* cover */
+		.mp-cover .mp-level.mp-level-open {
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		
+		.mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
+			-webkit-transform: translate3d(-100%, 0, 0);
+			-moz-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		}
+		
+		/* content style */
+		.mp-menu ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		.mp-menu h2 {
+			margin: 0;
+			padding: 1em;
+			color: #fff;
+			font-weight: 300;
+			font-size: 2em;
+		}
+		
+		.mp-menu.mp-overlap h2::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-right: 8px;
+			font-size: 75%;
+			line-height: 1.8;
+			opacity: 1;
+			-webkit-transition: opacity 0.3s, -webkit-transform 0.1s 0.3s;
+			-moz-transition: opacity 0.3s, -moz-transform 0.1s 0.3s;
+			transition: opacity 0.3s, transform 0.1s 0.3s;
+			-webkit-transform: translateX(-100%);
+			-moz-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+		
+		.mp-menu.mp-cover h2 {
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 1px;
+			font-size: 1em;
+		}
+		
+		.mp-overlap .mp-level.mp-level-overlay > h2::before {
+			opacity: 1;
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transform: translateX(0);
+			-moz-transform: translateX(0);
+			transform: translateX(0);
+		}
+		
+		.mp-menu ul li > a {
+			display: block;
+			padding: 0.7em 1em 0.7em 1.8em;
+			outline: none;
+			box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+			text-shadow: 0 0 1px rgba(255,255,255,0.1);
+			font-size: 1.4em;
+			color:#fefefe;
+			text-decoration: none;
+			-webkit-transition: background 0.3s, box-shadow 0.3s;
+			-moz-transition: background 0.3s, box-shadow 0.3s;
+			transition: background 0.3s, box-shadow 0.3s;
+		}
+		
+		.mp-menu ul li::before {
+			position: absolute;
+			left: 10px;
+			z-index: -1;
+			color: #fefefe;
+			line-height: 3.5;
+		}
+		
+		.mp-level > ul > li:first-child > a {
+			box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
+		}
+		
+		.mp-menu ul li a:hover,
+		.mp-level > ul > li:first-child > a:hover {
+			background: #fefefe;
+			box-shadow: inset 0 -1px rgba(0,0,0,0);
+			color:#333;
+		}
+		
+		.mp-menu .mp-level.mp-level-overlay > ul > li > a,
+		.mp-level.mp-level-overlay > ul > li:first-child > a {
+			box-shadow: inset 0 -1px rgba(0,0,0,0);
+		}
+		
+		.mp-back {
+			background: rgba(0,0,0,0.1);
+			outline: none;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			display: block;
+			font-size: 1em;
+			padding: 1em;
+			position: relative;
+			box-shadow: inset 0 1px rgba(0,0,0,0.1);
+			-webkit-transition: background 0.3s;
+			-moz-transition: background 0.3s;
+			transition: background 0.3s;
+		}
+		
+		.mp-back::after {
+			font-family: 'linecons';
+			position: absolute;
+			content: "\e037";
+			right: 10px;
+			font-size: 1.3em;
+			color: rgba(0,0,0,0.3);
+		}
+		
+		.mp-menu .mp-level.mp-level-overlay > .mp-back,
+		.mp-menu .mp-level.mp-level-overlay > .mp-back::after {
+			background: transparent;
+			box-shadow: none;
+			color: transparent;
+		}
+		
+		/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+		/* We'll show the first level only */
+		.no-csstransforms3d .mp-pusher,
+		.no-js .mp-pusher {
+			padding-left: 300px;
+		}
+		
+		.no-csstransforms3d .mp-menu .mp-level,
+		.no-js .mp-menu .mp-level {
+			display: none;
+		}
+		
+		.no-csstransforms3d .mp-menu > .mp-level,
+		.no-js .mp-menu > .mp-level {
+			display: block;
+		} 
+
+
+		.column_wrap {position:relative;}
+		.col_left {
+			background-color: #eee;
+			width: 340px !important;
+			position: fixed;
+			left: 0;
+			top: 60px;
+			bottom: 0;
+			height: auto;
+			display: block;
+			overflow: hidden;			
+		}
+		.col_right {
+			margin-left:340px;
+			background-color:#fefefe;
+			height:100%;
+			overflow-y:scroll;
+			-webkit-overflow-scrolling: touch;
+		}
+		.active {
+		  background: #fefefe;
+		  color:#333!important;
+		}
+		.deviceinfo .deviceitem {
+			width:160px;
+			height:200px;
+			background:#666;
+			margin:20px 18px;
+			float:left;
+			text-align: center;
+			padding: 20px 0px;
+			font-size: 16px;
+			color:#fff;		  
+		}
+		.qrcol {
+			margin-left:0px;
+			box-shadow: 1px 0 4px rgba(0,0,0,0.9);
+			text-align:center;
+			float: right;
+			width: 300px;
+			position:fixed;
+			right:0px;			
+		}
+		.qrcol .qrtitle {
+			text-align: center;
+			font-size: 18px;
+			padding: 10px 20px;
+			margin-top: 40px;
+			margin-bottom:10px;		
+		}
+		.qrcol #deviceqrimg {
+		  text-align:center;
+		}
+		.qrcol .qripdata {
+			font-size: 18px;
+			padding: 10px 20px;
+			margin-top: 10px;		  
+		}
+		.qrcol .ipaddr {
+		  font-size:24px;
+		  font-weight: bold;
+		  margin-top: 10px;
+		}
+		
+		.featuretitle {
+		   font-size:24px;
+		   text-align:center;
+		   line-height: 60px;
+		}
+
+		.topbar {
+		    display: block;
+		    position:fixed;
+		    top:0!important;
+		    left:0;
+		    right:0;
+		    height:60px!important;
+		    background-color:#050505!important; 
+		    color:#fff!important;
+		    z-index:100;		           
+		}
+      </style>
+</head>
+<body>
+    <div class="topbar container">
+	    <div class="row">
+		     <div class="col-md-4">
+		         <div id="backBtn"></div>
+		     </div> 
+		     <div class="col-md-4">             
+		       <div class="featuretitle">Devices</div>
+		     </div>
+		     <div class="col-md-4">
+		          <div id="refBut" class="pull-right"></div>
+		     </div>
+	     </div>
+    </div>
+	<div class="container" id="app">
+	   <div class="col_left">
+		<div class="mp-pusher" id="mp-pusher">
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu mp-overlap">
+					<div class="mp-level mp-level-open" data-level="1">
+						<h2 class="icon icon-world">Devices</h2>
+						<ul id="sidemenucontaier">
+						</ul>
+							
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+			</div>
+		</div>	
+		<div class="col_right">
+           <div class="deviceinfo">
+           
+           </div>
+           <div class="col_right qrcol">
+             <div class="qrtitle">
+               Scan the QR code to get Tablets paired with the POS
+             </div>
+             <div id="deviceqrimg">
+              <canvas width="220" height="200"></canvas>
+             </div>
+             <div class="qripdata">
+             </div> 
+           </div>
+		</div>
+	</div>
+	<script type="text/template" id="leftcol_tmpl">
+	 <% _.each(locations, function(loc) { %>
+		<li class="icon icon-arrow-left">
+				<a class="icon icon-display level1" data="<%=loc.devicetype %>"><%=loc.devicetype %></a>
+			<% if (_.size(loc.devices)>0) { %> 	
+				<div class="mp-level" data-level="2">
+					<h2 class="icon icon-display"><%=loc.devicetype %></h2>
+				  <% if (true) { %> 
+					<a class="mp-back" href="javascript:void(0);">back</a>
+					<ul>
+					  <% _.each(loc.devices, function(device){ %>
+						<li>
+							<a class="icon icon-phone level2" data="<%=loc.devicetype %>"><%=device.printerName %></a>
+						</li>
+					  <% }); %>
+					</ul>
+				  <% } %>
+				</div>
+			<%}%>	
+		</li>	 
+	 <%});%>
+	</script>
+	<script type="text/template" id="printer_tmpl">
+	    <% _.each(printers, function(printer){ %>
+		 <div class="deviceitem">
+		    <p class="prtname"><%=printer.name %></p>
+		    <p class="prtip"><%=printer.IP %></p>
+		    <% if(printer.device_id>0){ %>
+		      <button type="button" class="unassignBtn btn btn-lg btn-block" data="<%=printer.device_id%>" style="margin-top:60px;">Unassign</button>
+		    <% }else{ %>
+		      <button type="button" class="assignBtn btn btn-lg btn-block" style="margin-top:60px;">Assign</button>
+			<% } %>
+		 </div>
+		<% }); %>
+	</script>    
+	<script type="text/template" id="kds_tmpl">
+	    <% _.each(kdsdevices, function(kds){ %>
+		 <div class="deviceitem">
+		    <p><%=kds.device_id %></p>
+		    <p><%=kds.IP %></p>
+		    <p><%=kds.mac %></p>
+		 </div>
+		<% }); %>
+	</script>
+	<script type="text/template" id="add_printer_tmpl">
+		 <div class="deviceitem" id="addPrinterBtn">
+		    <p style="font-size:60px;">+</p>
+		    <p>Manually Add Printer Device</p>
+		 </div>
+	</script> 	 
+	<script type="text/template" id="tablets_tmpl">
+	    <% _.each(tablets, function(tablet){ %>
+		 <div class="deviceitem">
+		    <p><%=tablet.name %></p>
+		    <p><%=tablet.ip %></p>
+		    <p><%=tablet.connected %></p>
+		    <% if (tablet.username !== undefined) {%>
+		    <p><%=tablet.username %></p>
+		    <% } %>
+		 </div>
+		<% }); %>
+	</script>
+	<script type="text/template" id="mainposinfo_tmpl">	
+       <div>OR</div>
+       <div style="font-size:20px;">Manually set POS IP in Tablet</div>
+       <div class="ipaddr"><%=mainPosInfo.IP %></div> 
+       <div class="mac"><%=mainPosInfo.mac %></div> 
+       <div class="mac"><%=mainPosInfo.name %></div>
+    </script>	
+
+<!--
+	<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+	<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+    <script type="text/javascript" src='./js/devicesetting/devicesetting.js'></script>
+</body>
+</html>

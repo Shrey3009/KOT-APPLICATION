@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+    <title>Cash In/Out</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>
+    <link rel="stylesheet" href="./css/settings.css" type='text/css'/>
+    <link rel="stylesheet" href="./css/skins/all.css" type='text/css'/>
+    <!--jquery-->
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/jquery/icheck.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+</head>
+<style>
+	@font-face{
+	   font-family:'Trajan Pro';
+	   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+	}
+	.form-group input {
+		height: 50px;
+		font-size: 24px;	
+	}
+	body {
+	  background-color:#fff;
+	  color:#333;
+	}
+	#window {
+	  background-color:transparent;
+	}
+	.button {
+	    width:90px; 
+	    height:80px;
+	    background-color:#fff; 
+	    position:relative;
+	    float:left;
+	    margin-right:9px;
+	    margin-top:10px;
+	    cursor:pointer;
+	    font-size:1.9em;
+	
+	    -webkit-box-shadow: 0px 1px 3px #000000;-moz-box-shadow: 0px 1px 3px #000000;box-shadow: 0px 1px 3px #000000;
+	    -moz-border-radius: 5px;border-radius: 5px;
+	    background: #ffffff; /* old browsers */
+	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	}
+	.buttonDown {
+	  background:none;background-color: #c9cdd5; 
+	  -webkit-box-shadow:none;-moz-box-shadow: none;box-shadow: none;
+	}
+
+.key {
+	color:#333;
+	   font-size: 28px;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding-top:24px;
+	text-shadow: 0px 1px 1px #ffffff;
+	filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+.row {
+ margin:0px 0px !important;
+
+}
+#cashinoutpanel {
+  width:300px;
+  margin:0 auto;
+	
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:60px;  
+}
+#cashinoutpanel .cashvalue {
+	float:left;
+	text-align:center;
+	border-bottom:1px solid #000;
+	width:200px;
+}
+.valuesect {
+font-size:42px;
+margin:10px 20px; 
+width:100%;
+float:left;
+}	
+.commentwin {
+	color:#333;
+	position:absolute;
+	background-color:#fff;
+	top:100%;
+	height: 100%;
+	left:0px;
+	right: 0px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;	
+}
+.commentwin #confirmedaction {
+  font-size:18px;
+  text-align:center;
+  margin-top:100px;
+}
+.commentwin #confirmedvalue {
+	font-size:36px;
+	text-align:center;
+	margin-bottom:20px;
+}
+#cashInTitle{
+	background-color:5cb85c;
+}
+
+</style>
+<body>
+<div id="window">
+    <div id="cashinoutContent">
+        <div class="headbar" style="position:fixed;top:0px;left:0px;right:0px;">
+            <div class="col-md-2">
+                <div id="backBtn" ></div>
+            </div>
+            <div class="col-md-10">
+                <div id="wintitle" class="title col-md-10">备用金/支出</div>
+            </div>
+        </div>
+        
+		<div id="cashinoutpanel">
+			<div class="btn-group btn-group-justified" style="margin-top:20px;">
+                <a class="btn btn-success btn-lg" id="cashInTitle" href="#">备用金</a>
+                <a class="btn btn-info btn-lg" id="cashOutTitle" href="#">支出</a>
+            </div>		
+		    
+		    <div class="valuesect">
+		       <div style="width:20px;float:left;">￥</div>
+		       <div id="cashdefault" class="cashvalue">0.00</div>
+		    </div>
+	        <div class="row">
+			     <div class="button" data="1">
+			       <div class="key">1</div>
+			     </div>
+			     <div class="button" data="2">
+			       <div class="key">2</div>
+			     </div>
+			     <div class="button" data="3">
+			       <div class="key">3</div>
+			     </div>
+			</div> 
+
+			<div class="row">    
+			     <div class="button" data="4">
+			       <div class="key">4</div>
+			     </div>
+			     <div class="button" data="5">
+			       <div class="key">5</div>
+			     </div>
+			     <div class="button" data="6">
+			       <div class="key">6</div>
+			     </div>
+			</div> 
+			<div class="row">       
+			     <div class="button" data="7">
+			       <div class="key">7</div>
+			     </div>
+			     <div class="button" data="8">
+			       <div class="key">8</div>
+			     </div>
+			     <div class="button" data="9">
+			       <div class="key">9</div>
+			     </div>
+			</div> 
+			<div class="row">  		     
+			     <div class="button" data="0">
+			       <div class="key">0</div>
+			     </div>
+			     <div class="button" data="10">
+			       <div class="key">00</div>
+			     </div>
+			     <div class="button" data="-1">
+			       <div class="key">删除</div>
+			     </div>
+		    </div>
+            <button type="button" id="continueBtn" class="btn btn-lg btn-block" style="margin-top:20px;">继续</button>
+	    </div>  		     		     		     		     		     		     
+        </div>
+    </div>
+    <div class="commentwin">
+      <div class="row">
+         <div class="col-md-4 col-md-push-4" id="confirmedaction">
+            存入备用金
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-md-push-4" id="confirmedvalue">
+           ￥0.00
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-md-push-4 form-group">
+	        <div class="col-md-12">
+	            <input type="text" id="commnetbox" class="form-control round-input" placeholder="留下备注?">
+	        </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-md-push-4 form-group">
+            <button type="button" id="cancelBtn" class="btn btn-lg btn-block" style="margin-top:20px;">取消</button>
+            <button type="button" id="confirmsaveBtn" class="btn btn-lg btn-block btn-success" style="margin-top:20px;">保存</button>
+         </div>
+      </div>
+      </div>
+    </div>
+    
+    </div>
+</div>
+
+<!--
+<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+<script type="text/javascript" src='./js/app/views/cashinout.js'></script>
+</body>
+</html>
+
+
+

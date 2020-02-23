@@ -1,0 +1,1899 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000" >
+
+    <LinearLayout
+        android:id="@+id/ll_bill_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_order_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_bill_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/bill_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_big" />
+
+            <com.alfredbase.view.DashedLine
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s" />
+
+                <TextView
+                    android:id="@+id/tv_item_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s" />
+
+                <TextView
+                    android:id="@+id/tv_item_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/qty"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s" />
+
+                <TextView
+                    android:id="@+id/tv_item_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s" />
+            </LinearLayout>
+
+            <com.alfredbase.view.DashedLine
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/ll_bill_summary"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bill_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <com.alfredbase.view.DashedLine
+                        android:id="@+id/dl_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_sub_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_sub_total_num"
+                            android:text="@string/subtotal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+
+                        <TextView
+                            android:id="@+id/tv_sub_total_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=" $200.00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_discount_num"
+                            android:text="@string/discount"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+
+                        <TextView
+                            android:id="@+id/tv_discount_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="-$10.00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_taxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_taxes_num"
+                            android:gravity="center"
+                            android:text="@string/taxes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+
+                        <TextView
+                            android:id="@+id/tv_taxes_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="$15.00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_total_bill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_total_bill_num"
+                            android:text="@string/total_bill"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+
+                        <TextView
+                            android:id="@+id/tv_total_bill_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=" $00.00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_m_smail" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_void_all_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/box_key_number_selector"
+                        android:text="@string/void_all"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_s" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order_list1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/rl_summary_bottom"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:id="@+id/ll_subtotal_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_residue_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/total_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m" />
+
+
+                                    <com.alfredbase.view.DashedLine
+                                        android:layout_width="match_parent"
+                                        android:layout_height="8dp"
+                                        android:layout_marginTop="10dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/tv_residue_total_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text=" $200.00"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_xb" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_sub_total_rounding"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/rounding"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m"/>
+
+                                    <com.alfredbase.view.DashedLine
+                                        android:layout_width="match_parent"
+                                        android:layout_height="8dp"
+                                        android:layout_marginTop="10dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/tv_sub_total_rounding_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text=" $200.00"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_xb" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_change"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/change"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m" />
+
+                                    <com.alfredbase.view.DashedLine
+                                        android:layout_width="match_parent"
+                                        android:layout_height="8dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/tv_change_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text=" $00.00"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_xb" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_cash_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_cash_settlement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/cash_settlement"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/total_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_rounding"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/rounding"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_rounding_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_total_amount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/totle_paid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_total_cur"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/tv_total_amount_num"
+                                        android:background="@color/white"
+                                        android:singleLine="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_total_amount_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/white"
+                                        android:singleLine="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_change_action"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/change"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_change_action_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:singleLine="true"
+                                        android:text="$95.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_part_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_part_settlement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/part_settlement"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_part_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/total_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_part_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_part_total_amount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/totle_paid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_part_cur"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/tv_part_total_amount_num"
+                                        android:background="@color/white"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_part_total_amount_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/white"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <!--<RelativeLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp" >-->
+
+                                <!--<TextView-->
+                                <!--android:id="@+id/tv_change_action"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:text="@string/change"-->
+                                <!--android:textColor="@color/black"-->
+                                <!--android:textSize="@dimen/text_size_m_smail" />-->
+
+                                <!--<TextView-->
+                                <!--android:id="@+id/tv_change_action_num"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text="$95.00"-->
+                                <!--android:textColor="@color/black"-->
+                                <!--android:textSize="@dimen/text_size_m_smail" />-->
+                                <!--</RelativeLayout>-->
+
+                                <!--<com.alfredbase.view.DashedLine-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="8dp" />-->
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_cards_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_cards_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/visa_settlement"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_cards_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/amount_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/tv_cards_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_small" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="3dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_cards_amount_paid"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:text="@string/amount_paid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_cards_amount_paid_num"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg">
+
+                                        <TextView
+                                            android:id="@+id/tv_cards_amount_paid_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5dp"
+                                            android:hint="0.00"
+                                            android:maxLength="16"
+                                            android:selectAllOnFocus="true"
+                                            android:textColor="@color/black"
+                                            android:textCursorDrawable="@color/red"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/tv_cards_amount_symbol"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@id/tv_cards_amount_paid_num"
+                                            android:text="$"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_small" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="0dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingBottom="0dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_cards_rounding"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/rounding"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_cards_rounding_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="3dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_card_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg">
+
+                                        <TextView
+                                            android:id="@+id/tv_card_no"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="@string/card_no"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/tv_card_no_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_toRightOf="@+id/tv_card_no"
+                                            android:hint="8888"
+                                            android:inputType="number"
+                                            android:maxLength="4"
+                                            android:selectAllOnFocus="true"
+                                            android:textColor="@color/black"
+                                            android:textCursorDrawable="@color/red"
+                                            android:textScaleX="0.96"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_card_img"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_margin="5dp"
+                                            android:src="@drawable/img_visa" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/tv_cards_expiration_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:paddingBottom="10dp"
+                                            android:text="@string/exp_date"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_m_smail" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_cards_expiration_date_num"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_cards_expiration_date"
+                                            android:background="@drawable/bill_box_bg"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/tv_cards_expiration_date_num"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:hint="11/88"
+                                                android:maxLength="5"
+                                                android:text=""
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/text_size_m_smail" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_cards_cvv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:paddingBottom="10dp"
+                                            android:text="@string/cvv"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_m_smail" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_cards_cvv_num"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_cards_cvv"
+                                            android:background="@drawable/bill_box_bg"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/tv_cards_cvv_num"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="5dp"
+                                                android:background="@color/white"
+                                                android:hint="888"
+                                                android:maxLength="3"
+                                                android:selectAllOnFocus="true"
+                                                android:textColor="@color/black"
+                                                android:textCursorDrawable="@color/red"
+                                                android:textSize="@dimen/text_size_m_smail" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_special_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_special_settlement_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/entertainment"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_special_settlement_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/amount_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_special_settlement_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_special_settlement_authorize_by"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/authorize_by"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_special_settlement_authorize_by_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_special_settlement_person"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:id="@+id/iv_person_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_margin="5dp"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icon_person_name" />
+
+                                        <EditText
+                                            android:id="@+id/et_special_settlement_person_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toRightOf="@+id/iv_person_name"
+                                            android:background="@android:color/transparent"
+                                            android:hint="@string/guest_name"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="text"
+                                            android:nextFocusForward="@+id/et_special_settlement_phone_text"
+                                            android:singleLine="true"
+
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_s" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_special_settlement_phone"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:id="@+id/iv_phone_img"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_margin="5dp"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icon_phone" />
+
+                                        <EditText
+                                            android:id="@+id/et_special_settlement_phone_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toRightOf="@+id/iv_phone_img"
+                                            android:background="@android:color/transparent"
+                                            android:hint="@string/guest_phone_number"
+                                            android:inputType="phone"
+                                            android:singleLine="true"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_s" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_special_settlement_remarks"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="@string/remarks"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <EditText
+                                        android:id="@+id/et_special_settlement_remarks_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@id/tv_special_settlement_remarks"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/bill_box_bg"
+                                        android:gravity="top"
+                                        android:hint="@string/leave_comments"
+                                        android:inputType="textNoSuggestions"
+                                        android:lines="4"
+                                        android:paddingLeft="5dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_s"
+                                        android:visibility="visible" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_nets_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_nets_settlement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/net_settlement"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/amount_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_amount_paid"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:text="@string/amount_paid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_nets_amount_paid_num"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg">
+
+                                        <TextView
+                                            android:id="@+id/tv_nets_amount_paid_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5dp"
+                                            android:hint="0.00"
+                                            android:maxLength="16"
+                                            android:selectAllOnFocus="true"
+                                            android:textColor="@color/black"
+                                            android:textCursorDrawable="@color/red"
+                                            android:textSize="@dimen/text_size_m_smail" />
+
+                                        <TextView
+                                            android:id="@+id/tv_nets_amount_symbol"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@id/tv_nets_amount_paid_num"
+                                            android:text="$"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_m_smail" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="0dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingBottom="0dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_rounding"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/rounding"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                    <TextView
+                                        android:id="@+id/tv_nets_rounding_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_nets_ref_num"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/bill_box_bg">
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_ref"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:paddingLeft="5dp"
+                                        android:text="Ref #"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tv_nets_ref_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@color/white"
+                                        android:hint="888888888"
+                                        android:maxLength="9"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="5dp"
+                                        android:src="@drawable/img_nets" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <!-- alipay wechat settlement -->
+                            <LinearLayout
+                                android:id="@+id/ll_wechat_ali_settlement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:id="@+id/tv_wechat_ali_settlement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/alipay_settlement"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_wechat_ali_amount_due"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/amount_due"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <TextView
+                                        android:id="@+id/tv_wechat_ali_amount_due_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:text="$0.00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+                                </RelativeLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_wechat_ali_amount_paid"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:text="@string/amount_paid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_wechat_ali_amount_paid_num"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bill_box_bg">
+
+                                        <TextView
+                                            android:id="@+id/tv_wechat_ali_amount_paid_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5dp"
+                                            android:hint="0.00"
+                                            android:maxLength="16"
+                                            android:selectAllOnFocus="true"
+                                            android:textColor="@color/black"
+                                            android:textCursorDrawable="@color/red"
+                                            android:textSize="@dimen/text_size_m_smail" />
+
+                                        <TextView
+                                            android:id="@+id/tv_wechat_ali_amount_symbol"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@id/tv_wechat_ali_amount_paid_num"
+                                            android:text="￥"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_m_smail" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <com.alfredbase.view.DashedLine
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_wechat_ali_ref_num"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/bill_box_bg">
+
+                                    <TextView
+                                        android:id="@+id/tv_wechat_ali_ref"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:paddingLeft="5dp"
+                                        android:text="@string/payment_code"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tv_wechat_ali_ref_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@color/white"
+                                        android:hint="@string/scan_payment_code"
+                                        android:maxLength="9"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_m_smail" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="5dp"
+                                        android:src="@drawable/img_scaner" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!-- end alipay wechat -->
+                        </RelativeLayout>
+
+                        <com.alfredbase.view.DashedLine
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_margin="10dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_settlement_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_settlement_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/settlement_details"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_m" />
+                            </RelativeLayout>
+
+                            <com.alfredbase.view.DashedLine
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="10dp" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_all_settlements"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"></LinearLayout>
+
+                                    <!-- <LinearLayout -->
+                                    <!-- android:id="@+id/ll_sum_settled" -->
+                                    <!-- android:layout_width="wrap_content" -->
+                                    <!-- android:layout_height="wrap_content" -->
+                                    <!-- android:layout_below="@id/ll_all_settlements" -->
+                                    <!-- android:layout_gravity="bottom" -->
+                                    <!-- android:gravity="center_horizontal" -->
+                                    <!-- android:orientation="horizontal" -->
+                                    <!-- android:paddingTop="10dp" > -->
+
+
+                                    <!-- <TextView -->
+                                    <!-- android:id="@+id/tv_settlement_settled" -->
+                                    <!-- android:layout_width="wrap_content" -->
+                                    <!-- android:layout_height="wrap_content" -->
+                                    <!-- android:text="Settled " -->
+                                    <!-- android:textColor="@color/black" -->
+                                    <!-- android:textSize="@dimen/text_size_m_smail" /> -->
+
+
+                                    <!-- <TextView -->
+                                    <!-- android:id="@+id/tv_settlement_num" -->
+                                    <!-- android:layout_width="wrap_content" -->
+                                    <!-- android:layout_height="wrap_content" -->
+                                    <!-- android:text="$35.00" -->
+                                    <!-- android:textColor="@color/black" -->
+                                    <!-- android:textSize="@dimen/text_size_m_smail" /> -->
+                                    <!-- </LinearLayout> -->
+                                </RelativeLayout>
+                            </ScrollView>
+                        </LinearLayout>
+
+                        <com.alfredbase.view.DashedLine
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_summary_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="10dp">
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/tv_change" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_alignParentLeft="true" -->
+                        <!-- android:layout_centerVertical="true" -->
+                        <!-- android:text="@string/change" -->
+                        <!-- android:textColor="@color/black" -->
+                        <!-- android:textSize="@dimen/text_size_m_smail" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/tv_change_num" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_centerVertical="true" -->
+                        <!-- android:layout_toRightOf="@+id/tv_change" -->
+                        <!-- android:text=" $00.00" -->
+                        <!-- android:textColor="@color/black" -->
+                        <!-- android:textSize="@dimen/text_size_m_smail" /> -->
+
+                        <Button
+                            android:id="@+id/btn_close_bill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/box_key_number_selector"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <Button
+                            android:id="@+id/btn_print_receipt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/box_key_number_selector"
+                            android:text="@string/print_receipt"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_s"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_pay_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF">
+
+                    <com.alfredposclient.view.CloseMoneyKeyboard
+                        android:id="@+id/cashKeyboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_open_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/iv_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pay"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFFFF"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/sv_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@drawable/box_close">
+
+                                        <!-- <ImageView -->
+                                        <!-- android:layout_width="match_parent" -->
+                                        <!-- android:layout_height="wrap_content" -->
+                                        <!-- android:background="@drawable/box_close" /> -->
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="3dp">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/icon_cash" />
+
+                                            <TextView
+                                                android:id="@+id/tv_cash"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="@string/cash"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_size_m_smail" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <include
+                                        layout="@layout/cash_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginLeft="10dp"
+
+                                        android:layout_marginRight="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/box_close">
+
+                                        <!-- <ImageView -->
+                                        <!-- android:layout_width="match_parent" -->
+                                        <!-- android:layout_height="wrap_content" -->
+                                        <!-- android:background="@drawable/box_close" /> -->
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="3dp">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/icon_media" />
+
+                                            <TextView
+                                                android:id="@+id/tv_media"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="@string/media"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_size_s" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <include
+                                        android:id="@+id/media_keyboard_1"
+                                        layout="@layout/media_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal" />
+
+                                    <include
+                                        android:id="@+id/media_keyboard_2"
+                                        layout="@layout/china_media_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/box_close">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/icon_delivery" />
+
+                                            <TextView
+                                                android:id="@+id/tv_delivery"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="@string/delivery"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_size_s" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <include
+                                        layout="@layout/delivery_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/box_close">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/icon_adjust" />
+
+                                            <TextView
+                                                android:id="@+id/tv_adjustment"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="@string/adjustment"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_size_s" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <include
+                                        layout="@layout/options_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/box_close" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/icon_voucher" />
+
+                                            <TextView
+                                                android:id="@+id/tv_voucher"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="@string/voucher"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_size_s" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <include
+                                        layout="@layout/voucher_keyboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginLeft="10dp"
+
+                                        android:layout_marginRight="10dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.alfredposclient.view.AlipayWebView
+        android:id="@+id/web_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

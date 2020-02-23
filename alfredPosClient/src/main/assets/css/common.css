@@ -1,0 +1,23 @@
+
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.featuretitle {
+   font-size:24px;
+   text-align:center;
+   line-height: 60px;
+}
+
+.topbar {
+    display: block;
+    position:absolute;
+    height:60px!important;
+    bottom:0;
+    top:0!important;
+    left:0;
+    right:0;
+    background-color:#000!important; 
+    color:#fff!important;       
+}

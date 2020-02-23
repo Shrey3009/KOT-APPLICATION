@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_num"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_num_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/change_qty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_b" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_num_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#E9E9E9"
+            android:gravity="center"
+            android:minEms="4"
+            android:maxLength="3"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_num_panel"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF" >
+
+        <com.alfredwaiter.view.MoneyKeyboard
+            android:id="@+id/numKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

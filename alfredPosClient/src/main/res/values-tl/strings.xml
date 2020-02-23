@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+
+    <!--translate-->
+    <string name="open_rest_tips">Bago buksan ang restaurant, pakitiyak na nakakonekta ang lahat ng device sa device na ito.</string>
+    <string name="sync_tips">Ang aparatong ito ay hindi pa nasisiyahan sa iyong data ng restaurant sa Alfred Cloud. Mangyaring magbigay ng sumusunod na impormasyon ng account upang i-sync kasama ang Alfred Cloud</string>
+    <string name="select_revenue_centre_info1">Pumili ng Isa sa Revenue Center sa Sync</string>
+    <string name="select_revenue_centre_info2">Magkakaroon ng pag-sync sa paligid ng 1 minuto</string>
+    <string name="sync_complete">Nakumpleto ang pag-sync. Ang POS ay handa na para sa Dining Room 1. Mangyaring mag-login POS sa isang cashier account</string>
+    <string name="home_page_info">Ang Way ng Mga Restaurant Outght na Patakbuhin</string>
+    <string name="cashier_login_tips1">Ipasok ang Employee ID ng Cashier</string>
+    <string name="bill_manage">Pamahalaan ang Bill</string>
+    <string name="boh_settlement">BOH Settlement</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="report">Ulat</string>
+    <string name="system">System</string>
+    <string name="clock_in_out">Clock In / Out</string>
+    <string name="cash_in_out">Cash in / out</string>
+    <string name="place">Lugar</string>
+    <string name="name_of_the_place">Pangalan ng Lugar</string>
+    <string name="small">Maliit</string>
+    <string name="middle">Gitnang</string>
+    <string name="large">Malaking</string>
+    <string name="table_number">Numero ng Table</string>
+    <string name="staff">Mga tauhan</string>
+    <string name="misc">Misc</string>
+    <string name="free">Libre</string>
+    <string name="transfer">Maglipat</string>
+    <string name="weight">Timbang</string>
+    <string name="weight_kg">Timbang (kg)</string>
+    <string name="discount_item">Discount Item</string>
+    <string name="discount_w_category">Diskwento sa kategorya \n(maaari lamang i-apply nang isang beses)</string>
+    <string name="cannot_unseat">Hindi ma-unseat ang talahanayan na ito. \nAng ilang menu ay na-order.</string>
+    <string name="ask_transfer_table">Sigurado ka bang ilipat ang% 1 $ s sa% 2 $ s?</string>
+    <string name="adjustment">Pagsasaayos</string>
+    <string name="custom_payment">Custom na Pagbabayad</string>
+    <string name="amount_due">Halagang dapat bayaran</string>
+    <string name="authorize_by">Pahintulutan Ni</string>
+    <string name="leave_comments">Mag-iwan ng Mga Komento</string>
+    <string name="guest_phone_number">Guest Phone Number</string>
+    <string name="bill_number">Numero ng Bill</string>
+    <string name="boh_amount">BOH Halaga</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="payment_type">Uri ng Pagbabayad</string>
+    <string name="due_days">Dahil Araw</string>
+    <string name="please_scan_stored_qrcode">Mangyaring i-scan ang naka-imbak-card QRcode</string>
+    <string name="first_name">Pangalan</string>
+    <string name="last_name">Huling pangalan</string>
+    <string name="phone">Telepono</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="binding">Binding</string>
+    <string name="change_card">Baguhin ang Card</string>
+    <string name="query_balance">Balanse ng Query</string>
+    <string name="please_scan_new_old_stored_qrcode">Mangyaring i-scan ang bagong Stored-Card at ang lumang Stored-Card number o numero ng telepono ng gumagamit</string>
+    <string name="please_enter_old_stored_number">Mangyaring ipasok ang lumang Stored-Card number</string>
+    <string name="please_enter_user_phone_number">Mangyaring ipasok ang numero ng telepono ng gumagamit</string>
+    <string name="please_scan_card_or_phone">Mangyaring i-scan ang Stored-Card o punan ang numero ng telepono ng gumagamit</string>
+    <string name="kot_print">KOT Print</string>
+    <string name="kot_print_together">KOT print magkasama</string>
+    <string name="double_kot_print">Double KOT Print</string>
+    <string name="double_bill_prints">Double Bill Prints</string>
+    <string name="double_close_bill_prints">Double Close Bill Prints</string>
+    <string name="print_order_summary">I-print ang Buod ng Order</string>
+    <string name="print_direction_up">Print label direksyon up</string>
+    <string name="credit_card_rounding">Pag-ikot ng Credit Card</string>
+    <string name="auto_go_to_table">Auto pumunta sa Table</string>
+    <string name="sync_data">I-sync ang Data</string>
+    <string name="number_calling_setting_one_style">Numero ng Pagtawag Pagtatakda ng 1 Estilo</string>
+    <string name="calling_header">Calling Header</string>
+    <string name="calling_footer">Pagtawag sa Footer</string>
+    <string name="cancel_instead_of_void">Kanselahin sa halip na Walang bisa</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miyerkules</string>
+    <string name="thursday">Huwebes</string>
+    <string name="friday">Biyernes</string>
+    <string name="saturday">Sabado</string>
+    <string name="sunday">Linggo</string>
+    <!--untranslate-->
+    <string name="set_up">I-setup</string>
+    <string name="user_id_style">Employee ID</string>
+    <string name="user_id">Employee ID</string>
+    <string name="password">Password</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">Biz ID</string>
+    <string name="cashier_login_tips2">Ipasok ang Cashier Password</string>
+    <string name="logout">Mag-log out</string>
+    <string name="category_select">piliin</string>
+    <string name="enter_employee_id">Ipasok ang Employee ID</string>
+    <string name="version">Bersyon:</string>
+    <string name="warning">Babala</string>
+    <string name="server">Server</string>
+    <string name="loading">Naglo-load</string>
+    <string name="exit_program">Mangyaring mag-click muli upang lumabas</string>
+    <string name="drop_session_open">I-drop session \nupang magsimula</string>
+    <string name="drop_session_close">Ibalik pabalik \nupang isara</string>
+    <string name="manually_update">Hindi makatanggap ng data update message. \nDo kailangan mo nang mano-manong i-update ang data mula sa backoffice?</string>
+    <string name="day_symbol">ika</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">ALFRED</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">Ilipat \nTable</string>
+    <string name="hold_bill">Hold \nBill</string>
+    <string name="kiosk_hold">Kiosk at Hold</string>
+    <string name="open_item">Buksan ang \nemem</string>
+    <string name="edit_kot">I-edit ang \nkot</string>
+    <string name="app_dine_in">Kumain ka</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">I-print Resibo</string>
+    <string name="settled"> Napanatag:</string>
+    <string name="item_count">Bilang ng Item</string>
+    <string name="rounding">Rounding</string>
+    <string name="cash_other">Iba pa</string>
+    <string name="exact">Eksaktong $</string>
+    <string name="void_all">Walang bisa lahat</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">Disc</string>
+    <string name="sent_to_kitchen">Ang lahat ng bagay na iniutos ay ipinadala sa kusina</string>
+    <string name="remove_item">Alisin ang item na ito?</string>
+    <string name="item_complete">kumpleto ang item na ito</string>
+    <string name="sure_take_away">Sigurado ka ba na takeaway?</string>
+    <string name="no_order_detail">Hindi maaaring ilagay ang walang laman na order.</string>
+    <string name="network_connected">Hindi available ang koneksyon sa internet. Mangyaring kumonekta para sa pag-sync ng ulap ..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">I-print muli ang Bill</string>
+    <string name="edit_settlement">I-edit ang Settlement</string>
+    <string name="card_loss">Ulat Nawala</string>
+    <string name="fill_card">Punan ang card</string>
+    <string name="cash_inout">Cash \nIN / OUT</string>
+    <string name="sunmi_screen">SUNMI Vice Screen</string>
+    <!-- setting -->
+    <string name="update_msg">Mangyaring I-update ang Mensahe</string>
+    <string name="receive">Tumanggap</string>
+    <string name="_message">Mensahe</string>
+    <string name="update_successful">Matagumpay ang pag-update</string>
+    <string name="no_update">Walang pag-update</string>
+    <string name="no_sync_date">Hindi ma-sync ang data kapag nagbukas ang sesyon</string>
+    <string name="print_report_when_session">X Report</string>
+    <string name="print_cash_close">Cash W Close Print</string>
+    <string name="print_bill_set">I-print ang Bill</string>
+    <string name="print_lable">Print Label</string>
+    <string name="include_plu_void">Isama ang Plu Void</string>
+    <string name="password_update_successfully">Matagumpay na na-update ang password.</string>
+    <string name="employee_no_exist">Ang empleyado ay hindi umiiral sa backoffice.</string>
+    <string name="color_picker_tip">Tip: Pindutin ang ring ng kulay o bar ng kulay upang pumili ng isang halaga ng kulay</string>
+    <string name="color_select">Pagpili ng kulay</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">Ang sentro ng kita ay may isa pang naka-attach na aparatong POS. Upang magamit ang kasalukuyang device, pakikinig ng umiiral na device sa Alfred Cloud BackOffice at subukang muli.</string>
+    <string name="be_bound_already">Ang aparato ay naka-attach sa isa pang sentro ng kita. Paki-deploy ito sa BackOffice ng Alfred Cloud at subukang muli.</string>
+    <string name="sync_date_warning_tips">Ang setting ng revenue center ay hindi kumpleto. Mangyaring suriin ang mga sumusunod sa Aflred Backoffice:</string>
+    <string name="users">Mga gumagamit</string>
+    <string name="tables">Mga Tabla</string>
+    <string name="printer_printergroup">Printer o PrinterGroup</string>
+    <string name="product_categories">Mga Kategorya ng Produkto</string>
+    <string name="login_info_error">Ang Employee ID, Password at Biz ID ay hindi maaaring walang laman</string>
+    <!-- login -->
+    <string name="login_required">Tanging ang Cashier o Manager ang maaaring mag-login!</string>
+    <string name="invalid_employee">Di-wastong empleyado!</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">Ang kasalukuyang Session ay tumatakbo nang higit sa 12 oras!</string>
+    <string name="save_print_sales">Pag-save at Pagpi-print ng Sales</string>
+    <string name="whether_close_restaurant">Sigurado ka bang isara ang restaurant upang ihinto ang serbisyo ngayon?</string>
+    <string name="operation_on">Operasyon sa</string>
+    <string name="is_going_to_start">magsisimula na!</string>
+    <string name="bill_not_closed">Mayroong ilang mga bill na hindi pa nakasara.</string>
+    <string name="cashier_printer">Walang naka-set na printer para sa cashier.</string>
+    <string name="printing_close_report">Pag-print ng malapit na ulat</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">Nagpapadala sa Kusina</string>
+    <string name="place_before_print">Mangyaring ilagay ang order muna!</string>
+    <string name="setting_printer">Hindi handa ang printer, \nMangyaring pumunta sa Pagtatakda> Mga Device> \nPrinter upang magtalaga ng wastong printer ng Cashier!</string>
+    <string name="bill_printing">Ang Bill ay Pagpi-print</string>
+    <string name="no_items">Walang mga item sa listahan ng order!</string>
+    <string name="receipt_printing">Ang resibo ay Pagpi-print</string>
+    <string name="table_transfer">Paglipat ng Talahanayan</string>
+    <string name="table_transfer_from">Na-transfer mula sa% s ***</string>
+    <string name="to">sa</string>
+    <string name="no_set_kds_printer">Walang naka-set na Mga KDS o Printer Device para sa Mga Kusina</string>
+    <string name="place_order_failed">Nabigong ilagay ang order</string>
+    <string name="no_set_item_print">Menu: *% s * hindi naka-set printer</string>
+    <string name="print_bill_">Mangyaring mag-print ng bill</string>
+    <string name="assign_items_to_group">Mangyaring italaga mga item sa isang grupo.</string>
+    <string name="not_complete_order">Hindi kumpleto ang order.</string>
+    <string name="the_table">Ang lamesa</string>
+    <string name="occupied_time">  ay inookupahan ng 2 oras sa pag-upa</string>
+    <string name="pos_notification">Alfred POS Notification</string>
+    <string name="alfred_pos">Alfred POS</string>
+    <string name="online_order">Online Order</string>
+    <string name="the_most_selections">% d na mga seleksyon sa karamihan</string>
+    <string name="table_dining">Ang talahanayan ay inookupahan</string>
+    <string name="items"> modifier</string>
+    <string name="at_only">piliin LAMANG</string>
+    <!-- html -->
+    <string name="no_sales_print">Walang data ng benta upang i-print</string>
+    <string name="no_printer_devices">Walang Mga Device sa Printer</string>
+    <string name="cash_not_empty">Ang pera ay hindi maaaring walang laman</string>
+    <string name="save_success">I-save ang Tagumpay</string>
+    <string name="id_error">ID error !!!</string>
+    <string name="not_operations">Hindi maaaring magsagawa ng mga operasyon</string>
+    <string name="kds_paired">Ang isang aparatong KDS ay ipinares</string>
+    <string name="waiter_paired">Ipinapares ang One Waiter device</string>
+    <string name="printing">Pag-print</string>
+    <!-- App -->
+    <string name="print_down">I-print Serbisyo Down</string>
+    <string name="reconnect_print">Sigurado ka bang muling kumonekta sa Alfred Print Service?</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">Internal Error</string>
+    <string name="device_invalid">Di-wasto ang device</string>
+    <string name="login_failed">hindi tagumpay ang pag-login</string>
+    <string name="sync_data_failed">Nabigo ang data ng pag-sync</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">Ref id hindi walang laman</string>
+    <string name="close_payment_reminder">Ang napili na mode ng pagbabayad ay hindi magagamit sa ibang mode ng pagbabayad</string>
+    <string name="card_no_not_empty">Hindi maaaring walang laman ang Card</string>
+    <string name="card_no_for_four">Walang Card para sa apat</string>
+    <string name="card_no_not_correct">Hindi tama ang Card No</string>
+    <string name="cvv_not_empty">Ang CVV ay hindi maaaring walang laman</string>
+    <string name="cvv_for_three">CVV para sa tatlo</string>
+    <string name="exp_not_empty">Ang Petsa ng Pag-expire ay hindi maaaring walang laman</string>
+    <string name="exp_format">Format ng Petsa ng Pag-expire para sa 00/00</string>
+    <string name="cash_settlement">Pag-aayos ng Cash</string>
+    <string name="part_settlement">Bahagi ng Settlement</string>
+    <string name="totle_paid">Kabuuang Bayad</string>
+    <!--&lt;!&ndash;<string name="change">Baguhin -></string>-->
+    <string name="visa_settlement">Settlement ng Visa</string>
+    <string name="amount_paid">Halagang ibinayad</string>
+    <string name="card_no">Walang Kard</string>
+    <string name="exp_date">Petsa ng pagkawalang bisa</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">NET Settlement</string>
+    <string name="wechat_settlement">WeChat Settlement</string>
+    <string name="alipay_settlement">Alipay Settlement</string>
+    <string name="amount_auth_by">Halaga ng Auth sa pamamagitan ng</string>
+    <!-- other - window -->
+    <string name="switch_account">Lumipat ng account</string>
+    <string name="name_not_empty">Hindi maaaring walang laman ang pangalan</string>
+    <string name="price_not_empty">Hindi maaaring walang laman ang presyo</string>
+    <string name="order_split_">Ang split order</string>
+    <string name="_settled">  ay naisaayos na</string>
+    <string name="invalid_ip">Isang di-wastong IP address</string>
+    <string name="enter_people">Mangyaring Ipasok ang Bilang ng Mga Tao</string>
+    <string name="active_five_hours">Aktibong 5 oras</string>
+    <string name="switch_user">Paglipat ng gumagamit</string>
+    <string name="lock_screen">Lock ng screen</string>
+    <string name="refresh">refresh</string>
+    <string name="split_bill_win_title">Mga Detalye ng Bill</string>
+    <string name="split_print_all">Buong Bill Print</string>
+    <string name="slipt_print">Hatiin ang I-print</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">Pangalan ng talahanayan</string>
+    <string name="close_cash">Isara ang Cash</string>
+    <string name="bill_on_hold">BILL sa HOLD</string>
+    <string name="company">COMPANY</string>
+    <string name="house_charge">ANG BAYAD NA BAHAY</string>
+    <string name="close_split_bills">Isara ang Mga Hulugan ng Split</string>
+    <string name="event_voucher">Kaganapan Voucher</string>
+    <string name="voucher_ten">$ 10 Voucher</string>
+    <string name="voucher_five">$ 5 Voucher</string>
+    <string name="order_first">Hindi maaaring magamit ang diskwento!</string>
+    <string name="no_cashier_printer">Wala pang Cashier Printer</string>
+    <string name="discard_current_order">Sigurado ka bang itapon ang kasalukuyang order?</string>
+    <string name="unseat_table">Sigurado ka bang mag-unseat ng talahanayan? \nAng mga item ay hindi maitatala sa mga ulat.</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">Clock Out</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">Uri ng order</string>
+    <string name="online_order_status">Katayuan ng Order</string>
+    <string name="online_order_time">Lumikha ng Oras</string>
+    <string name="check">Suriin</string>
+    <string name="paid">Bayad</string>
+    <string name="making">Paggawa</string>
+    <string name="confirmed">ACCEPTED</string>
+
+    <string name="prepared">Inihanda</string>
+    <string name="preparing">Isinasagawa</string>
+    <string name="finish">Tapusin</string>
+    <string name="new_order">Bagong Order</string>
+    <string name="preparing_order">Isinasagawa / Inihanda</string>
+    <string name="completed_order">Nakumpleto</string>
+    <string name="receving_order">Receving</string>
+
+    <string name="index">Index</string>
+    <string name="welcome">Maligayang pagdating</string>
+    <string name="add_table_num">Magdagdag ng Numero ng Table</string>
+    <string name="input_table_num">Mangyaring Numero ng Numero ng Input</string>
+
+    <!--Zun-->
+    <string name="assign">Magtalaga</string>
+    <string name="manually_add">Manu-manong Magdagdag</string>
+    <string name="waiter_">Weyter</string>
+
+
+    <string name="devices_network">Network</string>
+
+    <string name="devices_bluetooth">Bluetooth</string>
+
+    <string name="revenue_center">Revenue Centre</string>
+    <string name="ipaddr_tips">Device Pairing \nSet up POS IP Address</string>
+    <string name="connect">Ikonekta</string>
+
+    <string name="january">Enero</string>
+    <string name="february">Pebrero</string>
+    <string name="march">Marso</string>
+    <string name="april">Abril</string>
+    <string name="may">Mayo</string>
+    <string name="june">Hunyo</string>
+    <string name="july">Hulyo</string>
+    <string name="august">Agosto</string>
+    <string name="september">Setyembre</string>
+    <string name="october">Oktubre</string>
+    <string name="november">Nobyembre</string>
+    <string name="december">Disyembre</string>
+
+    <string name="welcome_to">Maligayang pagdating sa</string>
+    <string name="please_clock_in">Mangyaring Clock In</string>
+    <string name="ask_delete_place">Sigurado ka bang tanggalin ang lugar na ito?</string>
+
+    <string name="days">Araw</string>
+    <string name="day">Araw</string>
+    <string name="split_pay">Hatiin</string>
+    <string name="all_pay">Lahat</string>
+    <string name="at_least">pumili ng hindi bababa sa</string>
+    <string name="please_input_amount">Mangyaring input halaga!</string>
+    <string name="operation_irreversible">Ang operasyon na ito ay hindi maibabalik, Sigurado ka ba?</string>
+    <string name="table_name_used">Pangalan ng Table na ginagamit na. Mangyaring gamitin ang ibang pangalan.</string>
+    <string name="please_select_empty_table">Mangyaring pumili ng isang walang laman na talahanayan</string>
+
+    <string name="turning_on_training_mode">Pag-on sa Mode ng Pagsasanay</string>
+    <string name="turning_on_training_mode_desc">Para sa mga unang beses na Gumagamit, ang mga setting ay pop up switch sa lilitaw sa tuktok</string>
+
+    <string name="ok">ok</string>
+    <string name="add">Idagdag</string>
+    <string name="cancel">Kanselahin ito</string>
+    <string name="sign_in">Ipasok</string>
+    <string name="sync">Pag-sync</string>
+    <string name="waiting_list">Listahan ng paghihintay</string>
+    <string name="queue">ang pila</string>
+    <string name="assign_table">Itakda\nTalahanayan</string>
+    <string name="summary">Buod</string>
+
+    <string name="add_queue">Magdagdag ng isang bagong pila</string>
+    <string name="queue_name">Pangalan ng pila</string>
+    <string name="ask_save_edit_content">Nais mong i-save ang na-edit na nilalaman?</string>
+    <string name="ask_delete_queue">Sigurado ka bang tanggalin ang queue na ito?</string>
+    <string name="name_used">Ang pangalan ay ginamit na, subukan ang isa pa</string>
+
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    
+    <color name="gray_line">#cbcbcb</color>
+    <color name="ex_list_bg">#eae5dd</color>
+	<color name="list_text_color">#333434</color>
+	<color name="bg_item_category">#967e53</color>
+	<color name="bg_instruction">#eaeaea</color>
+    <color name="devices_red">#ad0020</color>
+	
+</resources>

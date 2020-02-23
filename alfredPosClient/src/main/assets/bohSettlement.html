@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+    <title>BOH Settlement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.62, user-scalable=1, minimum-scale=0.62, maximum-scale=0.62"> -->
+    <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>
+    <link rel="stylesheet" href="./css/settings.css" type='text/css'/>
+    <link rel="stylesheet" href="./css/skins/all.css" type='text/css'/>
+    <!--jquery-->
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/jquery/icheck.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/moment.min.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+</head>
+<style>
+	@font-face{
+	   font-family:'Trajan Pro';
+	   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+	}
+	.form-group input {
+		height: 50px;
+		font-size: 24px;	
+	}
+	.headbar {
+	  position:relative!important;
+	}
+	.itemsect {
+		 font-size:28px;
+		 line-height:30px;
+		 margin: 0px 14px;
+		 padding:2px 0px;
+		 color:#fff;
+		 border-bottom:1px solid #fefefe;
+	}
+	.control-label {
+		padding-top: 14px!important;
+	}
+</style>
+<body>
+<div id="window">
+    <div id="bohSettListContent">
+        <div id="bohSettListBar" class="headbar">
+            <div class="col-md-2">
+                <div id="backBtn" ></div>
+            </div>
+            <div class="col-md-10">
+                <div id="wintitle" class="title col-md-8">BOH Settlement</div>
+
+                <div style="float: right;" id="bohSettRight">
+                    <ul>
+
+                        <li>
+                            <input type="text" style="width: 150px"  class="form-control searchbox" id="searchContent" placeholder="Order Id">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="billTables" class="maxCol">
+            <div id="header">
+                <div class="row">
+                    <div class="col-md-2">Name</div>
+                    <div class="col-md-2 ">Bill NO</div>
+                    <div class="col-md-1">Amount </div>
+                    <div class="col-md-2 showCol">Auth by </div>
+                    <div class="col-md-2 showCol">Due Days</div>
+                    <div class="col-md-3 showCol">Bill Date</div>
+                </div>
+            </div>
+            <div id="tableswrapper">
+                <div id="tablesscroller">
+                    <ul id="bohSettli"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bohSettDetailsContent">
+        <div class="row headbar">
+        </div>
+       <div id="billDetails" style="background-color:#1FB5AD;height:100%;padding-top:80px;color:#fff;font-size:18px;">
+
+       </div>
+    </div>
+</div>
+<script type="text/template" id="bohSettListItem-template">
+        <div class="row ">
+            <div class="col-md-2"><%=nameOfPerson %></div>
+            <div class="col-md-2"><%=billNo %></div>
+            <div class="col-md-1"><%=amount %></div>
+            <div class="col-md-2 showCol"><%=nameOfPerson %></div>
+            <div class="col-md-2 showCol"><%= daysDue %></div>
+            <div class="col-md-3 showCol"><%= sysCreateTime %></div>
+        </div>
+</script>
+<script type="text/template" id="bohSettdetailsItem-template">
+    <div class="row">
+     <form class="form-horizontal bucket-form">
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">Bill No</label>
+	            <div class="col-sm-6 itemsect">
+	                <%=billNo %>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">BOH Amount</label>
+	            <div class="col-sm-6 itemsect">
+	               <%=amount %>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">Name</label>
+	            <div class="col-sm-6 itemsect">
+	               <%=nameOfPerson %>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">Bill Date</label>
+	            <div class="col-sm-6 itemsect">
+	               <%= sysCreateTime%>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">Remarks</label>
+	            <div class="col-sm-6 itemsect">
+	               <%= remarks%>
+	            </div>
+	        </div>
+	        
+
+	        <div class="form-group">
+	         <label class="col-sm-3 control-label">Payment Method</label>
+             <div class="col-sm-6">
+				<div class="radio checked col-sm-6">
+				  <input type="radio" name="payment" id="cashpay" checked>
+				  <label for="cashpay">Cash</label>
+				</div>
+				
+				<div class="radio col-sm-6">
+				  <input type="radio" name="payment" id="cardpay">
+				  <label for="cardpay">Card</label>
+				</div>
+			 </div>	
+	        </div>
+	        <div class="form-group">
+	            <label class="col-sm-3 control-label">Amount</label>
+	            <div class="col-sm-6">
+	                <input type="text" id="bohamountpaid" class="form-control" value="<%=amount %>">
+	            </div>
+	        </div>
+      </form>
+      <div style="text-align:center">
+	      <button type="button" id="saveBohBtn" data="<%=id %>" class="btn btn-default btn-lg">Save</button>
+	      <button type="button" id="cancelBohBtn" data="<%=id %>" class="btn btn-default btn-lg">Cancel</button>
+      </div>
+      </div>
+</script>
+
+<!--
+<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+
+<script type="text/javascript" src='./js/app/models/bohsettlementlist_model.js'></script>
+<script type="text/javascript" src='./js/app/models/bohsettlementdetails_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/bohsettlementlist_collection.js'></script>
+<script type="text/javascript" src='./js/app/collections/bohsettlementdetails_collection.js'></script>
+<script type="text/javascript" src='./js/app/views/bohsettlementlist_view.js'></script>
+<script type="text/javascript" src='./js/app/views/bohsettlementdetails_view.js'></script>
+</body>
+</html>
+
+
+

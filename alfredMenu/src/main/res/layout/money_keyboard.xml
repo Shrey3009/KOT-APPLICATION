@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_money_root"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_00"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp90"
+                android:gravity="center"
+                android:text="00" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_Clear"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btn_Enter"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp180"
+            android:gravity="center"
+            android:text="@string/enter" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_200"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="$200" />
+
+        <Button
+            android:id="@+id/btn_100"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="$100" />
+
+        <Button
+            android:id="@+id/btn_50"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="$50" />
+
+        <Button
+            android:id="@+id/btn_10"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center"
+            android:text="$10" />
+    </LinearLayout>
+
+</LinearLayout>

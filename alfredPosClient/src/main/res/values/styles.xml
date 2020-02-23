@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- 设备标题 -->
+    <style name="device_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_light_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarCard">
+
+    </style>
+
+    <style name="CalendarCard.Root">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="CalendarCard.Day">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#b0b0b0</item>
+    </style>
+
+    <style name="CalendarCard.Days">
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="CalendarCard.Title">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarCard.Grid">
+        <item name="android:background">@drawable/card_grid_bg</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="CalendarCard.Cell">
+        <item name="android:background">@drawable/card_item_bg</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="tv_sales_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 销售报表 -->
+    <style name="analsis_lyt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 类型 -->
+    <style name="analsis_type">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/text_light_black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <!-- 数量 -->
+    <style name="analsis_count" parent="@style/analsis_type">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 合计 -->
+    <style name="analsis_heji" parent="@style/analsis_count">
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <!-- 灰色直线 -->
+    <style name="analsis_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#d1d1d1</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- 子菜单 -->
+    <style name="analsis_child_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_light_black</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">#f0f0f0</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+
+    <!--<style name="AnimationUpPopup">-->
+        <!--<item name="android:windowEnterAnimation">@anim/grow_fade_in_from_bottom</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/shrink_fade_out_from_bottom</item>-->
+    <!--</style>-->
+
+    <!--<style name="AnimationFromButtom" >-->
+        <!--<item name="android:windowEnterAnimation">@anim/popup_form_bottom</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/drop_down_to_bottom</item>-->
+    <!--</style>-->
+
+    <!--<style name="AnimationFromTop" >-->
+        <!--<item name="android:windowEnterAnimation">@anim/drop_down_from_top</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/hide_to_top</item>-->
+    <!--</style>-->
+
+    <!--<style name="main_menu_animstyle">-->
+        <!--<item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>-->
+    <!--</style>-->
+    <!--<style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">-->
+        <!--<item name="android:windowBackground">@drawable/photo_choose_bg</item>-->
+    <!--</style>-->
+</resources>

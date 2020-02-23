@@ -1,0 +1,109 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames 
+-dontskipnonpubliclibraryclasses 
+-dontpreverify 
+-verbose 
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/* 
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+
+#-keep class com.alfredposclient.com.alfredselfhelp.global.JavaConnectJS
+#-keep class * implements com.alfredposclient.com.alfredselfhelp.global.JavaConnectJS
+#-keepclassmembers class * implements com.alfredposclient.com.alfredselfhelp.global.JavaConnectJS {
+#   *;
+#}
+#-keepattributes *Annotation*
+#-keepattributes *JavascriptInterface*
+
+-ignorewarnings
+#-libraryjars libs/android-websockets.jar
+-libraryjars ../AlfredBase/libs/slf4j-api-1.7.6.jar
+-libraryjars ../AlfredBase/libs/mina-core-2.0.7.jar
+-libraryjars ../AlfredBase/libs/slf4j-simple-1.7.6.jar
+-libraryjars ../AlfredBase/libs/universal-image-loader-1.9.2.jar
+-libraryjars ../AlfredBase/libs/commons-codec-1.9.jar
+-libraryjars ../AlfredBase/libs/gson-2.2.4.jar
+-libraryjars ../AlfredBase/libs/pinyin4j-2.5.0.jar
+-libraryjars ../AlfredBase/libs/zxing.jar
+-libraryjars ../AlfredBase/libs/umeng-analytics-v5.4.2.jar
+-libraryjars ../AlfredBase
+#-libraryjars ../AlfredTaskQueue
+
+
+-dontwarn com.codebutler.android_websockets.**
+-dontwarn org.slf4j.**
+-dontwarn org.slf4j.helpers.**
+-dontwarn org.slf4j.spi.**
+
+-dontwarn org.apache.mina.core.**
+#-dontwarn org.apache.mina.core.buffer.**
+#-dontwarn org.apache.mina.core.file.**
+#-dontwarn org.apache.mina.core.filterchain.**
+#-dontwarn org.apache.mina.core.future.**
+#-dontwarn org.apache.mina.core.polling.**
+#-dontwarn org.apache.mina.core.service.**
+#-dontwarn org.apache.mina.core.session.**
+#-dontwarn org.apache.mina.core.write.**
+#-dontwarn org.apache.mina.core.filter.buffer.**
+#-dontwarn org.apache.mina.core.filter.codec.**
+-dontwarn org.slf4j.impl.**
+-dontwarn com.nostra13.universalimageloader.**
+-dontwarn org.apache.commons.codec.**
+-dontwarn com.google.gson.**
+-dontwarn com.hp.hpl.sparta.**
+-dontwarn com.google.zxing.**
+#-dontwarn com.hp.hpl.sparta.**
+#-dontwarn demo.**
+-dontwarn net.sourceforge.pinyin4j.**
+
+-keepattributes Signature
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class com.android.vending.licensing.ILicensingService
+-keep class com.google.gson.**{*;}
+-keep class com.google.gson.annotations.**{*;}
+-keep class com.google.gson.internal.**{*;}
+-keep class com.google.gson.internal.bind.**{*;}
+-keep class com.google.gson.reflect.**{*;}
+-keep class com.umeng.** {*;}
+-keepclassmembers class com.alfredbase.javabean.**{*;}
+-keepclassmembers class com.alfredwaiter.javabean.**{*;}
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+-keepclassmembers class * implements android.os.Parcelable {
+    static android.os.Parcelable$Creator CREATOR;
+}
+-keep class *  implements android.os.Parcelable{*;}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+

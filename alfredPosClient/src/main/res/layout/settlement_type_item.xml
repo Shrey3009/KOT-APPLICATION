@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv_settlement_icon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/icon_settle_cash" />
+
+        <RelativeLayout
+            android:id="@+id/rl_settlement_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_settlement_icon"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_settlement_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="$20.00"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_settlement_delicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/close_icon"
+                android:padding="15dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rl_settlement_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_settlement_icon"
+            android:background="@android:color/black" />
+
+        <com.alfredbase.view.DashedLine
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/rl_settlement_icon"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

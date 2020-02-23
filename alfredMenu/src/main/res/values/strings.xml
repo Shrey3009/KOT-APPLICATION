@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">AlfredMenu</string>
+    <string name="version">Version:</string>
+    <string name="exit_program">Please click back again to exit</string>
+    <string name="revenue_center">Revenue Center</string>
+    <string name="warn">WARN</string>
+    <string name="loading">Loading</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">Scan QR code from the POS of\nrevenue center to get KDS tablet paired.\nOr Slide to the left And\nManually connect POS by IP</string>
+    <string name="set_ipaddr">Device Pairing\nSet up POS IP Address</string>
+    <string name="connect">Connect</string>
+    <string name="invalid_ip">Invalid main POS IP or Devices are not in same network. Please check</string>
+    <string name="invalid_ip_">An invalid IP address set by you</string>
+    <string name="link">Must link the </string>
+    <string name="select_revenue_center">Your are eligible to serve\nin those revenue centers</string>
+    <string name="logining">Logining</string>
+    <string name="waiter_login_tips1">Device paired\nEnter Waiter Employee ID</string>
+    <string name="waiter_login_tips2">Enter Password</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">Title</string>
+    <string name="menu">Menu</string>
+    <string name="detail">Detail</string>
+    <string name="add_item">Please add item before</string>
+    <string name="item_name">Item Name</string>
+    <string name="modifier">Modifier</string>
+    <string name="add_modifier">Add Modifier</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">Place order successfully</string>
+    <string name="place_failed">Failed to place order</string>
+    <string name="print_bill_succ">Print bill successfully</string>
+    <string name="print_bill_failed">Failed to print bill</string>
+    <string name="network_errors">Cannot get bill print at this moment: Network errors</string>
+    <string name="order_closed">Order is closed, please select table and replace order again.</string>
+    <string name="order_not_edited">Order cannot be edited when under process. Please contact cashier to try again.</string>
+    <string name="order_split_settled">The order split is settled</string>
+    <string name="order_split">The order split </string>
+    <string name="settled"> is settled</string>
+    <string name="item_count">Item Count:</string>
+    <string name="discount_">Discount:-</string>
+    <string name="group_all">Group : All</string>
+    <string name="print_bill">Print Bill</string>
+
+    <!-- Setting -->
+    <string name="system_reset">System Reset</string>
+    <string name="clean_data">Are you sure to clean all data?</string>
+    <string name="logout_title">Waiter Logout</string>
+    <string name="logout_content">Are you sure to logout?</string>
+    <string name="history">Order History</string>
+    <string name="bump_mobile">Bump with Consumer Mobile APP</string>
+    <string name="connect_pos">Connect to POS Server</string>
+    <string name="data_sync">Data Sync</string>
+    <string name="kot_notification">KOT Notification</string>
+    <string name="zone_notification">Zone Notification</string>
+    <string name="reset">Reset</string>
+    <string name="logout">Logout</string>
+    <string name="version_">Version</string>
+    <string name="lock_screen">Lock Screen</string>
+
+    <!-- other -->
+    <string name="relogin_pos">POS has closed the current session. \nPlease relogin when next session starts</string>
+    <string name="pairing_failed">Pairing failed: Network errors</string>
+    <string name="empty_invalid">Empty value is invalid</string>
+    <string name="number_people">Please Enter Number Of People</string>
+    <string name="note">NOTE</string>
+    <string name="transfer_">  has been transfered to Table:</string>
+    <string name="order_belong">Select whom the order\nbelongs to</string>
+    <string name="clear">Clear</string>
+    <string name="enter">Enter</string>
+    <string name="cancel">Cancel</string>
+    <string name="check">Check</string>
+
+    <string name="At_least">choose LEAST  </string>
+    <string name="items"> modifier</string>
+    <string name="at_only">choose ONLY  </string>
+    <string name="name_not_empty">Name cannot be empty</string>
+    <string name="price_not_empty">Price cannot be empty</string>
+
+
+    <string name="edit">edit</string>
+    <string name="ip_changed_relogin">Your IP has changed.\nPlease ReLogin</string>
+
+    <string name="devices_network">Network</string>
+    <string name="devices_bluetooth">Bluetooth</string>
+    <string name="print_kot_succ">Print KOT success</string>
+    <string name="print_kot_failed">Print KOT failed</string>
+    <string name="print_down">Print Service Down</string>
+    <string name="reconnect_print">Are you sure to reconnect Alfred Print Service?</string>
+
+</resources>

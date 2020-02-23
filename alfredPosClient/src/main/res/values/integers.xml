@@ -1,0 +1,3 @@
+<resources>
+        <item name="menu_grid_col_num" type="integer">6</item>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">AlfredMenu</string>
+    <string name="version">الإصدار:</string>
+    <string name="exit_program">الرجاء النقر فوق "السابق" مرة أخرى للخروج</string>
+    <string name="revenue_center">مركز الإيرادات</string>
+    <string name="warn">يحذرون</string>
+    <string name="loading">جار التحميل</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">قم بمسح رمز الاستجابة السريعة من POS الخاص بـ \nمركز الإيرادات للحصول على إقران KDS tablet. \nأو مرر إلى اليسار و \nقم يدويًا بتوصيل POS عبر IP</string>
+    <string name="set_ipaddr">إقران الجهاز \nقم بإعداد عنوان IP لنقاط البيع</string>
+    <string name="connect">الاتصال</string>
+    <string name="invalid_ip">ليست أجهزة POS IP الرئيسية أو الأجهزة غير صالحة في نفس الشبكة. يرجى المراجعة</string>
+    <string name="invalid_ip_">عنوان IP غير صالح تم تعيينه بواسطتك</string>
+    <string name="link">يجب ربط</string>
+    <string name="select_revenue_center">أنت مؤهل للخدمة \nفي مراكز الدخل هذه</string>
+    <string name="logining">Logining</string>
+    <string name="waiter_login_tips1">يقترن الجهاز \nبإدخال معرف موظف النادل</string>
+    <string name="waiter_login_tips2">\nأدخل كلمة المرور</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">عنوان</string>
+    <string name="menu">قائمة طعام</string>
+    <string name="detail">التفاصيل</string>
+    <string name="add_item">يرجى إضافة البند من قبل</string>
+    <string name="item_name">اسم العنصر</string>
+    <string name="modifier">التعديل</string>
+    <string name="add_modifier">إضافة معدل</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">وضع النظام بنجاح</string>
+    <string name="place_failed">فشل في وضع النظام</string>
+    <string name="print_bill_succ">طباعة الفاتورة بنجاح</string>
+    <string name="print_bill_failed">فشل في طباعة الفاتورة</string>
+    <string name="network_errors">لا يمكن الحصول على طباعة الفاتورة في هذه اللحظة: أخطاء الشبكة</string>
+    <string name="order_closed">تم إغلاق الطلب ، يرجى تحديد الجدول واستبدال الطلب مرة أخرى.</string>
+    <string name="order_not_edited">لا يمكن تعديل الطلب عندما يكون قيد التشغيل. يرجى الاتصال أمين الصندوق للمحاولة مرة أخرى.</string>
+    <string name="order_split_settled">يتم تقسيم تقسيم الطلب</string>
+    <string name="order_split">ترتيب الانقسام</string>
+    <string name="settled"> واستقر</string>
+    <string name="item_count">عدد الأصناف:</string>
+    <string name="discount_">خصم:-</string>
+    <string name="group_all">المجموعة: جميع</string>
+    <string name="print_bill">طباعة بيل</string>
+
+    <!-- Setting -->
+    <string name="system_reset">إعادة تعيين النظام</string>
+    <string name="clean_data">هل أنت متأكد من تنظيف جميع البيانات؟</string>
+    <string name="logout_title">النادل الخروج</string>
+    <string name="logout_content">هل أنت متأكد من تسجيل الخروج؟</string>
+    <string name="history">تاريخ الطلب</string>
+    <string name="bump_mobile">نتوء مع التطبيق المحمول المستهلك</string>
+    <string name="connect_pos">الاتصال بخادم POS</string>
+    <string name="data_sync">مزامنة البيانات</string>
+    <string name="kot_notification">إخطار KOT</string>
+    <string name="zone_notification">إعلام المنطقة</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="logout">الخروج</string>
+    <string name="version_">الإصدار</string>
+    <string name="lock_screen">اقفل الشاشة</string>
+
+    <!-- other -->
+    <string name="relogin_pos">لقد أغلق POS الجلسة الحالية. \nالرجاء إعادة التسجيل عند بدء الجلسة التالية</string>
+    <string name="pairing_failed">فشل الاقتران: أخطاء الشبكة</string>
+    <string name="empty_invalid">القيمة الفارغة غير صالحة</string>
+    <string name="number_people">الرجاء إدخال عدد من الناس</string>
+    <string name="note">ملحوظة</string>
+    <string name="transfer_">  تم نقله إلى الجدول:</string>
+    <string name="order_belong">حدد من سيتبع الأمر \n</string>
+    <string name="clear">واضح</string>
+    <string name="enter">أدخل</string>
+    <string name="cancel">إلغاء</string>
+    <string name="check">التحقق من</string>
+
+    <string name="At_least">اختر الأقل</string>
+    <string name="items"> التعديل</string>
+    <string name="at_only">اختر فقط</string>
+    <string name="name_not_empty">الاسم لا يمكن أن يكون فارغا</string>
+    <string name="price_not_empty">لا يمكن أن يكون السعر فارغًا</string>
+
+
+    <string name="edit">تصحيح</string>
+    <string name="ip_changed_relogin">لقد تغير عنوان IP الخاص بك. \ الرجاء إعادة تسجيل الدخول</string>
+
+    <string name="devices_network">شبكة الاتصال</string>
+    <string name="devices_bluetooth">تقنية البلوتوث</string>
+    <string name="print_kot_succ">طباعة KOT النجاح</string>
+    <string name="print_kot_failed">فشل طباعة KOT</string>
+    <string name="print_down">خدمة الطباعة لأسفل</string>
+    <string name="reconnect_print">هل أنت متأكد من إعادة الاتصال بخدمة الطباعة؟</string>
+
+</resources>

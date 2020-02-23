@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TableLayout
+        android:id="@+id/dialogActivity_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/dialogActivity_sure"
+                android:onClick="doClick"
+                android:text="@string/ok" />
+
+            <Button
+                android:id="@+id/dialogActivity_cancle"
+                android:onClick="doClick"
+                android:text="@string/cancel" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/dialogActivity_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialogActivity_bottom"
+       >
+    </ListView>
+
+</RelativeLayout>

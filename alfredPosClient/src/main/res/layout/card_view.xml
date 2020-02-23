@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CalendarCard.Root"
+	android:background="@color/white">
+
+	<RelativeLayout
+		android:id="@+id/cardtitle_rl"
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+		<RelativeLayout
+			android:id="@+id/previous"
+			android:layout_width="60dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="@drawable/ic_arrow_left" />
+		</RelativeLayout>
+
+
+		<TextView
+			style="@style/CalendarCard.Title"
+			android:id="@+id/cardTitle"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="true"
+			android:textColor="#b0b0b0"
+			android:layout_alignParentLeft="true" />
+
+		<RelativeLayout
+			android:id="@+id/next"
+			android:layout_width="60dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/ic_arrow_right"
+				android:visibility="visible" />
+		</RelativeLayout>
+
+	</RelativeLayout>
+    
+    <LinearLayout 
+        style="@style/CalendarCard.Days"
+        android:id="@+id/cardDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cardtitle_rl">
+        
+        <TextView 
+	        android:id="@+id/cardDay1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay3"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay4"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay5"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay6"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+        <TextView 
+	        android:id="@+id/cardDay7"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        style="@style/CalendarCard.Day" />
+        
+    </LinearLayout>
+    
+    <ScrollView
+		android:id="@+id/sv_cardGrid"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cardDays">
+
+	    <LinearLayout
+	        style="@style/CalendarCard.Grid"
+	        android:id="@+id/cardGrid"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+	        android:orientation="vertical">
+	        
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        
+	    </LinearLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

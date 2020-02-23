@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <!--translate-->
+    <string name="open_rest_tips">在打开餐厅之前，请确保所有设备都已连接到此设备。</string>
+    <string name="sync_tips">尚未使用Alfred Cloud的餐厅数据初始化此设备。请提供以下帐户信息以与Alfred Cloud同步</string>
+    <string name="select_revenue_centre_info1">选择要同步的收入中心之一</string>
+    <string name="select_revenue_centre_info2">同步将花费大约1分钟</string>
+    <string name="sync_complete">同步完成。 POS已准备好进入餐厅1.请使用收银台帐户登录POS</string>
+    <string name="home_page_info">餐馆应该如何运作</string>
+    <string name="cashier_login_tips1">输入收银员工ID</string>
+    <string name="bill_manage">比尔管理</string>
+    <string name="boh_settlement">BOH结算</string>
+    <string name="dashboard">仪表板</string>
+    <string name="report">报告</string>
+    <string name="system">系统</string>
+    <string name="clock_in_out">时钟输入/输出</string>
+    <string name="cash_in_out">现金流入/流出</string>
+    <string name="place">地点</string>
+    <string name="name_of_the_place">地方名称</string>
+    <string name="small">小</string>
+    <string name="middle">中间</string>
+    <string name="large">大</string>
+    <string name="table_number">表号</string>
+    <string name="staff">员工</string>
+    <string name="misc">杂项</string>
+    <string name="free">自由</string>
+    <string name="transfer">传递</string>
+    <string name="weight">重量</string>
+    <string name="weight_kg">重量（KG）</string>
+    <string name="discount_item">折扣项目</string>
+    <string name="discount_w_category">按类别折扣\n（只能申请一次）</string>
+    <string name="cannot_unseat">无法取消这张桌子。 \n已订购一些菜单。</string>
+    <string name="ask_transfer_table">你确定将％1 $ s转移到％2 $ s吗？</string>
+    <string name="adjustment">调整</string>
+    <string name="custom_payment">自定义付款</string>
+    <string name="amount_due">到期金额</string>
+    <string name="authorize_by">授权</string>
+    <string name="leave_comments">留言</string>
+    <string name="guest_phone_number">客户电话号码</string>
+    <string name="bill_number">账单号码</string>
+    <string name="boh_amount">BOH金额</string>
+    <string name="bill_date">比尔日期</string>
+    <string name="payment_type">支付方式</string>
+    <string name="due_days">到期日</string>
+    <string name="please_scan_stored_qrcode">请扫描存储卡QRcode</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓</string>
+    <string name="phone">电话</string>
+    <string name="email">电子邮件</string>
+    <string name="address">地址</string>
+    <string name="binding">捆绑</string>
+    <string name="change_card">换卡</string>
+    <string name="query_balance">查询余额</string>
+    <string name="please_scan_new_old_stored_qrcode">请扫描新的存储卡和旧的存储卡号或用户电话号码</string>
+    <string name="please_enter_old_stored_number">请输入旧的存储卡号码</string>
+    <string name="please_enter_user_phone_number">请输入用户电话号码</string>
+    <string name="please_scan_card_or_phone">请扫描存储卡或填写用户电话号码</string>
+    <string name="kot_print">KOT打印</string>
+    <string name="kot_print_together">KOT打印在一起</string>
+    <string name="double_kot_print">双KOT打印</string>
+    <string name="double_bill_prints">双票据打印</string>
+    <string name="double_close_bill_prints">双关票据打印</string>
+    <string name="print_order_summary">打印订单汇总</string>
+    <string name="print_direction_up">打印标签方向向上</string>
+    <string name="credit_card_rounding">信用卡四舍五入</string>
+    <string name="auto_go_to_table">自动转到表格</string>
+    <string name="sync_data">同步数据</string>
+    <string name="number_calling_setting_one_style">号码呼叫设置1样式</string>
+    <string name="calling_header">呼叫标题</string>
+    <string name="calling_footer">呼叫页脚</string>
+    <string name="cancel_instead_of_void">取消而不是Void</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <!--untranslate-->
+    <string name="set_up">建立</string>
+    <string name="user_id_style">员工ID</string>
+    <string name="user_id">员工ID</string>
+    <string name="password">密码</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">商家ID</string>
+    <string name="cashier_login_tips2">输入收银员密码</string>
+    <string name="logout">登出</string>
+    <string name="category_select">选择</string>
+    <string name="enter_employee_id">输入员工ID</string>
+    <string name="version">版：</string>
+    <string name="warning">警告</string>
+    <string name="server">服务器</string>
+    <string name="loading">载入中</string>
+    <string name="exit_program">请再次点击返回退出</string>
+    <string name="drop_session_open">删除会话\n开始</string>
+    <string name="drop_session_close">退回\n关闭</string>
+    <string name="manually_update">没有收到数据更新消息。\n您是否需要从后台手动更新数据？</string>
+    <string name="day_symbol">日</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">阿尔弗雷德</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">传输\nTable</string>
+    <string name="hold_bill">按住\nBill</string>
+    <string name="kiosk_hold">报亭和举行</string>
+    <string name="open_item">打开\nItem域</string>
+    <string name="edit_kot">编辑\nkot</string>
+    <string name="app_dine_in">在用餐</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">打印收据</string>
+    <string name="settled"> 解决：</string>
+    <string name="item_count">物品数量</string>
+    <string name="rounding">四舍五入</string>
+    <string name="cash_other">其他</string>
+    <string name="exact">完全$</string>
+    <string name="void_all">全部无效</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">圆盘</string>
+    <string name="sent_to_kitchen">订购的所有商品都已送到厨房</string>
+    <string name="remove_item">删除这个项目？</string>
+    <string name="item_complete">这个项目已经完成</string>
+    <string name="sure_take_away">你确定外卖吗？</string>
+    <string name="no_order_detail">不能下空单。</string>
+    <string name="network_connected">互联网连接不可用。请连接云同步..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">重印比尔</string>
+    <string name="edit_settlement">编辑结算</string>
+    <string name="card_loss">报告丢失</string>
+    <string name="fill_card">填充卡</string>
+    <string name="cash_inout">现金\nIN / OUT</string>
+    <string name="sunmi_screen">SUNMI副屏幕</string>
+    <!-- setting -->
+    <string name="update_msg">请更新消息</string>
+    <string name="receive">接收</string>
+    <string name="_message">信息</string>
+    <string name="update_successful">更新成功</string>
+    <string name="no_update">没有更新</string>
+    <string name="no_sync_date">会话打开时无法同步数据</string>
+    <string name="print_report_when_session">X报告</string>
+    <string name="print_cash_close">现金W关闭打印</string>
+    <string name="print_bill_set">打印比尔</string>
+    <string name="print_lable">打印标签</string>
+    <string name="include_plu_void">包括Plu Void</string>
+    <string name="password_update_successfully">密码更新成功。</string>
+    <string name="employee_no_exist">员工在后台不存在。</string>
+    <string name="color_picker_tip">提示：触摸色环或颜色条以选择颜色值</string>
+    <string name="color_select">选择颜色</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">收入中心附有另一个POS设备。要使用当前设备，请在Alfred Cloud BackOffice中重新连接现有设备并重试。</string>
+    <string name="be_bound_already">该设备已连接到另一个收入中心。请在Alfred Cloud BackOffice中取消它，然后再试一次。</string>
+    <string name="sync_date_warning_tips">收入中心设置不完整。请检查Aflred Backoffice的以下内容：</string>
+    <string name="users">用户</string>
+    <string name="tables">表</string>
+    <string name="printer_printergroup">打印机或PrinterGroup</string>
+    <string name="product_categories">产品类别</string>
+    <string name="login_info_error">员工ID，密码和商家ID不能为空</string>
+    <!-- login -->
+    <string name="login_required">只有收银员或经理才能登录！</string>
+    <string name="invalid_employee">员工无效！</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">目前的会议正在运行12个小时！</string>
+    <string name="save_print_sales">储蓄和印刷销售</string>
+    <string name="whether_close_restaurant">你确定关闭餐厅今天停止服务吗？</string>
+    <string name="operation_on">操作上</string>
+    <string name="is_going_to_start">即将开始！</string>
+    <string name="bill_not_closed">还有一些法案尚未结案。</string>
+    <string name="cashier_printer">没有为收银员设置打印机。</string>
+    <string name="printing_close_report">打印关闭报告</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">送到厨房</string>
+    <string name="place_before_print">请先下订单！</string>
+    <string name="setting_printer">打印机未就绪，\n请转到设置>设备> \n打印机以分配正确的收银打印机！</string>
+    <string name="bill_printing">比尔正在印刷</string>
+    <string name="no_items">订单列表中没有商品！</string>
+    <string name="receipt_printing">收据是打印</string>
+    <string name="table_transfer">表转移</string>
+    <string name="table_transfer_from">***从％s ***转移</string>
+    <string name="to">至</string>
+    <string name="no_set_kds_printer">没有为厨房设置KDS或打印机设备</string>
+    <string name="place_order_failed">下订单失败</string>
+    <string name="no_set_item_print">菜单：*％s *未设置打印机</string>
+    <string name="print_bill_">请打印账单</string>
+    <string name="assign_items_to_group">请指定 组中的项目。</string>
+    <string name="not_complete_order">没有完成订单。</string>
+    <string name="the_table">桌子</string>
+    <string name="occupied_time">  已经被租用了2个小时</string>
+    <string name="pos_notification">Alfred POS通知</string>
+    <string name="alfred_pos">阿尔弗雷德POS</string>
+    <string name="online_order">在线订单</string>
+    <string name="the_most_selections">％d选择最多</string>
+    <string name="table_dining">桌子已被占用</string>
+    <string name="items"> 修改</string>
+    <string name="at_only">只选择</string>
+    <!-- html -->
+    <string name="no_sales_print">没有要打印的销售数据</string>
+    <string name="no_printer_devices">没有打印机设备</string>
+    <string name="cash_not_empty">现金不能为空</string>
+    <string name="save_success">节省成功</string>
+    <string name="id_error">ID错误!!!</string>
+    <string name="not_operations">无法执行操作</string>
+    <string name="kds_paired">一个KDS设备配对</string>
+    <string name="waiter_paired">一个服务员设备配对</string>
+    <string name="printing">印花</string>
+    <!-- App -->
+    <string name="print_down">打印服务</string>
+    <string name="reconnect_print">您确定要重新连接Alfred打印服务吗？</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">内部错误</string>
+    <string name="device_invalid">设备无效</string>
+    <string name="login_failed">登录失败</string>
+    <string name="sync_data_failed">同步数据失败</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">Ref id不为空</string>
+    <string name="close_payment_reminder">选择的付款方式不能与其他付款方式一起使用</string>
+    <string name="card_no_not_empty">卡号不能为空</string>
+    <string name="card_no_for_four">卡四号</string>
+    <string name="card_no_not_correct">卡号不正确</string>
+    <string name="cvv_not_empty">CVV不能为空</string>
+    <string name="cvv_for_three">CVV为三</string>
+    <string name="exp_not_empty">到期日期不能为空</string>
+    <string name="exp_format">00/00的到期日期格式</string>
+    <string name="cash_settlement">现金结算</string>
+    <string name="part_settlement">部分结算</string>
+    <string name="totle_paid">总支付</string>
+    <!--&lt;!&ndash;<string name="change">修改 - ></string>-->
+    <string name="visa_settlement">签证结算</string>
+    <string name="amount_paid">支付的金额</string>
+    <string name="card_no">卡号</string>
+    <string name="exp_date">截止日期</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">净结算</string>
+    <string name="wechat_settlement">微信结算</string>
+    <string name="alipay_settlement">支付宝结算</string>
+    <string name="amount_auth_by">金额认证</string>
+    <!-- other - window -->
+    <string name="switch_account">切换帐户</string>
+    <string name="name_not_empty">名称不能为空</string>
+    <string name="price_not_empty">价格不能为空</string>
+    <string name="order_split_">订单拆分</string>
+    <string name="_settled">  已经解决了</string>
+    <string name="invalid_ip">无效的IP地址</string>
+    <string name="enter_people">请输入人数</string>
+    <string name="active_five_hours">活跃5小时</string>
+    <string name="switch_user">切换用户</string>
+    <string name="lock_screen">锁屏</string>
+    <string name="refresh">刷新</string>
+    <string name="split_bill_win_title">账单明细</string>
+    <string name="split_print_all">整个比尔打印</string>
+    <string name="slipt_print">拆分打印</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">表名</string>
+    <string name="close_cash">关闭w现金</string>
+    <string name="bill_on_hold">条例草案暂停执行</string>
+    <string name="company">公司</string>
+    <string name="house_charge">房屋收费</string>
+    <string name="close_split_bills">关闭拆分账单</string>
+    <string name="event_voucher">活动优惠券</string>
+    <string name="voucher_ten">10美元的优惠券</string>
+    <string name="voucher_five">5美元的优惠券</string>
+    <string name="order_first">不能申请折扣！</string>
+    <string name="no_cashier_printer">还没有收银打印机</string>
+    <string name="discard_current_order">你确定要放弃当前的订单吗？</string>
+    <string name="unseat_table">你确定要取消桌子吗？\nVoid项目不会被记录到报告中。</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">时钟输出</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">订单类型</string>
+    <string name="online_order_status">订单状态</string>
+    <string name="online_order_time">创造时间</string>
+    <string name="check">校验</string>
+    <string name="paid">付费</string>
+    <string name="making">制造</string>
+    <string name="confirmed">公认</string>
+
+    <string name="prepared">准备</string>
+    <string name="preparing">进行中</string>
+    <string name="finish">完</string>
+    <string name="new_order">新命令</string>
+    <string name="preparing_order">正在进行/准备</string>
+    <string name="completed_order">已完成</string>
+    <string name="receving_order">Receving</string>
+
+    <string name="index">指数</string>
+    <string name="welcome">欢迎</string>
+    <string name="add_table_num">添加表号</string>
+    <string name="input_table_num">请输入表格编号</string>
+
+    <!--Zun-->
+    <string name="assign">分配</string>
+    <string name="manually_add">手动添加</string>
+    <string name="waiter_">服务员</string>
+
+
+    <string name="devices_network">网络</string>
+
+    <string name="devices_bluetooth">蓝牙</string>
+
+    <string name="revenue_center">收入中心</string>
+    <string name="ipaddr_tips">设备配对\n设置POS IP地址</string>
+    <string name="connect">连</string>
+
+    <string name="january">一月</string>
+    <string name="february">二月</string>
+    <string name="march">游行</string>
+    <string name="april">四月</string>
+    <string name="may">可以</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="august">八月</string>
+    <string name="september">九月</string>
+    <string name="october">十月</string>
+    <string name="november">十一月</string>
+    <string name="december">十二月</string>
+
+    <string name="welcome_to">欢迎来到</string>
+    <string name="please_clock_in">请钟入</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+    <string name="ask_delete_place">你确定要删除这个地方吗？</string>
+
+    <string name="days">天</string>
+    <string name="day">天</string>
+    <string name="split_pay">分裂</string>
+    <string name="all_pay">所有</string>
+    <string name="at_least">选择最少</string>
+    <string name="please_input_amount">请输入金额！</string>
+    <string name="operation_irreversible">这个操作是不可逆转的，你确定吗？</string>
+    <string name="table_name_used">表名已在使用中。 请使用其他名称。</string>
+    <string name="please_select_empty_table">请选择一张空表</string>
+
+    <string name="turning_on_training_mode">开启训练模式</string>
+    <string name="turning_on_training_mode_desc">对于初次使用的用户，设置将弹出开启显示在顶部</string>
+
+    <string name="ok">行</string>
+    <string name="add">更</string>
+    <string name="cancel">取消它</string>
+    <string name="sign_in">条目</string>
+    <string name="sync">同步</string>
+    <string name="waiting_list">等候名单</string>
+    <string name="queue">队列</string>
+    <string name="assign_table">设置\n表</string>
+    <string name="summary">摘要</string>
+
+    <string name="add_queue">添加新队列</string>
+    <string name="queue_name">队列名称</string>
+    <string name="ask_save_edit_content">想要保存已编辑的内容？</string>
+    <string name="ask_delete_queue">您确定要删除此队列吗？</string>
+    <string name="name_used">该名称已被使用，请尝试另一个</string>
+</resources>

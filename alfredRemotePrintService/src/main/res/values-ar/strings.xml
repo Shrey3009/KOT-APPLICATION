@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">مشروع قانون لا.</string>
+    <string name="emp">خطة الإدارة البيئية</string>
+    <string name="groupnum">مجموعة Num</string>
+    <string name="pos">نقاط البيع</string>
+    <string name="date">تاريخ</string>
+    <string name="total_">مجموع :</string>
+    <string name="rounding_print">التقريب:</string>
+    <string name="promotion_print">ترقية وظيفية :</string>
+    <string name="mastercard">بطاقة ماستر بطاقة ائتمان</string>
+    <string name="unionpay">يونيون باي</string>
+    <string name="visa">تأشيرة دخول</string>
+    <string name="amex_">أمريكان إكسبريس</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">العشاء</string>
+    <string name="hold_bill">عقد بيل</string>
+    <string name="com_credits">اعتمادات الشركة</string>
+    <string name="house_charge">بيت تهمة</string>
+    <string name="ent">ENT</string>
+    <string name="nets">NETS</string>
+    <string name="alipay">ALIPAY</string>
+    <string name="weixin">EZ-لينك</string>
+    <string name="paypal">تطبيق العشاء</string>
+    <string name="stored_card_use">استخدام بطاقة مخزنة</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">رسوم البطاقة المخزنة</string>
+    <string name="card_no">لا بطاقة</string>
+    <string name="check_closed"> تحقق مغلقة</string>
+    <string name="thank_you_and_see_you">شكرا لرؤيتك مرة أخرى!</string>
+    <string name="powered_by_alfred">ServedByAlfred</string>
+    <string name="kg">كلغ</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">مبيعات البند</string>
+    <string name="stored_card_sales">مبيعات بطاقة مخزنة</string>
+    <string name="ent_items">عناصر الأنف والحنجرة</string>
+    <string name="ent_bills">فواتير الأنف والحنجرة</string>
+    <string name="void_items">عناصر باطلة</string>
+    <string name="void_bills">فواتير باطلة</string>
+    <string name="refund_bills">فواتير الاسترداد</string>
+    <string name="refund_taxes">استرداد الضرائب</string>
+    <string name="total_refund">مجموع المبلغ</string>
+    <string name="discount_on_per">خصم على ٪</string>
+    <string name="discount_on_pri">خصم على $</string>
+    <string name="take_away_sales">مبيعات الوجبات الجاهزة</string>
+    <string name="take_away_tax">ضريبة الوجبات الجاهزة</string>
+    <string name="take_away_qty">البند الوجبات الجاهزة الكمية</string>
+    <string name="total_tax">ضريبة حصرية</string>
+    <string name="rounding">التقريب</string>
+    <string name="promotion">الترقيات</string>
+
+    <string name="gross_total">إجمالي المبيعات</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">العشاء</string>
+    <string name="boh">بوه</string>
+    <string name="total_card">المجموع بطاقة</string>
+    <string name="total_nets">شبكات كاملة</string>
+    <string name="total_cash">مجموع المبالغ النقدية</string>
+    <string name="total_boh">توتال بو</string>
+    <string name="total_ent">إجمالي الأنف والحنجرة</string>
+    <string name="vr_summary">باطلة / استرداد ملخص</string>
+    <string name="total_void">مجموع الفراغ</string>
+    <string name="disc_summary">ملخص الخصومات</string>
+    <string name="tax_svc">TAX / SVC</string>
+    <string name="drawer">الدرج</string>
+    <string name="expected_in_drawer">المتوقع في الدرج</string>
+    <string name="difference">فرق</string>
+    <string name="inclusive_tax">ضريبة شاملة</string>
+    <string name="total_taxsvc">إجمالي الضرائب / SVC</string>
+    <string name="variance">التباين</string>
+    <string name="total_of_bills">مجموع الفواتير</string>
+    <string name="total_of_paxs">مجموع باكس</string>
+    <string name="avg_bills">متوسط ​​الفواتير</string>
+    <string name="avg_paxs">متوسط ​​Paxs</string>
+    <string name="monthly_sales">تقرير البيع الشهري</string>
+    <string name="monthly_plu">تقرير PLU الشهري</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">تحليل معدل</string>
+    <string name="op">أب</string>
+    <string name="report_no_">رقم التقرير</string>
+    <string name="plu_name">اسم PLU</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">كل ساعة المبيعات</string>
+    <string name="promotion_sales">ترويج المبيعات</string>
+    <string name="promotion_name">ترقية وظيفية</string>
+    <string name="hour">ساعة</string>
+    <string name="tran">تران</string>
+    <!-- Void PLU -->
+    <string name="item_name">اسم العنصر</string>
+    <!-- KOT -->
+    <string name="kot_no_">رقم الكوت:</string>
+    <string name="date_">تاريخ:</string>
+    <string name="void_">*** باطل ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">اسم الطاولة:</string>
+    <string name="table_num">الجدول رقم:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">قم بتوصيل الطابعة WIFI بنجاح</string>
+    <string name="wifi_printer_disconnect_success">افصل الطابعة WIFI بنجاح</string>
+    <string name="wifi_printer_send_failed">فشل إرسال البيانات ، يرجى إعادة الاتصال</string>
+    <string name="wifi_printer_connect_error">قم بتوصيل خطأ طابعة WIFI</string>
+    <string name="wifi_printer_nopaper">الطابعة لا تحتوي على ورق</string>
+    <string name="print_order_summary"> - ملخص الطلب -</string>
+
+    <string name="monthly_start_date">وقت البدء</string>
+    <string name="monthly_end_date">وقت النهاية</string>
+
+</resources>

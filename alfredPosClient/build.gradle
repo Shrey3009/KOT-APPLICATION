@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+apply plugin: 'bugsee'
+import com.android.build.gradle.api.BaseVariant
+
+bugly {
+    appId = "900043720"
+    appKey = "1uIu64hwjNrP96gO"
+}
+
+bugsee {
+//    appToken 'f4eb9760-2327-4253-9f5b-533ee0e711c6'
+//    appToken '9290f896-1a2e-4b70-b1fa-46823bb4398c'
+    appToken { BaseVariant variant ->
+        switch (variant.buildType.name) {
+            case 'release': '5f8647d4-30e6-4599-8dd0-ab8c5bd39f84'
+                break
+//            case 'debug': 'f4eb9760-2327-4253-9f5b-533ee0e711c6'
+            case 'debug': '5f8647d4-30e6-4599-8dd0-ab8c5bd39f84'
+                break
+        }
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.alfredposclient"
+        minSdkVersion rootProject.ext.posMinSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaVersion
+        targetCompatibility rootProject.ext.javaVersion
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                [
+                    'src/main/res/layout/subpos',
+                    'src/main/res/layout/subpos/layout',
+                    'src/main/res/layout',
+                    'src/main/res'
+
+                ]
+        }
+    }
+    //配置keystore签名
+//    signingConfigs {
+//        release {
+//            storeFile file("../keyStore/alfredposclient.keystore")
+//            storePassword "8uhb*UHB"
+//            keyAlias "alfred shanghai"
+//            keyPassword "8uhb*UHB"
+//        }
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+//            signingConfig signingConfigs.release
+        }
+        debug {
+        }
+    }
+
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                // 修改apk文件名
+//                def fileName = "C360Engage PosClient.apk"
+//                output.outputFile = new File(output.outputFile.parent, fileName)
+//            }
+//        }
+//    }
+// as3.0以上
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def flavor = variant.name
+            def versionName = variant.versionName
+            def date = new Date()
+            def formattedDate = date.format('yyyy-MM-dd')
+            if(variant.buildType.name == "release")
+            {
+                outputFileName = "C360EngagePOS.apk"
+                flavor = versionName
+            }
+            else if(variant.buildType.name == "debug")
+            {
+                outputFileName = "pos_${flavor}_${versionName}_${formattedDate}.apk"
+                flavor = flavor + "_" + formattedDate
+            }
+            variant.outputs.each { output ->
+                output.versionNameOverride = flavor
+            }
+        }
+    }
+
+//    packagingOptions {
+//        exclude 'LICENSE.txt'
+//    }
+    buildToolsVersion '27.0.3'
+//    flavorDimensions 'default'
+//    productFlavors {
+//        dev {
+//            dimension = 'default'
+//            applicationIdSuffix = '.debug'
+//        }
+//        prod {
+//            dimension = 'default'
+//        }
+//    }
+}
+repositories {
+
+    flatDir {
+        dirs 'libs'
+    }
+//    maven {
+//        url 'https://oss.sonatype.org/content/repositories/snapshots'
+//    }
+    mavenCentral()
+}
+dependencies {
+   implementation project(':alfredBase')
+   implementation project(':alfredTaskQueue')
+   implementation project(':galleryfinal')
+//    compile rootProject.ext.libSupportV4
+//    compile 'com.path:android-priority-jobqueue:1.1.2'
+//    compile 'com.birbit:android-priority-jobqueue:2.0.0'
+//    compile files('libs/core-3.2.1.jar')
+    implementation 'com.contrarywind:Android-PickerView:4.1.3'
+    implementation(name: 'barcode_scanner_library_v2.0.8.0', ext: 'aar')
+    implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+    implementation 'com.sunmi:DS_Lib:1.0.3'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation(name:'barcode_scanner_library_v2.0.8.0', ext:'aar')
+    implementation "org.igniterealtime.smack:smack-android-extensions:4.2.0-alpha3"
+    implementation "org.igniterealtime.smack:smack-tcp:4.2.0-alpha3"
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation files('libs/glide-3.6.0.jar')
+
+}

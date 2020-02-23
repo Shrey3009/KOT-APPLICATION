@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">เวอร์ชัน:</string>
+    <string name="exit_program">โปรดคลิกกลับอีกครั้งเพื่อออก</string>
+    <string name="revenue_center">ศูนย์สรรพากร</string>
+    <string name="loading">กำลังโหลด</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">สแกนรหัส QR จาก POS ของ \nศูนย์รวมเพื่อรับแท็บเล็ต KDS ที่จับคู่ \nหรือเลื่อนไปทางซ้ายและ \nเชื่อมต่อ POS ด้วย IP ด้วยตนเอง</string>
+    <string name="ipaddr_tips">การจับคู่อุปกรณ์ \nตั้งค่าที่อยู่ IP ของ POS</string>
+    <string name="connect">ต่อ</string>
+    <string name="check_ip">ตรวจสอบว่าที่อยู่ IP ไม่ถูกต้อง</string>
+    <string name="pairing_fails">การจับคู่ล้มเหลวไม่อนุญาต</string>
+    <string name="employee_id">อุปกรณ์จับคู่ \nป้อนรหัสพนักงานของคุณ</string>
+    <string name="select_kitchen">KDS จับคู่ \nโปรดเลือกครัว \nที่ KDS เป็นของ</string>
+    <string name="paired_failed">อุปกรณ์ KDS ไม่ได้จับคู่กับ Alfred POS</string>
+    <string name="cashier_login_tips1">ป้อนรหัสพนักงาน</string>
+    <string name="cashier_login_tips2">ใส่รหัสผ่าน</string>
+    <string name="logining">Logining</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">ส่งล้มเหลว!</string>
+    <string name="other_pos_data">MainPos อื่น ๆ ส่งข้อมูล</string>
+    <string name="order_discarded">คำสั่งซื้อถูกยกเลิกโดยแคชเชียร์</string>
+    <string name="reconnect_pos">ไม่ได้เชื่อมต่อ POS หลัก \nเชื่อมต่อใหม่หรือไม่</string>
+    <string name="dine_in">รับประทานอาหารใน</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">ยังไม่เสร็จ</string>
+    <string name="be_doing">จะทำอย่างไร</string>
+    <string name="update">ปรับปรุง</string>
+
+    <string name="chargeback">การเรียกเก็บเงิน</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">PosId</string>
+    <string name="item_complete">สมบูรณ์</string>
+    <string name="kitchen_name">ชื่อห้องครัว</string>
+    <string name="reconnect_pos_">ส่งล้มเหลวคุณสามารถเชื่อมต่อ Pos หลักอีกครั้ง</string>
+    <string name="kot_in_progress">กำลังดำเนินการ</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">ประวัติ KOT</string>
+    <string name="kot_revert">คืนกลับ</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">OrderID</string>
+    <string name="pos">POS</string>
+    <string name="data">ข้อมูล</string>
+    <string name="dish">จาน</string>
+    <string name="undoing">การปลด</string>
+
+    <!-- Setting -->
+    <string name="reset">ข้อมูลทั้งหมดจะถูกลบ \nคุณแน่ใจหรือไม่ว่าจะรีเซ็ต KDS</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="ok">ตกลง</string>
+    <string name="reset_kds">รีเซ็ต KDS</string>
+    <string name="switch_account">สลับบัญชี</string>
+    <string name="kot_history_">ประวัติ Kot</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">KOT ส่งล้มเหลว</string>
+    <string name="relogin_pos">POS ได้ปิดเซสชันปัจจุบัน \nโปรดทำการล็อกอินอีกครั้งเมื่อเซสชันถัดไปเริ่มต้นขึ้น</string>
+
+    <!-- other -->
+    <string name="network_error">ข้อผิดพลาดร้ายแรงของเครือข่าย</string>
+    <string name="finished_items_number">กรุณาใส่จำนวนอาหารสำเร็จรูป</string>
+    <string name="max_number">จำนวนสูงสุดคือ</string>
+    <string name="no_finished">NO ของการสำเร็จ</string>
+    <string name="sending">การส่ง</string>
+    <string name="reconn_pos">คุณควรเชื่อมต่อ POS อีกครั้ง!</string>
+    <string name="complete_all_item">ยืนยันคำสั่งซื้อทั้งหมดเสร็จสมบูรณ์หรือไม่</string>
+    <string name="completed">เสร็จ</string>
+    <string name="choose">เลือก</string>
+    <string name="please_choose_pos">กรุณาเลือก POS</string>
+</resources>

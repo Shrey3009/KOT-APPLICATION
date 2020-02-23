@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="color_kot_done">#ebd59c</color>
+    <color name="color_kotview">#5e8093</color>
+    <color name="color_pop_kot">#cbcbcb</color>
+    <color name="bg_kotview_pop">#333434</color>
+    <color name="bg_complete_item">#ebd59c</color>
+    <color name="bg_update_item">#f34d8f</color>
+    
+    
+</resources>

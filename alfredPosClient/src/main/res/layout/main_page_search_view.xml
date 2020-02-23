@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000" >
+
+    <LinearLayout
+        android:id="@+id/ll_blank_left"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <com.alfredposclient.view.MyGridView
+        android:id="@+id/gv_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search"
+        android:layout_toLeftOf="@+id/ll_blank_right"
+        android:layout_toRightOf="@+id/ll_blank_left"
+        android:background="#FFFFFF"
+        android:cacheColorHint="@null"
+        android:horizontalSpacing="25dp"
+        android:listSelector="@null"
+        android:numColumns="5"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_blank_right"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_select_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_b"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:src="@drawable/icon_search"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <SearchView
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/search_menu"
+                android:minEms="10"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#DDDDDD"
+                android:imeOptions="actionDone"
+                android:textSize="@dimen/text_size_m" />
+
+            <com.alfredbase.view.DashedLine
+                android:id="@+id/dash_line"
+                android:layout_width="250dp"
+                android:layout_height="8dp"
+                android:layout_below="@id/et_search" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/icon_search_delete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

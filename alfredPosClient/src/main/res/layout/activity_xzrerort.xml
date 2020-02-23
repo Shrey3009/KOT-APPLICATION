@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alfredposclient.activity.XZReportActivity">
+
+    <include
+        android:id="@+id/in_xz_title"
+        layout="@layout/setting_top_bar" />
+
+    <com.alfredposclient.Calendar.CalendarCard
+        android:id="@+id/calendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_xz_title"
+        android:visibility="visible"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_xz_title"
+        layout="@layout/xzreport_layout" />
+
+</RelativeLayout>

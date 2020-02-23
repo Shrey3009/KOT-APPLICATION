@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">No. Bill</string>
+    <string name="emp">Emp</string>
+    <string name="groupnum">Nomor Grup</string>
+    <string name="pos">POS</string>
+    <string name="date">Tanggal</string>
+    <string name="total_">Total:</string>
+    <string name="rounding_print">Pembulatan:</string>
+    <string name="promotion_print">Promosi :</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="unionpay">UnionPay</string>
+    <string name="visa">VISA</string>
+    <string name="amex_">Amex</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">Makan malam</string>
+    <string name="hold_bill">Pegang Bill</string>
+    <string name="com_credits">Kredit Perusahaan</string>
+    <string name="house_charge">Biaya Rumah</string>
+    <string name="ent">THT</string>
+    <string name="nets">NETS</string>
+    <string name="alipay">ALIPAY</string>
+    <string name="weixin">EZ-Link</string>
+    <string name="paypal">Aplikasi restoran</string>
+    <string name="stored_card_use">Penggunaan Kartu Tersimpan</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabat</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">Biaya Kartu Tersimpan</string>
+    <string name="card_no">CardNo</string>
+    <string name="check_closed"> Periksa Ditutup</string>
+    <string name="thank_you_and_see_you">Terima kasih dan sampai jumpa lagi!</string>
+    <string name="powered_by_alfred">Dilayani olehAlfred</string>
+    <string name="kg">KG</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">Penjualan Barang</string>
+    <string name="stored_card_sales">Penjualan Kartu Tersimpan</string>
+    <string name="ent_items">Item THT</string>
+    <string name="ent_bills">Tagihan THT</string>
+    <string name="void_items">Barang Batal</string>
+    <string name="void_bills">Tagihan Batal</string>
+    <string name="refund_bills">Pengembalian Tagihan</string>
+    <string name="refund_taxes">Pengembalian Pajak</string>
+    <string name="total_refund">Pengembalian Uang Total</string>
+    <string name="discount_on_per">Diskon pada%</string>
+    <string name="discount_on_pri">Diskon $</string>
+    <string name="take_away_sales">Bawa pulang penjualan</string>
+    <string name="take_away_tax">Pajak pesanan pulang</string>
+    <string name="take_away_qty">Jumlah item yang di-ambil</string>
+    <string name="total_tax">Pajak Eksklusif</string>
+    <string name="rounding">Pembulatan</string>
+    <string name="promotion">Promosi</string>
+
+    <string name="gross_total">Total Penjualan Kotor</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">Restoran</string>
+    <string name="boh">BOH</string>
+    <string name="total_card">KARTU TOTAL</string>
+    <string name="total_nets">JARINGAN TOTAL</string>
+    <string name="total_cash">TOTAL TUNAI</string>
+    <string name="total_boh">TOTAL BOH</string>
+    <string name="total_ent">TOTAL THT</string>
+    <string name="vr_summary">RINGKASAN BATAL / PENGEMBALIAN</string>
+    <string name="total_void">Total Batal</string>
+    <string name="disc_summary">RINGKASAN DISKON</string>
+    <string name="tax_svc">PAJAK / SVC</string>
+    <string name="drawer">LACI</string>
+    <string name="expected_in_drawer">Diharapkan dalam Laci</string>
+    <string name="difference">Perbedaan</string>
+    <string name="inclusive_tax">Pajak Inklusif</string>
+    <string name="total_taxsvc">Total PAJAK / SVC</string>
+    <string name="variance">Perbedaan</string>
+    <string name="total_of_bills">Total Tagihan</string>
+    <string name="total_of_paxs">Total Paxs</string>
+    <string name="avg_bills">Tagihan Rata-rata</string>
+    <string name="avg_paxs">Pax Rata-rata</string>
+    <string name="monthly_sales">Laporan Penjualan Bulanan</string>
+    <string name="monthly_plu">Laporan PLU Bulanan</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">Analisis Pengubah</string>
+    <string name="op">Op</string>
+    <string name="report_no_">Nomor laporan</string>
+    <string name="plu_name">Nama PLU</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">Penjualan Setiap Jam</string>
+    <string name="promotion_sales">Promosi Penjualan</string>
+    <string name="promotion_name">Promosi</string>
+    <string name="hour">Jam</string>
+    <string name="tran">Tran</string>
+    <!-- Void PLU -->
+    <string name="item_name">Nama barang</string>
+    <!-- KOT -->
+    <string name="kot_no_">KOT No:</string>
+    <string name="date_">Tanggal:</string>
+    <string name="void_">*** KOSONG ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">Nama Tabel:</string>
+    <string name="table_num">Nomor Meja .:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">Hubungkan printer WIFI berhasil</string>
+    <string name="wifi_printer_disconnect_success">Putuskan koneksi WIFI-printer berhasil</string>
+    <string name="wifi_printer_send_failed">Kirim Data Gagal, harap hubungkan kembali</string>
+    <string name="wifi_printer_connect_error">Hubungkan kesalahan WIFI-printer</string>
+    <string name="wifi_printer_nopaper">Printer tidak memiliki kertas</string>
+    <string name="print_order_summary"> - Ringkasan Pesanan -</string>
+
+    <string name="monthly_start_date">Waktu mulai</string>
+    <string name="monthly_end_date">Akhir waktu</string>
+</resources>

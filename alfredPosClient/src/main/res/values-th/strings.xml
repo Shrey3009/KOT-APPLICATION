@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <!--translate-->
+    <string name="open_rest_tips">ก่อนเปิดร้านอาหารโปรดตรวจสอบว่าอุปกรณ์ทั้งหมดเชื่อมต่อกับอุปกรณ์นี้</string>
+    <string name="sync_tips">อุปกรณ์นี้ยังไม่ได้เริ่มต้นกับข้อมูลร้านอาหารของคุณที่ Alfred Cloud โปรดระบุข้อมูลบัญชีต่อไปนี้เพื่อซิงค์กับ Alfred Cloud</string>
+    <string name="select_revenue_centre_info1">เลือกหนึ่งในศูนย์รายได้เพื่อซิงค์</string>
+    <string name="select_revenue_centre_info2">การซิงค์จะใช้เวลาประมาณ 1 นาที</string>
+    <string name="sync_complete">ซิงค์เสร็จสมบูรณ์ POS พร้อมสำหรับห้องรับประทานอาหาร 1. กรุณาเข้าสู่ระบบ POS ด้วยบัญชีแคชเชียร์</string>
+    <string name="home_page_info">เส้นทางของร้านอาหารทางวิ่ง</string>
+    <string name="cashier_login_tips1">ป้อนรหัสพนักงานแคชเชียร์</string>
+    <string name="bill_manage">จัดการบิล</string>
+    <string name="boh_settlement">การชำระบัญชีของ BOH</string>
+    <string name="dashboard">แผงควบคุม</string>
+    <string name="report">รายงาน</string>
+    <string name="system">ระบบ</string>
+    <string name="clock_in_out">นาฬิกาเข้า / ออก</string>
+    <string name="cash_in_out">รับเงินสดเข้า / ออก</string>
+    <string name="place">สถานที่</string>
+    <string name="name_of_the_place">ชื่อสถานที่</string>
+    <string name="small">เล็ก</string>
+    <string name="middle">กลาง</string>
+    <string name="large">ใหญ่</string>
+    <string name="table_number">จำนวนตาราง</string>
+    <string name="staff">บุคลากร</string>
+    <string name="misc">อื่น ๆ</string>
+    <string name="free">ฟรี</string>
+    <string name="transfer">โอน</string>
+    <string name="weight">น้ำหนัก</string>
+    <string name="weight_kg">น้ำหนัก (กิโลกรัม)</string>
+    <string name="discount_item">รายการส่วนลด</string>
+    <string name="discount_w_category">ส่วนลดตามหมวดหมู่ \n(สามารถใช้ได้ครั้งเดียวเท่านั้น)</string>
+    <string name="cannot_unseat">ไม่สามารถเปิดตารางนี้ \nมีการสั่งเมนูบางรายการแล้ว</string>
+    <string name="ask_transfer_table">คุณแน่ใจว่าจะโอน% 1 $ s ไปยัง% 2 $ s หรือไม่</string>
+    <string name="adjustment">การปรับ</string>
+    <string name="custom_payment">การชำระเงินที่กำหนดเอง</string>
+    <string name="amount_due">จำนวนที่เหลือจำนวนที่ยังค้างอยู่</string>
+    <string name="authorize_by">อนุญาตโดย</string>
+    <string name="leave_comments">แสดงความคิดเห็น</string>
+    <string name="guest_phone_number">หมายเลขโทรศัพท์ของแขก</string>
+    <string name="bill_number">หมายเลขบิล</string>
+    <string name="boh_amount">จำนวน BOH</string>
+    <string name="bill_date">วันที่เรียกเก็บเงิน</string>
+    <string name="payment_type">ประเภทการชำระเงิน</string>
+    <string name="due_days">วันที่ครบกำหนด</string>
+    <string name="please_scan_stored_qrcode">กรุณาสแกน QRCode การ์ดที่เก็บไว้</string>
+    <string name="first_name">ชื่อจริง</string>
+    <string name="last_name">นามสกุล</string>
+    <string name="phone">โทรศัพท์</string>
+    <string name="email">อีเมล์</string>
+    <string name="address">ที่อยู่</string>
+    <string name="binding">ผูกพัน</string>
+    <string name="change_card">เปลี่ยนบัตร</string>
+    <string name="query_balance">Query Balance</string>
+    <string name="please_scan_new_old_stored_qrcode">โปรดสแกนการ์ด Stored- ใหม่และหมายเลข Stored-Card เก่าหรือหมายเลขโทรศัพท์ของผู้ใช้</string>
+    <string name="please_enter_old_stored_number">โปรดป้อนหมายเลข Stored-Card เก่า</string>
+    <string name="please_enter_user_phone_number">โปรดป้อนหมายเลขโทรศัพท์ของผู้ใช้</string>
+    <string name="please_scan_card_or_phone">กรุณาสแกนบัตรที่เก็บไว้หรือกรอกหมายเลขโทรศัพท์ของผู้ใช้</string>
+    <string name="kot_print">พิมพ์ KOT</string>
+    <string name="kot_print_together">KOT พิมพ์ด้วยกัน</string>
+    <string name="double_kot_print">พิมพ์คู่ KOT</string>
+    <string name="double_bill_prints">พิมพ์ใบเรียกเก็บเงินสองครั้ง</string>
+    <string name="double_close_bill_prints">ปิดบิลคู่</string>
+    <string name="print_order_summary">พิมพ์สรุปการสั่งซื้อ</string>
+    <string name="print_direction_up">พิมพ์ป้ายกำกับทิศทางขึ้น</string>
+    <string name="credit_card_rounding">การปัดเศษบัตรเครดิต</string>
+    <string name="auto_go_to_table">ไปที่ตารางอัตโนมัติ</string>
+    <string name="sync_data">ซิงค์ข้อมูล</string>
+    <string name="number_calling_setting_one_style">การตั้งค่าการโทรจำนวน 1 สไตล์</string>
+    <string name="calling_header">กำลังเรียกส่วนหัว</string>
+    <string name="calling_footer">เรียกส่วนท้าย</string>
+    <string name="cancel_instead_of_void">ยกเลิกแทนโมฆะ</string>
+    <string name="monday">วันจันทร์</string>
+    <string name="tuesday">วันอังคาร</string>
+    <string name="wednesday">วันพุธ</string>
+    <string name="thursday">วันพฤหัสบดี</string>
+    <string name="friday">วันศุกร์</string>
+    <string name="saturday">วันเสาร์</string>
+    <string name="sunday">วันอาทิตย์</string>
+    <!--untranslate-->
+    <string name="set_up">ติดตั้ง</string>
+    <string name="user_id_style">รหัสพนักงาน</string>
+    <string name="user_id">รหัสพนักงาน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">รหัส Biz</string>
+    <string name="cashier_login_tips2">ป้อนรหัสผ่านแคชเชียร์</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="category_select">เลือก</string>
+    <string name="enter_employee_id">ป้อนรหัสพนักงาน</string>
+    <string name="version">เวอร์ชัน:</string>
+    <string name="warning">การเตือน</string>
+    <string name="server">เซิร์ฟเวอร์</string>
+    <string name="loading">กำลังโหลด</string>
+    <string name="exit_program">โปรดคลิกกลับอีกครั้งเพื่อออก</string>
+    <string name="drop_session_open">วางเซสชัน \nเพื่อเริ่ม</string>
+    <string name="drop_session_close">วางกลับ \nเพื่อปิด</string>
+    <string name="manually_update">ไม่ได้รับข้อความอัปเดตข้อมูล \nคุณต้องการอัปเดตข้อมูลจาก BackOffice ด้วยตนเองหรือไม่</string>
+    <string name="day_symbol">TH</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">อัลเฟรด</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">โอน \nTable</string>
+    <string name="hold_bill">ถือ \nBill</string>
+    <string name="kiosk_hold">คีออสและถือ</string>
+    <string name="open_item">เปิด \nItem</string>
+    <string name="edit_kot">แก้ไข \nkot</string>
+    <string name="app_dine_in">รับประทานอาหารใน</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">พิมพ์ใบเสร็จ</string>
+    <string name="settled"> ตัดสิน:</string>
+    <string name="item_count">รายการนับ</string>
+    <string name="rounding">การล้อม</string>
+    <string name="cash_other">คนอื่น ๆ</string>
+    <string name="exact">แน่นอน $</string>
+    <string name="void_all">ถือเป็นโมฆะทั้งหมด</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">จาน</string>
+    <string name="sent_to_kitchen">รายการทั้งหมดที่สั่งซื้อถูกส่งไปที่ห้องครัว</string>
+    <string name="remove_item">ลบรายการนี้ไหม</string>
+    <string name="item_complete">รายการนี้เสร็จสมบูรณ์</string>
+    <string name="sure_take_away">คุณแน่ใจว่าซื้อกลับบ้านหรือไม่?</string>
+    <string name="no_order_detail">ไม่สามารถวางคำสั่งซื้อที่ว่างเปล่า</string>
+    <string name="network_connected">ไม่มีการเชื่อมต่ออินเทอร์เน็ต โปรดเชื่อมต่อสำหรับการซิงค์บนคลาวด์ ..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">พิมพ์บิลใหม่</string>
+    <string name="edit_settlement">แก้ไขการชำระบัญชี</string>
+    <string name="card_loss">รายงานที่หายไป</string>
+    <string name="fill_card">เติมบัตร</string>
+    <string name="cash_inout">เงินสด \ นิน / ออก</string>
+    <string name="sunmi_screen">หน้าจอรอง SUNMI</string>
+    <!-- setting -->
+    <string name="update_msg">โปรดอัปเดตข้อความ</string>
+    <string name="receive">รับ</string>
+    <string name="_message">ข่าวสาร</string>
+    <string name="update_successful">อัปเดตสำเร็จ</string>
+    <string name="no_update">ไม่มีการอัพเดท</string>
+    <string name="no_sync_date">ไม่สามารถซิงค์ข้อมูลเมื่อเปิดเซสชัน</string>
+    <string name="print_report_when_session">รายงาน X</string>
+    <string name="print_cash_close">เงินสดพร้อมปิดพิมพ์</string>
+    <string name="print_bill_set">พิมพ์บิล</string>
+    <string name="print_lable">พิมพ์ฉลาก</string>
+    <string name="include_plu_void">รวม Plu Void</string>
+    <string name="password_update_successfully">อัปเดตรหัสผ่านสำเร็จแล้ว</string>
+    <string name="employee_no_exist">พนักงานไม่มีอยู่ที่ BackOffice</string>
+    <string name="color_picker_tip">เคล็ดลับ: แตะที่วงแหวนสีหรือแถบสีเพื่อเลือกค่าสี</string>
+    <string name="color_select">การเลือกสี</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">ศูนย์รายได้มีอุปกรณ์ POS อื่นเชื่อมต่ออยู่ หากต้องการใช้อุปกรณ์ปัจจุบันโปรดติดตั้งอุปกรณ์ที่มีอยู่ใน Alfred Cloud BackOffice อีกครั้งแล้วลองอีกครั้ง</string>
+    <string name="be_bound_already">อุปกรณ์ถูกแนบกับศูนย์รายได้อื่น โปรดลองอีกครั้งใน Alfred Cloud BackOffice แล้วลองอีกครั้ง</string>
+    <string name="sync_date_warning_tips">การตั้งค่าศูนย์รายได้ไม่สมบูรณ์ โปรดตรวจสอบสิ่งต่อไปนี้ที่ Aflred Backoffice:</string>
+    <string name="users">ผู้ใช้</string>
+    <string name="tables">ตาราง</string>
+    <string name="printer_printergroup">เครื่องพิมพ์หรือ PrinterGroup</string>
+    <string name="product_categories">หมวดหมู่สินค้า</string>
+    <string name="login_info_error">รหัสพนักงานรหัสผ่านและรหัส Biz ต้องไม่ว่างเปล่า</string>
+    <!-- login -->
+    <string name="login_required">แคชเชียร์หรือผู้จัดการเท่านั้นที่สามารถเข้าสู่ระบบ!</string>
+    <string name="invalid_employee">พนักงานไม่ถูกต้อง!</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">เซสชันปัจจุบันทำงานนานกว่า 12 ชั่วโมง!</string>
+    <string name="save_print_sales">การออมและการขายการพิมพ์</string>
+    <string name="whether_close_restaurant">คุณแน่ใจว่าจะปิดร้านอาหารเพื่อหยุดให้บริการวันนี้?</string>
+    <string name="operation_on">เปิดใช้งาน</string>
+    <string name="is_going_to_start">กำลังจะเริ่มขึ้น!</string>
+    <string name="bill_not_closed">ยังมีตั๋วบางใบที่ยังไม่ปิด</string>
+    <string name="cashier_printer">ไม่มีการตั้งค่าเครื่องพิมพ์สำหรับแคชเชียร์</string>
+    <string name="printing_close_report">การพิมพ์รายงานปิด</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">ส่งไปที่ห้องครัว</string>
+    <string name="place_before_print">โปรดสั่งซื้อสินค้าก่อน!</string>
+    <string name="setting_printer">เครื่องพิมพ์ไม่พร้อม \nโปรดไปที่การตั้งค่า> อุปกรณ์> \nเครื่องพิมพ์เพื่อกำหนดเครื่องพิมพ์แคชเชียร์ที่ถูกต้อง!</string>
+    <string name="bill_printing">Bill กำลังพิมพ์</string>
+    <string name="no_items">ไม่มีรายการในรายการสั่งซื้อ!</string>
+    <string name="receipt_printing">ใบเสร็จรับเงินกำลังพิมพ์</string>
+    <string name="table_transfer">การถ่ายโอนตาราง</string>
+    <string name="table_transfer_from">*** โอนจาก% s ***</string>
+    <string name="to">ไปยัง</string>
+    <string name="no_set_kds_printer">ไม่มีการตั้งค่า KDS หรืออุปกรณ์เครื่องพิมพ์สำหรับ Kitchens</string>
+    <string name="place_order_failed">สั่งซื้อล้มเหลว</string>
+    <string name="no_set_item_print">เมนู: *% s * ไม่ได้ตั้งค่าเครื่องพิมพ์</string>
+    <string name="print_bill_">กรุณาพิมพ์ใบเรียกเก็บเงิน</string>
+    <string name="assign_items_to_group">โปรดกำหนดรายการให้กับกลุ่ม</string>
+    <string name="not_complete_order">ไม่เสร็จสิ้นการสั่งซื้อ</string>
+    <string name="the_table">โต๊ะ</string>
+    <string name="occupied_time">  ถูกเช่าเป็นเวลา 2 ชั่วโมง</string>
+    <string name="pos_notification">การแจ้งเตือน Alfred POS</string>
+    <string name="alfred_pos">POS อัลเฟรด</string>
+    <string name="online_order">สั่งซื้อออนไลน์</string>
+    <string name="the_most_selections">% d รายการที่เลือกมากที่สุด</string>
+    <string name="table_dining">ตารางถูกครอบครอง</string>
+    <string name="items"> ส่วนขยาย</string>
+    <string name="at_only">เลือกเท่านั้น</string>
+    <!-- html -->
+    <string name="no_sales_print">ไม่มีข้อมูลการขายที่จะพิมพ์</string>
+    <string name="no_printer_devices">ไม่มีอุปกรณ์เครื่องพิมพ์</string>
+    <string name="cash_not_empty">เงินสดต้องไม่ว่างเปล่า</string>
+    <string name="save_success">บันทึกความสำเร็จ</string>
+    <string name="id_error">ID ผิดพลาด !!!</string>
+    <string name="not_operations">ไม่สามารถดำเนินการได้</string>
+    <string name="kds_paired">จับคู่อุปกรณ์ KDS หนึ่งตัว</string>
+    <string name="waiter_paired">จับคู่อุปกรณ์บริกรหนึ่งตัว</string>
+    <string name="printing">การพิมพ์</string>
+    <!-- App -->
+    <string name="print_down">พิมพ์บริการลง</string>
+    <string name="reconnect_print">คุณแน่ใจหรือไม่ว่าจะเชื่อมต่อกับ Alfred Print Service อีกครั้ง?</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">ข้อผิดพลาดภายใน</string>
+    <string name="device_invalid">อุปกรณ์ไม่ถูกต้อง</string>
+    <string name="login_failed">การเข้าสู่ระบบล้มเหลว</string>
+    <string name="sync_data_failed">ข้อมูลการซิงค์ล้มเหลว</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">รหัสอ้างอิงไม่ว่างเปล่า</string>
+    <string name="close_payment_reminder">โหมดการชำระเงินที่เลือกไม่สามารถใช้กับโหมดการชำระเงินอื่น ๆ</string>
+    <string name="card_no_not_empty">การ์ดไม่สามารถว่างเปล่าได้</string>
+    <string name="card_no_for_four">หมายเลขบัตรสำหรับสี่</string>
+    <string name="card_no_not_correct">หมายเลขบัตรไม่ถูกต้อง</string>
+    <string name="cvv_not_empty">CVV ต้องไม่ว่างเปล่า</string>
+    <string name="cvv_for_three">CVV สำหรับสาม</string>
+    <string name="exp_not_empty">วันที่หมดอายุต้องไม่ว่างเปล่า</string>
+    <string name="exp_format">รูปแบบวันที่หมดอายุสำหรับ 00/00</string>
+    <string name="cash_settlement">การจ่ายเงินสด</string>
+    <string name="part_settlement">การชำระส่วนหนึ่ง</string>
+    <string name="totle_paid">ทั้งหมดที่จ่าย</string>
+    <!--&lt;!&ndash;<string name="change">เปลี่ยน -></string>-->
+    <string name="visa_settlement">การชำระวีซ่า</string>
+    <string name="amount_paid">จำนวนเงินที่จ่าย</string>
+    <string name="card_no">หมายเลขบัตร</string>
+    <string name="exp_date">วันหมดอายุ</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">การชำระบัญชี NET</string>
+    <string name="wechat_settlement">การชำระบัญชี WeChat</string>
+    <string name="alipay_settlement">การชำระเงิน Alipay</string>
+    <string name="amount_auth_by">จำนวนการรับรองความถูกต้องโดย</string>
+    <!-- other - window -->
+    <string name="switch_account">สลับบัญชี</string>
+    <string name="name_not_empty">ชื่อต้องไม่ว่างเปล่า</string>
+    <string name="price_not_empty">ราคาต้องไม่ว่างเปล่า</string>
+    <string name="order_split_">การแยกคำสั่ง</string>
+    <string name="_settled">  ถูกตัดสิน</string>
+    <string name="invalid_ip">ที่อยู่ IP ไม่ถูกต้อง</string>
+    <string name="enter_people">กรุณาใส่จำนวนคน</string>
+    <string name="active_five_hours">ใช้งาน 5 ชั่วโมง</string>
+    <string name="switch_user">เปลี่ยนผู้ใช้</string>
+    <string name="lock_screen">ล็อกหน้าจอ</string>
+    <string name="refresh">รีเฟรช</string>
+    <string name="split_bill_win_title">รายละเอียดการเรียกเก็บเงิน</string>
+    <string name="split_print_all">พิมพ์บิลทั้งหมด</string>
+    <string name="slipt_print">แยกพิมพ์</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">ชื่อตาราง</string>
+    <string name="close_cash">ปิด w เงินสด</string>
+    <string name="bill_on_hold">เรียกเก็บเงินเมื่อถือ</string>
+    <string name="company">บริษัท</string>
+    <string name="house_charge">ค่าใช้จ่ายบ้าน</string>
+    <string name="close_split_bills">ปิดตั๋วเงินแยก</string>
+    <string name="event_voucher">บัตรกำนัลกิจกรรม</string>
+    <string name="voucher_ten">บัตรกำนัล $ 10</string>
+    <string name="voucher_five">บัตรกำนัล $ 5</string>
+    <string name="order_first">ไม่สามารถใช้ส่วนลด!</string>
+    <string name="no_cashier_printer">ยังไม่มีเครื่องพิมพ์แคชเชียร์</string>
+    <string name="discard_current_order">คุณแน่ใจว่าจะยกเลิกคำสั่งซื้อปัจจุบันหรือไม่</string>
+    <string name="unseat_table">คุณแน่ใจหรือไม่ที่จะล้างตาราง \nรายการที่ไม่ถูกต้องจะไม่ถูกบันทึกลงในรายงาน</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">นาฬิกาออก</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">ประเภทการสั่งซื้อ</string>
+    <string name="online_order_status">สถานะการสั่งซื้อ</string>
+    <string name="online_order_time">สร้างเวลา</string>
+    <string name="check">ตรวจสอบ</string>
+    <string name="paid">ต้องจ่าย</string>
+    <string name="making">การทำ</string>
+    <string name="confirmed">ยอมรับ</string>
+
+    <string name="prepared">เตรียมพร้อม</string>
+    <string name="preparing">กำลังดำเนินการ</string>
+    <string name="finish">เสร็จสิ้น</string>
+    <string name="new_order">คำสั่งซื้อใหม่</string>
+    <string name="preparing_order">กำลังดำเนินการ / เตรียมพร้อม</string>
+    <string name="completed_order">เสร็จ</string>
+    <string name="receving_order">receving</string>
+
+    <string name="index">ดัชนี</string>
+    <string name="welcome">ยินดีต้อนรับ</string>
+    <string name="add_table_num">เพิ่มหมายเลขตาราง</string>
+    <string name="input_table_num">กรุณาใส่หมายเลขตาราง</string>
+
+    <!--Zun-->
+    <string name="assign">กำหนด</string>
+    <string name="manually_add">เพิ่มด้วยตนเอง</string>
+    <string name="waiter_">บริกร</string>
+
+
+    <string name="devices_network">เครือข่าย</string>
+
+    <string name="devices_bluetooth">บลูทู ธ</string>
+
+    <string name="revenue_center">ศูนย์สรรพากร</string>
+    <string name="ipaddr_tips">การจับคู่อุปกรณ์ \nตั้งค่าที่อยู่ IP ของ POS</string>
+    <string name="connect">ต่อ</string>
+
+    <string name="january">มกราคม</string>
+    <string name="february">กุมภาพันธ์</string>
+    <string name="march">มีนาคม</string>
+    <string name="april">เมษายน</string>
+    <string name="may">อาจ</string>
+    <string name="june">มิถุนายน</string>
+    <string name="july">กรกฎาคม</string>
+    <string name="august">สิงหาคม</string>
+    <string name="september">กันยายน</string>
+    <string name="october">ตุลาคม</string>
+    <string name="november">พฤศจิกายน</string>
+    <string name="december">ธันวาคม</string>
+
+    <string name="welcome_to">ยินดีต้อนรับสู่</string>
+    <string name="please_clock_in">กรุณานาฬิกาใน</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+    <string name="ask_delete_place">คุณแน่ใจที่จะลบสถานที่นี้?</string>
+
+    <string name="days">วัน</string>
+    <string name="day">วัน</string>
+    <string name="split_pay">แยก</string>
+    <string name="all_pay">ทั้งหมด</string>
+    <string name="at_least">เลือกอย่างน้อย</string>
+    <string name="please_input_amount">กรุณาใส่จำนวนเงิน!</string>
+    <string name="operation_irreversible">การดำเนินการนี้กลับไม่ได้คุณแน่ใจหรือ</string>
+    <string name="table_name_used">ชื่อตารางถูกใช้งานแล้ว กรุณาใช้ชื่ออื่น</string>
+    <string name="please_select_empty_table">โปรดเลือกตารางที่ว่างเปล่า</string>
+
+    <string name="turning_on_training_mode">เปิดโหมดการฝึกอบรม</string>
+    <string name="turning_on_training_mode_desc">สำหรับผู้ใช้ครั้งแรกการตั้งค่าจะปรากฏขึ้นที่ด้านบน</string>
+
+    <string name="ok">ตกลง</string>
+    <string name="add">ขึ้น</string>
+    <string name="cancel">ยกเลิกมัน</string>
+    <string name="sign_in">การเข้า</string>
+    <string name="sync">ซิงค์</string>
+    <string name="waiting_list">กำลังรอรายการ</string>
+    <string name="queue">คิว</string>
+    <string name="assign_table">ตั้งค่า \nตาราง</string>
+    <string name="summary">ย่อ</string>
+
+    <string name="add_queue">เพิ่มคิวใหม่</string>
+    <string name="queue_name">ชื่อของคิว</string>
+    <string name="ask_save_edit_content">ต้องการบันทึกเนื้อหาที่แก้ไขหรือไม่</string>
+    <string name="ask_delete_queue">คุณแน่ใจที่จะลบคิวนี้?</string>
+    <string name="name_used">มีการใช้ชื่อนี้แล้วลองใช้ชื่ออื่น</string>
+
+
+</resources>

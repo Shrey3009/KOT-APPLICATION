@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_pax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_pax_title"
+            android:text="@string/pax"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_pax_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.alfredbase.view.DashedLine
+        android:id="@+id/dl_line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/rl_pax"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_order_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dl_line"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/order_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />    
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_bar_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_bill_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_order_no"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/box_close"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:text="@string/bill"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:id="@+id/rl_print_colse_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bill_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_print_bill"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/print"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/discount"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_close_bill"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp100"
+            android:background="@drawable/box_bill_selector"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/tv_delete_order"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_print_bill_"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/print"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_table_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_print_colse_bill"
+        android:layout_gravity="center"
+        android:background="@drawable/box_close"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:text="@string/table"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_table_and_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_table_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tables"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp100"
+            android:background="@drawable/box_bill_selector"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/table"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_transfer_table"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp100"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/tv_tables"
+            android:background="@drawable/box_bill_selector"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/transfer_table"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_s" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_misc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_table_and_transfer"
+        android:layout_gravity="center"
+        android:background="@drawable/box_close"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:text="@string/misc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:id="@+id/rl_misc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_misc"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/rl_take_hold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_table_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_take_away"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/box_bill_selector"
+                android:gravity="center"
+                android:text="@string/takeaway"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/text_size_s" />
+
+            <TextView
+                android:id="@+id/tv_hold_bill"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp80"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_take_away"
+                android:background="@drawable/box_bill_selector"
+                android:gravity="center"
+                android:text="@string/hold_bill"
+                android:textColor="@color/text_color_selector"
+                android:textSize="@dimen/text_size_s" />
+        </RelativeLayout>
+		<!--<TextView-->
+            <!--android:id="@+id/tv_take_away"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_height="@dimen/dp60"-->
+            <!--android:background="@drawable/box_bill_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/take_away"-->
+            <!--android:textColor="@color/text_color_selector"-->
+            <!--android:textSize="@dimen/text_size_small" />-->
+
+		
+        <TextView
+            android:id="@+id/tv_open_item"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/open_item"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_kick_cashdrawer"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/open_drawer"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_selector"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <TextView
+            android:id="@+id/tv_table_name"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/table_name"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_cash_close"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/box_bill_selector"
+            android:gravity="center"
+            android:text="@string/close_cash"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

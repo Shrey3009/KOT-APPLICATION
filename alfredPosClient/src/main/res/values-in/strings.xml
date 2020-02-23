@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <!--translate-->
+    <string name="open_rest_tips">Sebelum membuka restoran, pastikan semua perangkat terhubung ke perangkat ini.</string>
+    <string name="sync_tips">Perangkat ini belum diinisialisasi dengan data restoran Anda di Alfred Cloud. Harap berikan informasi akun berikut untuk disinkronkan dengan Alfred Cloud</string>
+    <string name="select_revenue_centre_info1">Pilih Salah Satu dari Pusat Pendapatan untuk Disinkronkan</string>
+    <string name="select_revenue_centre_info2">Sinkronisasi akan memakan waktu sekitar 1 menit</string>
+    <string name="sync_complete">Sinkronisasi selesai. POS siap untuk Ruang Makan 1. Silakan masuk POS dengan akun kasir</string>
+    <string name="home_page_info">Restoran Harus Dijalankan</string>
+    <string name="cashier_login_tips1">Masukkan ID Karyawan Kasir</string>
+    <string name="bill_manage">Kelola Bill</string>
+    <string name="boh_settlement">Penyelesaian BOH</string>
+    <string name="dashboard">Dasbor</string>
+    <string name="report">Melaporkan</string>
+    <string name="system">Sistem</string>
+    <string name="clock_in_out">Jam Masuk / Keluar</string>
+    <string name="cash_in_out">Uang masuk / keluar</string>
+    <string name="place">Tempat</string>
+    <string name="name_of_the_place">Nama Tempat</string>
+    <string name="small">Kecil</string>
+    <string name="middle">Tengah</string>
+    <string name="large">Besar</string>
+    <string name="table_number">Nomor meja</string>
+    <string name="staff">Staf</string>
+    <string name="misc">Lain-lain</string>
+    <string name="free">Bebas</string>
+    <string name="transfer">Transfer</string>
+    <string name="weight">Berat</string>
+    <string name="weight_kg">Berat (KG)</string>
+    <string name="discount_item">Barang Diskon</string>
+    <string name="discount_w_category">Diskon berdasarkan kategori \n(hanya dapat diterapkan satu kali)</string>
+    <string name="cannot_unseat">Tidak dapat melepas kursi tabel ini. \nBeberapa menu sudah dipesan.</string>
+    <string name="ask_transfer_table">Anda yakin mentransfer% 1 $ s ke% 2 $ s?</string>
+    <string name="adjustment">Pengaturan</string>
+    <string name="custom_payment">Pembayaran Khusus</string>
+    <string name="amount_due">Jumlah Karena</string>
+    <string name="authorize_by">Otorisasi Oleh</string>
+    <string name="leave_comments">Tinggalkan Komentar</string>
+    <string name="guest_phone_number">Nomor Telepon Tamu</string>
+    <string name="bill_number">Nomor Tagihan</string>
+    <string name="boh_amount">Jumlah BOH</string>
+    <string name="bill_date">Tanggal tagihan</string>
+    <string name="payment_type">Tipe pembayaran</string>
+    <string name="due_days">Hari Jatuh Tempo</string>
+    <string name="please_scan_stored_qrcode">Silakan pindai kode QR kartu yang disimpan</string>
+    <string name="first_name">Nama depan</string>
+    <string name="last_name">Nama keluarga</string>
+    <string name="phone">Telepon</string>
+    <string name="email">E-mail</string>
+    <string name="address">Alamat</string>
+    <string name="binding">Mengikat</string>
+    <string name="change_card">Ganti Kartu</string>
+    <string name="query_balance">Saldo Kueri</string>
+    <string name="please_scan_new_old_stored_qrcode">Silakan memindai Kartu Disimpan baru dan nomor Kartu Tersimpan lama atau nomor telepon pengguna</string>
+    <string name="please_enter_old_stored_number">Silakan masukkan nomor Kartu Tersimpan yang lama</string>
+    <string name="please_enter_user_phone_number">Silakan masukkan nomor telepon pengguna</string>
+    <string name="please_scan_card_or_phone">Silakan memindai Kartu Tersimpan atau mengisi nomor telepon pengguna</string>
+    <string name="kot_print">KOT Print</string>
+    <string name="kot_print_together">KOT Cetak Bersama</string>
+    <string name="double_kot_print">Cetak KOT ganda</string>
+    <string name="double_bill_prints">Cetakan Tagihan Ganda</string>
+    <string name="double_close_bill_prints">Cetak Tagihan Tutup Ganda</string>
+    <string name="print_order_summary">Ringkasan Pesanan Cetak</string>
+    <string name="print_direction_up">Cetak Label Arah ATAS</string>
+    <string name="credit_card_rounding">Pembulatan Kartu Kredit</string>
+    <string name="auto_go_to_table">Pergi ke Tabel secara otomatis</string>
+    <string name="sync_data">Sinkronkan Data</string>
+    <string name="number_calling_setting_one_style">Pengaturan Panggilan Nomor 1 Gaya</string>
+    <string name="calling_header">Memanggil Header</string>
+    <string name="calling_footer">Memanggil Footer</string>
+    <string name="cancel_instead_of_void">Batalkan bukan Void</string>
+    <string name="monday">Senin</string>
+    <string name="tuesday">Selasa</string>
+    <string name="wednesday">Rabu</string>
+    <string name="thursday">Kamis</string>
+    <string name="friday">Jumat</string>
+    <string name="saturday">Sabtu</string>
+    <string name="sunday">Minggu</string>
+    <!--untranslate-->
+    <string name="set_up">Mempersiapkan</string>
+    <string name="user_id_style">identitas pegawai</string>
+    <string name="user_id">identitas pegawai</string>
+    <string name="password">Kata sandi</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">ID Biz</string>
+    <string name="cashier_login_tips2">Masukkan Kata Sandi Kasir</string>
+    <string name="logout">Keluar</string>
+    <string name="category_select">memilih</string>
+    <string name="enter_employee_id">Masukkan ID Karyawan</string>
+    <string name="version">Versi:</string>
+    <string name="warning">Peringatan</string>
+    <string name="server">Server</string>
+    <string name="loading">Memuat</string>
+    <string name="exit_program">Silakan klik KEMBALI lagi untuk keluar</string>
+    <string name="drop_session_open">Letakkan sesi \nuntuk memulai</string>
+    <string name="drop_session_close">Letakkan kembali \nuntuk menutup</string>
+    <string name="manually_update">Tidak menerima pesan pembaruan data. \nApakah Anda perlu memperbarui data secara manual dari kantor?</string>
+    <string name="day_symbol">th</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">ALFRED</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">Transfer \nTabel</string>
+    <string name="hold_bill">Tahan \nBill</string>
+    <string name="kiosk_hold">Kios dan Tahan</string>
+    <string name="open_item">Buka \nitem</string>
+    <string name="edit_kot">Edit \nkot</string>
+    <string name="app_dine_in">Makan di tempat</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">Print Kwitansi</string>
+    <string name="settled"> Diselesaikan:</string>
+    <string name="item_count">Jumlah Item</string>
+    <string name="rounding">Pembulatan</string>
+    <string name="cash_other">Lainnya</string>
+    <string name="exact">Tepat $</string>
+    <string name="void_all">Batal semua</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">Cakram</string>
+    <string name="sent_to_kitchen">Semua barang yang dipesan telah dikirim ke dapur</string>
+    <string name="remove_item">Hapus item ini?</string>
+    <string name="item_complete">item ini telah selesai</string>
+    <string name="sure_take_away">Anda yakin bisa dibawa pulang?</string>
+    <string name="no_order_detail">Tidak dapat melakukan pemesanan kosong.</string>
+    <string name="network_connected">Koneksi internet tidak tersedia. Harap sambungkan untuk sinkronisasi cloud ..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">RUU Cetak Ulang</string>
+    <string name="edit_settlement">Edit Penyelesaian</string>
+    <string name="card_loss">Laporkan Hilang</string>
+    <string name="fill_card">Isi kartu</string>
+    <string name="cash_inout">Uang tunai \nIN / OUT</string>
+    <string name="sunmi_screen">Layar Wakil SUNMI</string>
+    <!-- setting -->
+    <string name="update_msg">Harap Perbarui Pesan</string>
+    <string name="receive">Menerima</string>
+    <string name="_message">Pesan</string>
+    <string name="update_successful">Pembaruan berhasil</string>
+    <string name="no_update">Tidak ada pembaruan</string>
+    <string name="no_sync_date">Data tidak dapat disinkronkan saat sesi dibuka</string>
+    <string name="print_report_when_session">X Laporkan</string>
+    <string name="print_cash_close">Cash W Tutup Print</string>
+    <string name="print_bill_set">Cetak Bill</string>
+    <string name="print_lable">Label cetak</string>
+    <string name="include_plu_void">Sertakan Plu Void</string>
+    <string name="password_update_successfully">Pembaruan kata sandi berhasil.</string>
+    <string name="employee_no_exist">Karyawan tidak ada di kantor belakang.</string>
+    <string name="color_picker_tip">Tip: Sentuh cincin warna atau bilah warna untuk memilih nilai warna</string>
+    <string name="color_select">Pemilihan warna</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">Pusat pendapatan memiliki perangkat POS lain yang terpasang. Untuk menggunakan perangkat saat ini, silakan deattach perangkat yang ada di Alfred Cloud BackOffice dan coba lagi.</string>
+    <string name="be_bound_already">Perangkat terpasang ke pusat pendapatan lain. Harap langkutkannya di Alfred Cloud BackOffice dan coba lagi.</string>
+    <string name="sync_date_warning_tips">Pengaturan pusat pendapatan tidak lengkap. Silakan periksa hal-hal berikut di Aflred Backoffice:</string>
+    <string name="users">Pengguna</string>
+    <string name="tables">Tabel</string>
+    <string name="printer_printergroup">Printer atau PrinterGroup</string>
+    <string name="product_categories">Kategori Produk</string>
+    <string name="login_info_error">ID Karyawan, Kata Sandi, dan ID Biz tidak boleh kosong</string>
+    <!-- login -->
+    <string name="login_required">Hanya Kasir atau Manajer yang bisa masuk!</string>
+    <string name="invalid_employee">Karyawan tidak valid!</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">Sesi saat ini berjalan lebih dari 12 jam!</string>
+    <string name="save_print_sales">Menyimpan dan Mencetak Penjualan</string>
+    <string name="whether_close_restaurant">Apakah Anda yakin akan menutup restoran untuk menghentikan layanan hari ini?</string>
+    <string name="operation_on">Operasi aktif</string>
+    <string name="is_going_to_start">akan dimulai!</string>
+    <string name="bill_not_closed">Ada beberapa tagihan yang belum ditutup.</string>
+    <string name="cashier_printer">Tidak ada printer yang diatur untuk kasir.</string>
+    <string name="printing_close_report">Mencetak laporan tutup</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">Mengirim ke Dapur</string>
+    <string name="place_before_print">Silakan pesan dulu!</string>
+    <string name="setting_printer">Printer belum siap, \nBuka Pengaturan> Perangkat> \nPrinter untuk menetapkan printer Kasir yang benar!</string>
+    <string name="bill_printing">Bill Mencetak</string>
+    <string name="no_items">Tidak ada item dalam daftar pesanan!</string>
+    <string name="receipt_printing">Tanda terima sedang dicetak</string>
+    <string name="table_transfer">Transfer Meja</string>
+    <string name="table_transfer_from">*** Ditransfer dari% s ***</string>
+    <string name="to">untuk</string>
+    <string name="no_set_kds_printer">KDS atau Perangkat Printer tidak diatur untuk Dapur</string>
+    <string name="place_order_failed">Pesanan Tempat Gagal</string>
+    <string name="no_set_item_print">Menu: *% s * tidak mengatur printer</string>
+    <string name="print_bill_">Silakan cetak tagihan</string>
+    <string name="assign_items_to_group">Silakan assign item ke grup.</string>
+    <string name="not_complete_order">Tidak menyelesaikan pesanan.</string>
+    <string name="the_table">Meja</string>
+    <string name="occupied_time">  telah ditempati selama 2 jam di sewa</string>
+    <string name="pos_notification">Pemberitahuan POS Alfred</string>
+    <string name="alfred_pos">Alfred POS</string>
+    <string name="online_order">Pemesanan Online</string>
+    <string name="the_most_selections">% d pilihan paling banyak</string>
+    <string name="table_dining">Meja telah ditempati</string>
+    <string name="items"> pengubah</string>
+    <string name="at_only">pilih HANYA</string>
+    <!-- html -->
+    <string name="no_sales_print">Tidak ada data penjualan untuk dicetak</string>
+    <string name="no_printer_devices">Tidak Ada Perangkat Printer</string>
+    <string name="cash_not_empty">Uang tunai tidak boleh kosong</string>
+    <string name="save_success">Simpan Sukses</string>
+    <string name="id_error">ID kesalahan !!!</string>
+    <string name="not_operations">Tidak dapat melakukan operasi</string>
+    <string name="kds_paired">Satu perangkat KDS dipasangkan</string>
+    <string name="waiter_paired">Satu perangkat Pelayan dipasangkan</string>
+    <string name="printing">Pencetakan</string>
+    <!-- App -->
+    <string name="print_down">Layanan Cetak Turun</string>
+    <string name="reconnect_print">Apakah Anda yakin akan menyambung kembali Layanan Cetak Alfred?</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">Kesalahan internal</string>
+    <string name="device_invalid">Perangkat tidak valid</string>
+    <string name="login_failed">gagal masuk</string>
+    <string name="sync_data_failed">data sinkronisasi gagal</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">Ref id tidak kosong</string>
+    <string name="close_payment_reminder">Mode pembayaran yang dipilih tidak dapat digunakan dengan mode pembayaran lainnya</string>
+    <string name="card_no_not_empty">Kartu Tidak boleh kosong</string>
+    <string name="card_no_for_four">Nomor Kartu untuk empat</string>
+    <string name="card_no_not_correct">Kartu No tidak benar</string>
+    <string name="cvv_not_empty">CVV tidak boleh kosong</string>
+    <string name="cvv_for_three">CVV untuk tiga</string>
+    <string name="exp_not_empty">Tanggal Kedaluwarsa tidak boleh kosong</string>
+    <string name="exp_format">Format Tanggal Kedaluwarsa untuk 00/00</string>
+    <string name="cash_settlement">Penyelesaian Uang Tunai</string>
+    <string name="part_settlement">Penyelesaian Bagian</string>
+    <string name="totle_paid">Total Dibayar</string>
+    <!--&lt;!&ndash;<string name="change">Ubah -></string>-->
+    <string name="visa_settlement">Penyelesaian Visa</string>
+    <string name="amount_paid">Jumlah yang dibayarkan</string>
+    <string name="card_no">Kartu no</string>
+    <string name="exp_date">Tanggal kadaluarsa</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">Penyelesaian NET</string>
+    <string name="wechat_settlement">Penyelesaian WeChat</string>
+    <string name="alipay_settlement">Penyelesaian Alipay</string>
+    <string name="amount_auth_by">Jumlah Auth oleh</string>
+    <!-- other - window -->
+    <string name="switch_account">Ganti akun</string>
+    <string name="name_not_empty">Nama tidak boleh kosong</string>
+    <string name="price_not_empty">Harga tidak boleh kosong</string>
+    <string name="order_split_">Pesanan terpecah</string>
+    <string name="_settled">  diselesaikan</string>
+    <string name="invalid_ip">Alamat IP yang tidak valid</string>
+    <string name="enter_people">Silakan Masukkan Jumlah Orang</string>
+    <string name="active_five_hours">Aktif 5 jam</string>
+    <string name="switch_user">Ganti Pengguna</string>
+    <string name="lock_screen">Layar kunci</string>
+    <string name="refresh">menyegarkan</string>
+    <string name="split_bill_win_title">Rincian Tagihan</string>
+    <string name="split_print_all">Cetak Tagihan Utuh</string>
+    <string name="slipt_print">Cetak Split</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">Nama tabel</string>
+    <string name="close_cash">Tutup dengan Uang Tunai</string>
+    <string name="bill_on_hold">BILL on HOLD</string>
+    <string name="company">PERUSAHAAN</string>
+    <string name="house_charge">BIAYA RUMAH</string>
+    <string name="close_split_bills">Tutup Tagihan Terpisah</string>
+    <string name="event_voucher">Voucher Acara</string>
+    <string name="voucher_ten">Voucher $ 10</string>
+    <string name="voucher_five">Voucher $ 5</string>
+    <string name="order_first">Tidak dapat menerapkan diskon!</string>
+    <string name="no_cashier_printer">Belum Ada Printer Kasir</string>
+    <string name="discard_current_order">Apakah Anda yakin akan membuang pesanan saat ini?</string>
+    <string name="unseat_table">Apakah Anda yakin akan menghapus tabel? \nBarang item tidak akan dicatat ke dalam laporan.</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">Jam Habis</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">Jenis pesanan</string>
+    <string name="online_order_status">Status pemesanan</string>
+    <string name="online_order_time">Ciptakan Waktu</string>
+    <string name="check">Memeriksa</string>
+    <string name="paid">Dibayar</string>
+    <string name="making">PEMBUATAN</string>
+    <string name="confirmed">DITERIMA</string>
+
+    <string name="prepared">Siap</string>
+    <string name="preparing">Sedang berlangsung</string>
+    <string name="finish">Selesai</string>
+    <string name="new_order">Pesanan baru</string>
+    <string name="preparing_order">Sedang diproses / Disiapkan</string>
+    <string name="completed_order">Lengkap</string>
+    <string name="receving_order">Menerima</string>
+
+    <string name="index">Indeks</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="add_table_num">Tambahkan Nomor Meja</string>
+    <string name="input_table_num">Silakan Masukkan Nomor Tabel</string>
+
+    <!--Zun-->
+    <string name="assign">Menetapkan</string>
+    <string name="manually_add">Tambahkan secara manual</string>
+    <string name="waiter_">Pelayan</string>
+
+
+    <string name="devices_network">Jaringan</string>
+
+    <string name="devices_bluetooth">Bluetooth</string>
+
+    <string name="revenue_center">Pusat Pendapatan</string>
+    <string name="ipaddr_tips">Penyandingan Perangkat \nSiapkan Alamat IP POS</string>
+    <string name="connect">Menghubungkan</string>
+
+    <string name="january">Januari</string>
+    <string name="february">Februari</string>
+    <string name="march">Maret</string>
+    <string name="april">April</string>
+    <string name="may">Mungkin</string>
+    <string name="june">Juni</string>
+    <string name="july">Juli</string>
+    <string name="august">Agustus</string>
+    <string name="september">September</string>
+    <string name="october">Oktober</string>
+    <string name="november">November</string>
+    <string name="december">Desember</string>
+
+    <string name="welcome_to">Selamat Datang di</string>
+    <string name="please_clock_in">Mohon Masukan waktu</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+    <string name="ask_delete_place">Anda yakin akan menghapus tempat ini?</string>
+
+    <string name="days">Hari</string>
+    <string name="day">Hari</string>
+    <string name="split_pay">Membagi</string>
+    <string name="all_pay">Semua</string>
+    <string name="at_least">pilih paling tidak</string>
+    <string name="please_input_amount">Silakan masukkan jumlah!</string>
+    <string name="operation_irreversible">Operasi ini tidak dapat dibatalkan, Anda yakin?</string>
+    <string name="table_name_used">Nama Tabel sudah digunakan. Silakan gunakan nama lain.</string>
+    <string name="please_select_empty_table">Silakan pilih tabel kosong</string>
+
+    <string name="turning_on_training_mode">Mengaktifkan Mode Pelatihan</string>
+    <string name="turning_on_training_mode_desc">Untuk Pengguna pertama kali, Pengaturan akan muncul pada muncul di atas</string>
+
+    <string name="ok">ok</string>
+    <string name="add">Tambah</string>
+    <string name="cancel">Batal</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sync">Sync</string>
+    <string name="waiting_list">Daftar tunggu</string>
+    <string name="queue">antrian</string>
+    <string name="assign_table">Tetapkan \nMeja</string>
+    <string name="summary">Ringkasan</string>
+
+    <string name="add_queue">Tambahkan antrian baru</string>
+    <string name="queue_name">Nama antrian</string>
+    <string name="ask_save_edit_content">Ingin menyimpan konten yang diedit?</string>
+    <string name="ask_delete_queue">Apakah Anda yakin untuk menghapus antrian ini?</string>
+    <string name="name_used">Nama sudah digunakan, coba yang lain</string>
+
+</resources>

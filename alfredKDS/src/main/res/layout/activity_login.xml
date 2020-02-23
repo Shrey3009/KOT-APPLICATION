@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+			<TextView 
+			    android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_b"
+                android:visibility="gone"
+			    />
+            <TextView
+                android:id="@+id/tv_login_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/employee_id"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_b" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/login_header" >
+
+                <TextView
+                    android:id="@+id/tv_id_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <TextView
+                    android:id="@+id/tv_id_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <TextView
+                    android:id="@+id/tv_id_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <TextView
+                    android:id="@+id/tv_id_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <TextView
+                    android:id="@+id/tv_id_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+            </LinearLayout>
+
+            <com.alfredbase.view.Numerickeyboard
+                android:id="@+id/employee_id_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" >
+            </com.alfredbase.view.Numerickeyboard>
+        </LinearLayout>
+      <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+	        <TextView
+	            android:id="@+id/tv_app_version"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/version"
+	            android:gravity="center"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/text_size_s" />        
+        </LinearLayout>        
+    </RelativeLayout>
+
+</RelativeLayout>

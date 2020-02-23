@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <!--translate-->
+    <string name="open_rest_tips">Trước khi mở nhà hàng, vui lòng đảm bảo tất cả các thiết bị được kết nối với thiết bị này.</string>
+    <string name="sync_tips">Thiết bị này chưa được khởi tạo với dữ liệu nhà hàng của bạn tại Alfred Cloud. Vui lòng cung cấp thông tin tài khoản sau để đồng bộ hóa với Alfred Cloud</string>
+    <string name="select_revenue_centre_info1">Chọn một trong Trung tâm doanh thu để đồng bộ hóa</string>
+    <string name="select_revenue_centre_info2">Đồng bộ hóa sẽ mất khoảng 1 phút</string>
+    <string name="sync_complete">Đồng bộ hóa hoàn tất. POS đã sẵn sàng cho Phòng ăn 1. Vui lòng đăng nhập POS bằng tài khoản thu ngân</string>
+    <string name="home_page_info">Con đường của các nhà hàng sẽ được điều hành</string>
+    <string name="cashier_login_tips1">Nhập ID nhân viên thu ngân</string>
+    <string name="bill_manage">Quản lý hóa đơn</string>
+    <string name="boh_settlement">Giải quyết BOH</string>
+    <string name="dashboard">bảng điều khiển</string>
+    <string name="report">Bài báo cáo</string>
+    <string name="system">Hệ thống</string>
+    <string name="clock_in_out">Đồng hồ vào / ra</string>
+    <string name="cash_in_out">Tiền vào / ra</string>
+    <string name="place">Địa điểm</string>
+    <string name="name_of_the_place">Tên của địa điểm</string>
+    <string name="small">Nhỏ bé</string>
+    <string name="middle">Ở giữa</string>
+    <string name="large">Lớn</string>
+    <string name="table_number">Số bảng</string>
+    <string name="staff">Cán bộ</string>
+    <string name="misc">Linh tinh</string>
+    <string name="free">Miễn phí</string>
+    <string name="transfer">chuyển khoản</string>
+    <string name="weight">Cân nặng</string>
+    <string name="weight_kg">Trọng lượng (KG)</string>
+    <string name="discount_item">Mục giảm giá</string>
+    <string name="discount_w_category">Giảm giá theo danh mục \n(chỉ có thể được áp dụng một lần)</string>
+    <string name="cannot_unseat">Không thể bỏ bảng này. \nMột số menu đã được đặt hàng.</string>
+    <string name="ask_transfer_table">Bạn có chắc chắn chuyển% 1 $ s sang% 2 $ s không?</string>
+    <string name="adjustment">Điều chỉnh</string>
+    <string name="custom_payment">Thanh toán tùy chỉnh</string>
+    <string name="amount_due">Số tiền đến hạn</string>
+    <string name="authorize_by">Ủy quyền bởi</string>
+    <string name="leave_comments">Để lại bình luận</string>
+    <string name="guest_phone_number">Số điện thoại của khách</string>
+    <string name="bill_number">Số hóa đơn</string>
+    <string name="boh_amount">Số tiền BOH</string>
+    <string name="bill_date">Ngày thanh toán</string>
+    <string name="payment_type">Hình thức thanh toán</string>
+    <string name="due_days">Ngày đáo hạn</string>
+    <string name="please_scan_stored_qrcode">Vui lòng quét mã QRcard được lưu trữ</string>
+    <string name="first_name">Tên đầu tiên</string>
+    <string name="last_name">Họ</string>
+    <string name="phone">Điện thoại</string>
+    <string name="email">E-mail</string>
+    <string name="address">Địa chỉ nhà</string>
+    <string name="binding">Ràng buộc</string>
+    <string name="change_card">Đổi thẻ</string>
+    <string name="query_balance">Số dư truy vấn</string>
+    <string name="please_scan_new_old_stored_qrcode">Vui lòng quét Thẻ lưu trữ mới và số Thẻ lưu trữ cũ hoặc số điện thoại người dùng</string>
+    <string name="please_enter_old_stored_number">Vui lòng nhập số Thẻ đã lưu trữ cũ</string>
+    <string name="please_enter_user_phone_number">Vui lòng nhập số điện thoại người dùng</string>
+    <string name="please_scan_card_or_phone">Vui lòng quét Thẻ lưu trữ hoặc điền số điện thoại người dùng</string>
+    <string name="kot_print">In KOT</string>
+    <string name="kot_print_together">KOT In cùng nhau</string>
+    <string name="double_kot_print">In đôi KOT</string>
+    <string name="double_bill_prints">In hóa đơn kép</string>
+    <string name="double_close_bill_prints">Đóng hai lần in hóa đơn</string>
+    <string name="print_order_summary">In tóm tắt</string>
+    <string name="print_direction_up">Hướng in nhãn LÊN</string>
+    <string name="credit_card_rounding">Làm tròn thẻ tín dụng</string>
+    <string name="auto_go_to_table">Tự động đi tới Bảng</string>
+    <string name="sync_data">Đồng bộ dữ liệu</string>
+    <string name="number_calling_setting_one_style">Cài đặt số gọi kiểu 1</string>
+    <string name="calling_header">Tiêu đề gọi</string>
+    <string name="calling_footer">Gọi chân</string>
+    <string name="cancel_instead_of_void">Hủy thay vì bỏ trống</string>
+    <string name="monday">Thứ hai</string>
+    <string name="tuesday">Thứ ba</string>
+    <string name="wednesday">Thứ tư</string>
+    <string name="thursday">Thứ năm</string>
+    <string name="friday">Thứ sáu</string>
+    <string name="saturday">ngày thứ bảy</string>
+    <string name="sunday">chủ nhật</string>
+    <!--untranslate-->
+    <string name="set_up">Thiết lập</string>
+    <string name="user_id_style">Mã hiệu công nhân</string>
+    <string name="user_id">Mã hiệu công nhân</string>
+    <string name="password">Mật khẩu</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">ID Biz</string>
+    <string name="cashier_login_tips2">Nhập mật khẩu thu ngân</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="category_select">lựa chọn</string>
+    <string name="enter_employee_id">Nhập ID nhân viên</string>
+    <string name="version">Phiên bản:</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="server">Máy chủ</string>
+    <string name="loading">Tải</string>
+    <string name="exit_program">Vui lòng nhấp lại lần nữa để thoát</string>
+    <string name="drop_session_open">Thả phiên \nto bắt đầu</string>
+    <string name="drop_session_close">Thả lại \nto đóng</string>
+    <string name="manually_update">Không nhận được thông báo cập nhật dữ liệu. \nBạn có cần cập nhật dữ liệu thủ công từ backoffice không?</string>
+    <string name="day_symbol">thứ</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">TUYỆT VỜI</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">Chuyển \nTable</string>
+    <string name="hold_bill">Giữ \nBill</string>
+    <string name="kiosk_hold">Ki-ốt và giữ</string>
+    <string name="open_item">Mở \nitem</string>
+    <string name="edit_kot">Chỉnh sửa \nkot</string>
+    <string name="app_dine_in">Ăn trưa ở</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">Biên lai in</string>
+    <string name="settled"> Định cư:</string>
+    <string name="item_count">Số mặt hàng</string>
+    <string name="rounding">Làm tròn</string>
+    <string name="cash_other">Khác</string>
+    <string name="exact">Chính xác $</string>
+    <string name="void_all">Bỏ trống tất cả</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">Đĩa</string>
+    <string name="sent_to_kitchen">Tất cả các mặt hàng đặt hàng đã được gửi đến nhà bếp</string>
+    <string name="remove_item">Xóa mục này?</string>
+    <string name="item_complete">mục này đã hoàn thành</string>
+    <string name="sure_take_away">Bạn có chắc chắn mang đi?</string>
+    <string name="no_order_detail">Không thể đặt thứ tự trống.</string>
+    <string name="network_connected">Kết nối Internet không có sẵn. Vui lòng kết nối để đồng bộ hóa trên đám mây ..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">In lại hóa đơn</string>
+    <string name="edit_settlement">Chỉnh sửa giải quyết</string>
+    <string name="card_loss">Báo cáo bị mất</string>
+    <string name="fill_card">Điền vào thẻ</string>
+    <string name="cash_inout">Tiền mặt \nIN / OUT</string>
+    <string name="sunmi_screen">Màn hình phó của SUNMI</string>
+    <!-- setting -->
+    <string name="update_msg">Vui lòng cập nhật tin nhắn</string>
+    <string name="receive">Nhận được</string>
+    <string name="_message">Thông điệp</string>
+    <string name="update_successful">Cập nhật thành công</string>
+    <string name="no_update">Không có cập nhật</string>
+    <string name="no_sync_date">Dữ liệu không thể được đồng bộ hóa khi phiên mở</string>
+    <string name="print_report_when_session">Báo cáo X</string>
+    <string name="print_cash_close">Tiền mặt W Đóng In</string>
+    <string name="print_bill_set">Hóa đơn in</string>
+    <string name="print_lable">In nhãn</string>
+    <string name="include_plu_void">Bao gồm Plu Void</string>
+    <string name="password_update_successfully">Cập nhật mật khẩu thành công.</string>
+    <string name="employee_no_exist">Các nhân viên không tồn tại ở backoffice.</string>
+    <string name="color_picker_tip">Mẹo: Chạm vào vòng màu hoặc thanh màu để chọn giá trị màu</string>
+    <string name="color_select">Lựa chọn màu sắc</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">Trung tâm doanh thu có một thiết bị POS khác được đính kèm. Để sử dụng thiết bị hiện tại, vui lòng kết nối thiết bị hiện có trong Alfred Cloud BackScript và thử lại.</string>
+    <string name="be_bound_already">Thiết bị được gắn vào một trung tâm doanh thu khác. Vui lòng kết nối nó trong Alfred Cloud BackScript và thử lại.</string>
+    <string name="sync_date_warning_tips">Cài đặt trung tâm doanh thu không hoàn thành. Vui lòng kiểm tra các nội dung sau tại Aflred Backoffice:</string>
+    <string name="users">Người dùng</string>
+    <string name="tables">Những cái bàn</string>
+    <string name="printer_printergroup">Máy in hoặc nhóm máy in</string>
+    <string name="product_categories">Danh mục sản phẩm</string>
+    <string name="login_info_error">ID nhân viên, mật khẩu và Biz ID không thể để trống</string>
+    <!-- login -->
+    <string name="login_required">Chỉ Thủ quỹ hoặc Quản lý mới có thể đăng nhập!</string>
+    <string name="invalid_employee">Nhân viên không hợp lệ!</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">Phiên hiện tại đang diễn ra trong hơn 12 giờ!</string>
+    <string name="save_print_sales">Tiết kiệm và in ấn doanh số</string>
+    <string name="whether_close_restaurant">Bạn có chắc chắn đóng cửa nhà hàng để dừng dịch vụ ngày hôm nay?</string>
+    <string name="operation_on">Hoạt động trên</string>
+    <string name="is_going_to_start">sẽ bắt đầu</string>
+    <string name="bill_not_closed">Có một số hóa đơn chưa được đóng.</string>
+    <string name="cashier_printer">Không có máy in được đặt cho thu ngân.</string>
+    <string name="printing_close_report">In báo cáo chặt chẽ</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">Gửi đến nhà bếp</string>
+    <string name="place_before_print">Vui lòng đặt hàng trước!</string>
+    <string name="setting_printer">Máy in chưa sẵn sàng, \nVui lòng truy cập Cài đặt> Thiết bị> \nMáy in để gán máy in Thủ quỹ chính xác!</string>
+    <string name="bill_printing">Hóa đơn đang in</string>
+    <string name="no_items">Không có mục nào trong danh sách theo thứ tự!</string>
+    <string name="receipt_printing">Biên nhận đang in</string>
+    <string name="table_transfer">Chuyển bảng</string>
+    <string name="table_transfer_from">*** Đã chuyển từ% s ***</string>
+    <string name="to">đến</string>
+    <string name="no_set_kds_printer">Không có KDS hoặc Thiết bị máy in nào được đặt cho Bếp</string>
+    <string name="place_order_failed">Đặt hàng không thành công</string>
+    <string name="no_set_item_print">Menu: *% s * không đặt máy in</string>
+    <string name="print_bill_">Vui lòng in hóa đơn</string>
+    <string name="assign_items_to_group">Hãy phân công các mục cho một nhóm.</string>
+    <string name="not_complete_order">Không hoàn thành đơn hàng.</string>
+    <string name="the_table">Cai ban</string>
+    <string name="occupied_time">  đã được cho thuê trong 2 giờ tại cho thuê</string>
+    <string name="pos_notification">Thông báo Alfred POS</string>
+    <string name="alfred_pos">Alfred POS</string>
+    <string name="online_order">Đặt hàng trực tuyến</string>
+    <string name="the_most_selections">% d lựa chọn nhiều nhất</string>
+    <string name="table_dining">Bảng đã bị chiếm dụng</string>
+    <string name="items"> bổ nghĩa</string>
+    <string name="at_only">chọn CHỈ</string>
+    <!-- html -->
+    <string name="no_sales_print">Không có dữ liệu bán hàng để in</string>
+    <string name="no_printer_devices">Không có thiết bị máy in</string>
+    <string name="cash_not_empty">Tiền mặt không thể để trống</string>
+    <string name="save_success">Cứu thành công</string>
+    <string name="id_error">Lỗi ID !!!</string>
+    <string name="not_operations">Không thể thực hiện các hoạt động</string>
+    <string name="kds_paired">Một thiết bị KDS được ghép nối</string>
+    <string name="waiter_paired">Một thiết bị bồi bàn được ghép nối</string>
+    <string name="printing">In ấn</string>
+    <!-- App -->
+    <string name="print_down">Dịch vụ in xuống</string>
+    <string name="reconnect_print">Bạn có chắc chắn kết nối lại Dịch vụ In Alfred không?</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">Lỗi bên trong</string>
+    <string name="device_invalid">Thiết bị không hợp lệ</string>
+    <string name="login_failed">đăng nhập thất bại</string>
+    <string name="sync_data_failed">dữ liệu đồng bộ hóa không thành công</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">Id không trống</string>
+    <string name="close_payment_reminder">Chế độ thanh toán được chọn không thể được sử dụng với chế độ thanh toán khác</string>
+    <string name="card_no_not_empty">Thẻ Không thể để trống</string>
+    <string name="card_no_for_four">Thẻ số cho bốn</string>
+    <string name="card_no_not_correct">Thẻ số không đúng</string>
+    <string name="cvv_not_empty">CVV không thể để trống</string>
+    <string name="cvv_for_three">CVV cho ba</string>
+    <string name="exp_not_empty">Ngày hết hạn không thể để trống</string>
+    <string name="exp_format">Định dạng ngày hết hạn cho 00/00</string>
+    <string name="cash_settlement">Thanh toán tiền mặt</string>
+    <string name="part_settlement">Giải quyết một phần</string>
+    <string name="totle_paid">Tổng số chi trả</string>
+    <!--&lt;!&ndash;<string name="change">Thay đổi -></string>-->
+    <string name="visa_settlement">Giải quyết Visa</string>
+    <string name="amount_paid">Số tiền phải trả</string>
+    <string name="card_no">Không có thẻ</string>
+    <string name="exp_date">Ngày hết hạn</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">Giải quyết NET</string>
+    <string name="wechat_settlement">Giải quyết WeChat</string>
+    <string name="alipay_settlement">Giải quyết Alipay</string>
+    <string name="amount_auth_by">Số tiền xác thực bằng</string>
+    <!-- other - window -->
+    <string name="switch_account">Chuyển tài khoản</string>
+    <string name="name_not_empty">Tên không thể để trống</string>
+    <string name="price_not_empty">Giá không thể để trống</string>
+    <string name="order_split_">Sự phân chia thứ tự</string>
+    <string name="_settled">  được giải quyết</string>
+    <string name="invalid_ip">Địa chỉ IP không hợp lệ</string>
+    <string name="enter_people">Vui lòng nhập số người</string>
+    <string name="active_five_hours">Hoạt động 5 giờ</string>
+    <string name="switch_user">Chuyển người dùng</string>
+    <string name="lock_screen">Màn hình khóa</string>
+    <string name="refresh">Làm tươi</string>
+    <string name="split_bill_win_title">Chi tiết hóa đơn</string>
+    <string name="split_print_all">In toàn bộ hóa đơn</string>
+    <string name="slipt_print">Tách in</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">Tên bảng</string>
+    <string name="close_cash">Đóng w Tiền mặt</string>
+    <string name="bill_on_hold">HÓA ĐƠN GIỮ</string>
+    <string name="company">CÔNG TY</string>
+    <string name="house_charge">PHÍ NHÀ</string>
+    <string name="close_split_bills">Đóng hóa đơn chia</string>
+    <string name="event_voucher">Phiếu sự kiện</string>
+    <string name="voucher_ten">Phiếu mua hàng trị giá $ 10</string>
+    <string name="voucher_five">Phiếu mua hàng $ 5</string>
+    <string name="order_first">Không thể áp dụng giảm giá!</string>
+    <string name="no_cashier_printer">Chưa có máy in thu ngân</string>
+    <string name="discard_current_order">Bạn có chắc chắn để loại bỏ đơn đặt hàng hiện tại?</string>
+    <string name="unseat_table">Bạn có chắc chắn hủy kết nối bảng không? \nCác mục trống sẽ không được ghi vào báo cáo.</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">Hết giờ</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">Kiểu đơn hàng</string>
+    <string name="online_order_status">Tình trạng đặt hàng</string>
+    <string name="online_order_time">Tạo thời gian</string>
+    <string name="check">Kiểm tra</string>
+    <string name="paid">Đã thanh toán</string>
+    <string name="making">CHẾ TẠO</string>
+    <string name="confirmed">CHẤP NHẬN</string>
+
+    <string name="prepared">Chuẩn bị</string>
+    <string name="preparing">Trong tiến trình</string>
+    <string name="finish">Hoàn thành</string>
+    <string name="new_order">Đơn hàng mới</string>
+    <string name="preparing_order">Đang tiến hành / Chuẩn bị</string>
+    <string name="completed_order">Đã hoàn thành</string>
+    <string name="receving_order">Nhận</string>
+
+    <string name="index">Mục lục</string>
+    <string name="welcome">Chào mừng bạn</string>
+    <string name="add_table_num">Thêm số bảng</string>
+    <string name="input_table_num">Vui lòng nhập số bảng</string>
+
+    <!--Zun-->
+    <string name="assign">Chỉ định</string>
+    <string name="manually_add">Thêm thủ công</string>
+    <string name="waiter_">Phục vụ nam</string>
+
+
+    <string name="devices_network">Mạng</string>
+
+    <string name="devices_bluetooth">Bluetooth</string>
+
+    <string name="revenue_center">Trung tâm doanh thu</string>
+    <string name="ipaddr_tips">Ghép nối thiết bị \nThiết lập địa chỉ IP POS</string>
+    <string name="connect">Kết nối</string>
+
+    <string name="january">tháng Giêng</string>
+    <string name="february">Tháng hai</string>
+    <string name="march">tháng Ba</string>
+    <string name="april">Tháng 4</string>
+    <string name="may">có thể</string>
+    <string name="june">Tháng 6</string>
+    <string name="july">Tháng 7</string>
+    <string name="august">tháng Tám</string>
+    <string name="september">Tháng Chín</string>
+    <string name="october">Tháng Mười</string>
+    <string name="november">Tháng 11</string>
+    <string name="december">Tháng 12</string>
+
+    <string name="welcome_to">Chào mừng bạn đến</string>
+    <string name="please_clock_in">Xin vui lòng đồng hồ trong</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+    <string name="ask_delete_place">Bạn có chắc chắn để xóa nơi này?</string>
+
+    <string name="days">Ngày</string>
+    <string name="day">ngày</string>
+    <string name="split_pay">Tách</string>
+    <string name="all_pay">Tất cả các</string>
+    <string name="at_least">chọn ít nhất</string>
+    <string name="please_input_amount">Vui lòng nhập số tiền!</string>
+    <string name="operation_irreversible">Thao tác này là không thể đảo ngược, Bạn có chắc không?</string>
+    <string name="table_name_used">Tên bảng đã được sử dụng. Vui lòng sử dụng tên khác.</string>
+    <string name="please_select_empty_table">Vui lòng chọn một bảng trống</string>
+
+    <string name="turning_on_training_mode">Bật chế độ đào tạo</string>
+    <string name="turning_on_training_mode_desc">Đối với Người dùng lần đầu, cài đặt sẽ bật lên bật lên trên đầu</string>
+
+    <string name="ok">được rồi</string>
+    <string name="add">Thêm</string>
+    <string name="cancel">Hủy bỏ nó</string>
+    <string name="sign_in">Nhập</string>
+    <string name="sync">Đồng bộ hóa</string>
+    <string name="waiting_list">Danh sách chờ</string>
+    <string name="queue">hàng đợi</string>
+    <string name="assign_table">Đặt\nBảng</string>
+    <string name="summary">Tóm tắt</string>
+
+    <string name="add_queue">Thêm một hàng đợi mới</string>
+    <string name="queue_name">Tên của hàng đợi</string>
+    <string name="ask_save_edit_content">Bạn muốn lưu nội dung chỉnh sửa?</string>
+    <string name="ask_delete_queue">Bạn có chắc chắn để xóa hàng đợi này?</string>
+    <string name="name_used">Tên đã được sử dụng, hãy thử tên khác</string>
+
+</resources>

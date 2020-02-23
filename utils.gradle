@@ -1,0 +1,14 @@
+def  getVersionNameAdvanced(){
+//下面这行代码中的project是谁？
+    defxmlFile = project.file("AndroidManifest.xml")
+    defrootManifest = new XmlSlurper().parse(xmlFile)
+    returnrootManifest['@android:versionName']
+}
+//现在，想把这个API输出到各个Project。由于这个utils.gradle会被每一个Project Apply，所以
+//我可以把getVersionNameAdvanced定义成一个closure，然后赋值到一个外部属性
+// 下面的ext是谁的ext？
+ext{ //此段花括号中代码是闭包
+    //除了ext.xxx=value这种定义方法外，还可以使用ext{}这种书写方法。
+    //ext{}不是ext(Closure)对应的函数调用。但是ext{}中的{}确实是闭包。
+    getVersionNameAdvanced = this.&getVersionNameAdvanced
+}

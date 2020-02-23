@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Edit Settlement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.62, user-scalable=1, minimum-scale=0.62, maximum-scale=0.62"> -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>
+    <link rel="stylesheet" href='./css/entvoid.css' type='text/css'/>
+    <!--jquery-->
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+</head>
+<style>
+	@font-face{
+	   font-family:'Trajan Pro';
+	   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+	}
+	.headbar {
+	  position:relative!important;
+	}
+</style>
+<body>
+<div id="window">
+
+    <div id="settlementListContent">
+        <div id="settlementListBar" class="headbar">
+            <div class="col-md-2">
+                <div id="backBtn" ></div>
+            </div>
+            <div class="col-md-10">
+                <div id="wintitle" class="title col-md-8">Edit Settlement</div>
+
+                <div style="float: right;" id="settlementRight">
+                    <ul>
+                        <li >
+                            <button type="button" id="todayOrderListBut" class="btn btn-default">
+                                <span>Today</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" id="allOrderListBut" class="btn btn-default">
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="text" style="width: 150px"  class="form-control searchbox" id="searchContent" placeholder="Order Id">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="billTables" class="maxCol">
+            <div id="header">
+                <div class="row">
+                    <div class="col-md-2 ">Bill NO</div>
+                    <div class="col-md-2 showCol">Amount</div>
+                    <div class="col-md-2 showCol">Location</div>
+                    <div class="col-md-2 showCol">Cashier</div>
+                    <div class="col-md-3 showCol">Time</div>
+                </div>
+            </div>
+            <div id="tableswrapper">
+                <div id="tablesscroller">
+                    <ul id="settlementli">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/template" id="settlementListItem-template">
+        <div class="row">
+            <div class="col-md-2"><%=billNo %></div>
+            <div class="col-md-2"><%=totalAmount %></div>
+            <div class="col-md-2 showCol"><%=placeName %></div>
+            <div class="col-md-2 showCol"><%=userName %></div>
+            <div class="col-md-3 showCol"><%=paymentCreateTime %></div>
+        </div>
+</script>
+
+
+<!--<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>-->
+
+<script type="text/javascript" src='./js/app/models/settlementlist_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/settlementlist_collection.js'></script>
+<script type="text/javascript" src='./js/app/views/settlementlist_view.js'></script>
+</body>
+</html>

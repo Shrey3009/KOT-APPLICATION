@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_kotview_pop"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kot_pop_back_selector" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_kot_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_pop_kot"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="KOT ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_m"
+                    android:visibility="gone" />
+                
+                <TextView
+                    android:id="@+id/tv_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_pop_kot"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/table"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_m" />
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_table"
+                    android:paddingLeft="20dp"
+                    android:text="@string/order_id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_below="@+id/tv_table">
+                    
+                    <TextView
+	                    android:id="@+id/tv_kiosk_order_id"
+	                    android:layout_width="0dp"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="2"
+	                    android:gravity="center_vertical"
+	                    android:paddingLeft="15dp"
+	                    android:text="@string/order_id"
+	                    android:textColor="@color/black"
+	                    android:textSize="@dimen/text_size_s" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:text="11:20am"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_s" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_below="@+id/ll_table">
+
+                    <TextView
+                        android:id="@+id/tv_pos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="15dp"
+                        android:text="POS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_s" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="15dp"
+                        android:text="20/04/2014"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_s" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_kds_delivery"
+                    android:layout_below="@+id/ll_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/kitchen_ll_orderRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_kds_delivery"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/kitchen_tv_orderremark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_remark"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_s"
+                        android:singleLine="false"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbars="vertical"
+                        android:maxLines="3"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:lineSpacingExtra="3dp"
+                        android:isScrollContainer="true"
+                        android:scrollbarFadeDuration="3000"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black"
+                    android:layout_below="@+id/kitchen_ll_orderRemark" />
+            </RelativeLayout>
+
+            <com.alfredkds.view.PopItemListView
+            android:id="@+id/lv_kot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_top"
+            android:layout_above="@+id/ll_bottom"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/black"
+            android:dividerHeight="1px"
+            android:visibility="gone"
+            android:listSelector="@android:color/transparent" >
+        </com.alfredkds.view.PopItemListView>
+            <com.alfredkds.view.SwipeMenuRecyclerView
+                android:id="@+id/re_kot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_top"
+                android:layout_above="@+id/ll_bottom"
+                ></com.alfredkds.view.SwipeMenuRecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/ll_bottom"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_gravity="center"
+                    android:text="@string/completed"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_complete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_kotview_pop"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kot_pop_complete_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

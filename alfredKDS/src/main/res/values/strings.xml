@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">Version:</string>
+    <string name="exit_program">Please click BACK again to exit</string>
+    <string name="revenue_center">Revenue Center</string>
+    <string name="loading">Loading</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">Scan QR code from the POS of\nrevenue center to get KDS tablet paired.\nOr Slide to the left And\nManually connect POS by IP</string>
+    <string name="ipaddr_tips">Device Pairing\nSet up POS IP Address</string>
+    <string name="connect">Connect</string>
+    <string name="check_ip">Check the IP address is not correct</string>
+    <string name="pairing_fails">Pairing fails, no permit</string>
+    <string name="employee_id">Device paired\nEnter Your Employee ID</string>
+    <string name="select_kitchen">KDS Paired\nPlease select the kitchen\nthat the KDS belongs to</string>
+    <string name="paired_failed">The KDS Device is not paired to Alfred POS</string>
+    <string name="cashier_login_tips1">Enter Employee ID</string>
+    <string name="cashier_login_tips2">Enter Password</string>
+    <string name="logining">Logining</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">Send Failed!</string>
+    <string name="other_pos_data">Other MainPos send data</string>
+    <string name="order_discarded">The order has been discarded by cashier.</string>
+    <string name="reconnect_pos">Main POS disconnected.\nReconnect it?</string>
+    <string name="dine_in">Dine in</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">Unfinished</string>
+    <string name="be_doing">Be doing</string>
+    <string name="update">Update</string>
+
+    <string name="chargeback">Chargeback</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">PosId</string>
+    <string name="item_complete">complete</string>
+    <string name="kitchen_name">Kitchen Name</string>
+    <string name="reconnect_pos_">Send Failed,you can reconnect Main Pos</string>
+    <string name="kot_in_progress">in progress</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">KOT HISTORY</string>
+    <string name="kot_revert">revert</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">OrderId</string>
+    <string name="pos">POS</string>
+    <string name="data">Data</string>
+    <string name="dish">Dish</string>
+    <string name="undoing">Undoing</string>
+
+    <!-- Setting -->
+    <string name="reset">All data will be removed, \nare you sure to reset KDS?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="reset_kds">Reset KDS</string>
+    <string name="switch_account">Switch Account</string>
+    <string name="kot_history_">Kot History</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">KOT submit failed</string>
+    <string name="relogin_pos">POS has closed the current session.\nPlease relogin when next session starts</string>
+
+    <!-- other -->
+    <string name="network_error">Network Fatal Error</string>
+    <string name="finished_items_number">Please Enter The Number Of Finished Dishes</string>
+    <string name="max_number">MAX number is </string>
+    <string name="no_finished">NO. OF FINISHED</string>
+    <string name="sending">Sending</string>
+    <string name="reconn_pos">You should reconnect pos!</string>
+    <string name="complete_all_item">Confirm all orders are completed?</string>
+    <string name="completed">Complete</string>
+
+    <string name="choose">Select</string>
+    <string name="please_choose_pos">Please select POS</string>
+</resources>

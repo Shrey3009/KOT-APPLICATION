@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <TextView
+        android:id="@+id/tv_kitchen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:text="@string/kitchen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/edit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+</LinearLayout>

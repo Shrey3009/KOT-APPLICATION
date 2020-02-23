@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">Tinatawag na Num</string>
+    <string name="version">Bersyon:</string>
+    <string name="exit_program">Mangyaring mag-click muli upang lumabas</string>
+    <string name="revenue_center">Revenue Centre</string>
+    <string name="warn">BALAAN</string>
+    <string name="loading">Naglo-load</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">I-scan ang QR code mula sa POS ng \nrevenue center upang makakuha ng KDS tablet na ipinares. \nOr Slide sa kaliwa At \nManunekta na kumunekta sa POS sa pamamagitan ng IP</string>
+    <string name="set_ipaddr">Device Pairing \nSet up POS IP Address</string>
+    <string name="connect">Ikonekta</string>
+    <string name="invalid_ip">Hindi wastong pangunahing POS IP o Mga Device ay wala sa parehong network. Mangyaring suriin</string>
+    <string name="invalid_ip_">Isang hindi wastong IP address na itinakda mo</string>
+    <string name="link">Dapat i-link ang</string>
+    <string name="select_revenue_center">Ang iyong mga karapat-dapat na maghatid ng mga sentrong pang-kita</string>
+    <string name="logining">Logining</string>
+    <string name="waiter_login_tips1">Nakareserba ang device na \nEnter Waiter Employee ID</string>
+    <string name="waiter_login_tips2">\nIpasok ang Password</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">Pamagat</string>
+    <string name="menu">Menu</string>
+    <string name="detail">Detalye</string>
+    <string name="add_item">Mangyaring magdagdag ng item bago</string>
+    <string name="item_name">Pangalan ng Item</string>
+    <string name="modifier">Modifier</string>
+    <string name="add_modifier">Magdagdag ng Modifier</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">Matagumpay na mag-order ng lugar</string>
+    <string name="place_failed">Nabigong ilagay ang pagkakasunud-sunod</string>
+    <string name="print_bill_succ">Matagumpay na i-print ang bill</string>
+    <string name="print_bill_failed">Nabigong mag-print ng kuwenta</string>
+    <string name="network_errors">Hindi makapag-print ng kuwenta sa sandaling ito: Mga error sa network</string>
+    <string name="order_closed">Isinara ang order, mangyaring piliin ang table at palitan muli ang order.</string>
+    <string name="order_not_edited">Hindi maaaring mai-edit ang order kapag nasa ilalim ng proseso. Mangyaring makipag-ugnay sa cashier upang subukang muli.</string>
+    <string name="order_split_settled">Ang split order ay naisaayos na</string>
+    <string name="order_split">Ang split order</string>
+    <string name="settled"> ay naisaayos na</string>
+    <string name="item_count">Bilang ng Item:</string>
+    <string name="discount_">Discount: -</string>
+    <string name="group_all">Pangkat: Lahat</string>
+    <string name="print_bill">I-print ang Bill</string>
+
+    <!-- Setting -->
+    <string name="system_reset">I-reset ang System</string>
+    <string name="clean_data">Sigurado ka bang linisin ang lahat ng data?</string>
+    <string name="logout_title">Mag-logout ng Waiter</string>
+    <string name="logout_content">Sigurado kang mag-logout?</string>
+    <string name="history">Kasaysayan ng Order</string>
+    <string name="bump_mobile">Bump sa Consumer Mobile APP</string>
+    <string name="connect_pos">Kumonekta sa POS Server</string>
+    <string name="data_sync">Pag-sync ng Data</string>
+    <string name="kot_notification">KOT Notification</string>
+    <string name="zone_notification">Notification ng Zone</string>
+    <string name="reset">I-reset</string>
+    <string name="logout">Mag-log out</string>
+    <string name="version_">Bersyon</string>
+    <string name="lock_screen">Lock ng screen</string>
+
+    <!-- other -->
+    <string name="relogin_pos">Isinara ng POS ang kasalukuyang sesyon. \nMangyaring mag-relogin kapag nagsisimula ang susunod na session</string>
+    <string name="pairing_failed">Nabigo ang pagpapares: Mga error sa network</string>
+    <string name="empty_invalid">Ang di-wastong halaga ay hindi wasto</string>
+    <string name="number_people">Mangyaring Ipasok ang Bilang ng Mga Tao</string>
+    <string name="note">TANDAAN</string>
+    <string name="transfer_">  ay inilipat sa Table:</string>
+    <string name="order_belong">Piliin kung kanino ang order na nbelongs</string>
+    <string name="clear">Malinaw</string>
+    <string name="enter">Ipasok</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="check">Suriin</string>
+    <string name="up_one_level">Up One Level</string>
+    <string name="exit_filed">Exit Field</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Kamusta na blangko fragment</string>
+    <string name="check_ip">Maling address ng IP, mangyaring suriin ang iyong IP address</string>
+</resources>

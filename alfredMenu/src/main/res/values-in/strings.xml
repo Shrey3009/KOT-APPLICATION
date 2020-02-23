@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">alfredmenu</string>
+    <string name="version">Versi:</string>
+    <string name="exit_program">Silakan klik kembali lagi untuk keluar</string>
+    <string name="revenue_center">Pusat Penghasilan</string>
+    <string name="warn">MEMPERINGATKAN</string>
+    <string name="loading">Memuat</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">Pindai kode QR dari POS pusat pendapatan untuk mendapatkan pasangan KDS tablet. \natau Geser ke kiri Dan \nHubungkan POS secara manual dengan IP</string>
+    <string name="set_ipaddr">Penyandingan Perangkat \nSiapkan Alamat IP POS</string>
+    <string name="connect">Menghubungkan</string>
+    <string name="invalid_ip">IP atau Perangkat POS utama tidak valid dalam jaringan yang sama. Silakan periksa</string>
+    <string name="invalid_ip_">Alamat IP tidak valid yang Anda tentukan</string>
+    <string name="link">Harus menautkan</string>
+    <string name="select_revenue_center">Anda berhak untuk melayani di pusat pendapatan tersebut</string>
+    <string name="logining">Masuk</string>
+    <string name="waiter_login_tips1">Perangkat dipasangkan \nMasukkan ID Karyawan Pelayan</string>
+    <string name="waiter_login_tips2">\nMasukkan Kata Sandi</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">Judul</string>
+    <string name="menu">Menu</string>
+    <string name="detail">Detail</string>
+    <string name="add_item">Silakan tambahkan item sebelumnya</string>
+    <string name="item_name">Nama barang</string>
+    <string name="modifier">Pengubah</string>
+    <string name="add_modifier">Tambahkan Pengubah</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">Berhasil memesan</string>
+    <string name="place_failed">Gagal memesan</string>
+    <string name="print_bill_succ">Tagihan cetak berhasil</string>
+    <string name="print_bill_failed">Gagal mencetak tagihan</string>
+    <string name="network_errors">Tidak dapat mencetak tagihan saat ini: Kesalahan jaringan</string>
+    <string name="order_closed">Pesanan ditutup, silakan pilih tabel dan ganti lagi pesanan.</string>
+    <string name="order_not_edited">Pesanan tidak dapat diedit saat sedang dalam proses. Silakan hubungi kasir untuk mencoba lagi.</string>
+    <string name="order_split_settled">Pemecahan pesanan diselesaikan</string>
+    <string name="order_split">Pesanan terpecah</string>
+    <string name="settled"> diselesaikan</string>
+    <string name="item_count">Jumlah Barang:</string>
+    <string name="discount_">Diskon:-</string>
+    <string name="group_all">Grup: Semua</string>
+    <string name="print_bill">Cetak Bill</string>
+
+    <!-- Setting -->
+    <string name="system_reset">Reset Sistem</string>
+    <string name="clean_data">Apakah Anda yakin untuk membersihkan semua data?</string>
+    <string name="logout_title">Pelayan Keluar</string>
+    <string name="logout_content">Apakah Anda yakin untuk keluar?</string>
+    <string name="history">Riwayat Pemesanan</string>
+    <string name="bump_mobile">Bertabrakan dengan Consumer Mobile APP</string>
+    <string name="connect_pos">Terhubung ke Server POS</string>
+    <string name="data_sync">Sinkronisasi data</string>
+    <string name="kot_notification">Pemberitahuan KOT</string>
+    <string name="zone_notification">Pemberitahuan Zona</string>
+    <string name="reset">Setel ulang</string>
+    <string name="logout">Keluar</string>
+    <string name="version_">Versi</string>
+    <string name="lock_screen">Layar kunci</string>
+
+    <!-- other -->
+    <string name="relogin_pos">POS telah menutup sesi saat ini. \nSilakan masuk kembali saat sesi berikutnya dimulai</string>
+    <string name="pairing_failed">Penyandingan gagal: Kesalahan jaringan</string>
+    <string name="empty_invalid">Nilai kosong tidak valid</string>
+    <string name="number_people">Silakan Masukkan Jumlah Orang</string>
+    <string name="note">CATATAN</string>
+    <string name="transfer_">  telah dipindahkan ke Tabel:</string>
+    <string name="order_belong">Pilih untuk siapa pesanan ini</string>
+    <string name="clear">Bersih</string>
+    <string name="enter">Memasukkan</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="check">Memeriksa</string>
+
+    <string name="At_least">pilih LEAST</string>
+    <string name="items"> pengubah</string>
+    <string name="at_only">pilih HANYA</string>
+    <string name="name_not_empty">Nama tidak boleh kosong</string>
+    <string name="price_not_empty">Harga tidak boleh kosong</string>
+
+
+    <string name="edit">sunting</string>
+    <string name="ip_changed_relogin">IP Anda telah berubah. \ Silakan Masuk Kembali</string>
+
+    <string name="devices_network">Jaringan</string>
+    <string name="devices_bluetooth">Bluetooth</string>
+    <string name="print_kot_succ">Cetak KOT success</string>
+    <string name="print_kot_failed">Cetak KOT failed</string>
+    <string name="print_down">Servis Printer Terkendala</string>
+    <string name="reconnect_print">Apakah kamu yakin untuk mengkoneksikan kembali servis printer ?</string>
+
+</resources>

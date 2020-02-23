@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/ll_dish_total"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" >
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sub_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/subtotal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/discount_"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/tv_taxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/taxes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_m" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_grand_total_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/tv_grand_total"
+            android:layout_marginRight="10dp"
+            android:text="@string/grand_total"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+        <TextView
+            android:id="@+id/tv_grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="$300.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xb" 
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_dishes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_dish_total"
+		android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

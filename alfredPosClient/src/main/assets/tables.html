@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <title>Tables</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.62, user-scalable=1, minimum-scale=0.62, maximum-scale=0.62"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/jquery/jquery-ui-1.10.4.custom.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+    <script type="text/javascript" src='./js/lib/ftscroller.js'></script>
+    
+    <style>
+		@font-face{
+		   font-family:'Trajan Pro';
+		   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+		}
+		    
+		.headbar {
+			height:60px;
+			background-color:#050505;
+			color:#fff;
+			font-family: "Sansita One";
+			font-size:24px;
+		}
+		.headbar .title {
+		  line-height:60px;
+		}
+		.locationlist .rowright{
+		  margin-left:60px;
+		  border-bottom:2px solid #000;
+		  height:78px;
+		} 
+		.locationlist .name {
+		  font-family: "Trajan Pro";
+		  font-size:20px;
+		}
+		.selected .name {
+		  color:#fff;
+		}
+		.tblabel{
+		     color:#000;
+		     font-size: 18px;
+		     text-align:center;
+		     margin-top:10px;
+		 }
+		.selected .tblabel{
+		     color:#fff;
+		     font-size: 18px;
+		     text-align:center;
+		     margin-top:10px;
+		 }
+		 .selected .pendingtag {
+		   color:#fff;
+		 }
+		 .selected .billingtag {
+		   color:#fff;
+		 }
+ 		 #locationApp {
+ 		   border-right:2px solid #050505;
+ 		   position: fixed;
+ 		   bottom: 0px;
+ 		   top: 60px;
+ 		   width:370px!important;
+ 		 }
+ 		 .pendingtag {
+ 		   text-align:center;
+ 		   padding:4px 0px;
+ 		 }
+ 		 .billingtag {
+ 		   text-align:center;
+ 		   padding:4px 0px;
+ 		 }
+ 		 #tableApp {
+ 		   position: fixed;
+ 		   bottom: 0px;
+ 		   top: 60px;
+ 		   right:0px;
+ 		   left: 383px;
+ 		   -webkit-overflow-scrolling: touch;
+ 		   overflow:hidden;
+ 		 }
+ 		 #tableApp .headbar {
+		   border-left: 2px solid #fff; 		 
+ 		 }
+ 		 
+ 		 #tableApp .tablecell {
+ 		   height:180px;
+ 		   width:180px;
+ 		   float:left;
+ 		   background-color:#fff;
+ 		 }
+ 		 .tablecell .tablename{
+			font-size: 28px;
+			position:relative;
+			top: 70px; 
+			font-family: "Trajan Pro";		 
+ 		 }
+
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="row headbar">
+       <div class="col-md-4">
+           <div class="col-md-4">
+               <div id="backBtn"></div>
+           </div>
+           <div class="col-md-4 title">Locations</div>
+       </div>  
+       <div class="col-md-8">
+           <div class="col-md-10">
+               <div class="text-center title">Tables</div>
+           </div>
+           <div class="col-md-2">
+               <div id="refBut" class="pull-right"></div>
+           </div>
+       </div> 
+  </div>
+   <div class="row" >
+       <div class="col-md-4" id="locationApp">
+           <div class="row locationlist">
+               <ul id="locationList">
+               </ul>
+           </div>
+       </div>
+       <div id="tableApp">
+           <div id="tableList">
+           </div>
+       </div>
+   </div>
+</div>
+<script type="text/template" id="tablesItem-template">
+    <div class="itembox" id="table_<%=tableName%>" data="<%=id%>">
+     <div class="selecteditem">
+	     <div class="tablename"><%=tableName%></div>
+	     <div class="time"><div class="timer"></div>13:00</div>
+     </div>
+    </div>
+</script>
+<script type="text/template" id="locationItem-template">
+    <li class="locationLi">
+        <div class="row rowright" id="location_<%=id %>" data="<%=id %>">
+            <div class="col-md-4 name"><%=placeName %></div>
+            <div class="col-md-8">
+                <div class="col-md-6 tblabel">Billing</div>
+                <div class="col-md-6 tblabel">Pending</div>
+                <div class="col-md-6 pendingtag" ><%=billing %></div>
+                <div class="col-md-6 billingtag"><%=pending %></div>
+            </div>
+        </div>
+    </li>
+ </script>
+
+<!--
+<script type="text/javascript" src='./js/app/tablesJson.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+
+<!--加载区域-->
+<script type="text/javascript" src='./js/app/models/tables_model.js'></script>
+<script type="text/javascript" src='./js/app/models/location_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/tables_collection.js'></script>
+<script type="text/javascript" src='./js/app/collections/location_collection.js'></script>
+<script type="text/javascript" src='./js/app/views/tables_view.js'></script>
+<script type="text/javascript" src='./js/app/views/location_view.js'></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_cash_200"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$200"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_cash_50"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$50"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_cash_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$10"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_cash_150"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$150"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_cash_20"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$20"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_cash_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$5"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_cash_100"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="$100"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_exact"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="@string/exact"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_Others"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_number_selector"
+            android:gravity="center"
+            android:text="@string/cash_other"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_big" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">Hindi.</string>
+    <string name="emp">Emp</string>
+    <string name="groupnum">Grupo Num</string>
+    <string name="pos">POS</string>
+    <string name="date">Petsa</string>
+    <string name="total_">Kabuuan:</string>
+    <string name="rounding_print">Pag-ikot:</string>
+    <string name="promotion_print">Pag-promote:</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="unionpay">UnionPay</string>
+    <string name="visa">VISA</string>
+    <string name="amex_">Amex</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">Mga hapunan</string>
+    <string name="hold_bill">I-hold ang Bill</string>
+    <string name="com_credits">Mga Kredito ng Kumpanya</string>
+    <string name="house_charge">Bahay Charge</string>
+    <string name="ent">ENT</string>
+    <string name="nets">NETS</string>
+    <string name="alipay">ALIPAY</string>
+    <string name="weixin">EZ-Link</string>
+    <string name="paypal">Diner App</string>
+    <string name="stored_card_use">Naka-imbak-Card Paggamit</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">Stored-Card Charge</string>
+    <string name="card_no">CardNo</string>
+    <string name="check_closed"> Isinara ang Sarado</string>
+    <string name="thank_you_and_see_you">Salamat at makita ka ulit!</string>
+    <string name="powered_by_alfred">ServedByAlfred</string>
+    <string name="kg">KG</string>
+
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">Pagbebenta ng Item</string>
+    <string name="stored_card_sales">Naka-imbak-Card Sales</string>
+    <string name="ent_items">ENT Items</string>
+    <string name="ent_bills">ENT Bills</string>
+    <string name="void_items">Walang bisa na mga item</string>
+    <string name="void_bills">Walang bisa na mga perang papel</string>
+    <string name="refund_bills">Mga Refund Bill</string>
+    <string name="refund_taxes">Mga Pagbabayad ng Buwis</string>
+    <string name="total_refund">Kabuuang Refund</string>
+    <string name="discount_on_per">Diskwento sa%</string>
+    <string name="discount_on_pri">Diskwento sa $</string>
+    <string name="take_away_sales">Mga bilihan ng takeaway</string>
+    <string name="take_away_tax">Takeaway tax</string>
+    <string name="take_away_qty">Qty item sa takeaway</string>
+    <string name="total_tax">Eksklusibong Buwis</string>
+    <string name="rounding">Rounding</string>
+    <string name="promotion">Mga Promosyon</string>
+
+    <string name="gross_total">Gross Total Sales</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">Diner</string>
+    <string name="boh">BOH</string>
+    <string name="total_card">TOTAL CARD</string>
+    <string name="total_nets">TOTAL NETS</string>
+    <string name="total_cash">TOTAL CASH</string>
+    <string name="total_boh">TOTAL BOH</string>
+    <string name="total_ent">TOTAL ENT</string>
+    <string name="vr_summary">VOID / REFUND SUMMARY</string>
+    <string name="total_void">Kabuuang Walang bisa</string>
+    <string name="disc_summary">MGA SUMUSUNOD NA MGA DISKAUYAHAN</string>
+    <string name="tax_svc">TAX / SVC</string>
+    <string name="drawer">DRAWER</string>
+    <string name="expected_in_drawer">Inaasahang sa Drawer</string>
+    <string name="difference">Pagkakaiba</string>
+    <string name="inclusive_tax">Inclusive Tax</string>
+    <string name="total_taxsvc">Kabuuang BUWIS / SVC</string>
+    <string name="variance">Pagkakaiba</string>
+    <string name="total_of_bills">Kabuuan ng mga Bills</string>
+    <string name="total_of_paxs">Kabuuang Paxs</string>
+    <string name="avg_bills">Avg na Bills</string>
+    <string name="avg_paxs">Avg Paxs</string>
+    <string name="monthly_sales">Ulat sa Buwanang Pagbebenta</string>
+    <string name="monthly_plu">Ulat ng Buwanang PLU</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">Pagsusuri ng Modifier</string>
+    <string name="op">Op</string>
+    <string name="report_no_">Ulat ng Hindi.</string>
+    <string name="plu_name">Pangalan ng PLU</string>
+
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">Oras ng Pagbebenta</string>
+    <string name="promotion_sales">Mga Pagbebenta sa Pag-promote</string>
+    <string name="promotion_name">Pag-promote</string>
+    <string name="hour">Oras</string>
+    <string name="tran">Tran</string>
+    <!-- Void PLU -->
+    <string name="item_name">Pangalan ng Item</string>
+    <!-- KOT -->
+    <string name="kot_no_">KOT Hindi:</string>
+    <string name="date_">Petsa:</string>
+    <string name="void_">*** VOID ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">Pangalan ng Table:</string>
+    <string name="table_num">Table No .:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">Ikonekta ang WIFI-printer na matagumpay</string>
+    <string name="wifi_printer_disconnect_success">Idiskonekta ang matagumpay na WIFI-printer</string>
+    <string name="wifi_printer_send_failed">Ipadala ang Data Nabigong, mangyaring makipagkonek muli</string>
+    <string name="wifi_printer_connect_error">Ikonekta ang error ng WIFI-printer</string>
+    <string name="wifi_printer_nopaper">Ang printer ay walang papel</string>
+    <string name="print_order_summary"> - Buod ng Order -</string>
+
+    <string name="monthly_start_date">Oras ng simula</string>
+    <string name="monthly_end_date">Oras ng Pagtatapos</string>
+</resources>

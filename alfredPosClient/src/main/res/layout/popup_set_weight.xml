@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_weight"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_weight_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/weight_kg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_b" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_weight_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box_pax"
+            android:gravity="center"
+            android:maxLength="6"
+            android:minEms="5"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="0.000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weight_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_weight_keyboard"
+            android:scaleType="fitXY"
+            android:src="@drawable/shadow_pop" />
+
+        <RelativeLayout
+            android:id="@+id/rl_weight_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <com.alfredposclient.view.MoneyKeyboard
+                android:id="@+id/weightKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

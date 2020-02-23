@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">alfredmenu</string>
+    <string name="version">เวอร์ชัน:</string>
+    <string name="exit_program">โปรดคลิกกลับอีกครั้งเพื่อออก</string>
+    <string name="revenue_center">ศูนย์สรรพากร</string>
+    <string name="warn">เตือน</string>
+    <string name="loading">กำลังโหลด</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">สแกนรหัส QR จาก POS ของ \nศูนย์รวมเพื่อรับแท็บเล็ต KDS ที่จับคู่ \nหรือเลื่อนไปทางซ้ายและ \nเชื่อมต่อ POS ด้วย IP ด้วยตนเอง</string>
+    <string name="set_ipaddr">การจับคู่อุปกรณ์ \nตั้งค่าที่อยู่ IP ของ POS</string>
+    <string name="connect">ต่อ</string>
+    <string name="invalid_ip">IP IP หลักหรืออุปกรณ์ไม่ถูกต้องไม่ได้อยู่ในเครือข่ายเดียวกัน โปรดตรวจสอบ</string>
+    <string name="invalid_ip_">ที่อยู่ IP ที่คุณกำหนดไม่ถูกต้อง</string>
+    <string name="link">จะต้องเชื่อมโยง</string>
+    <string name="select_revenue_center">คุณมีสิทธิ์แสดงศูนย์รายได้ \nin เหล่านั้น</string>
+    <string name="logining">Logining</string>
+    <string name="waiter_login_tips1">อุปกรณ์จับคู่ \nใส่รหัสพนักงานพนักงาน</string>
+    <string name="waiter_login_tips2">\nป้อนรหัสผ่าน</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">หัวข้อ</string>
+    <string name="menu">เมนู</string>
+    <string name="detail">รายละเอียด</string>
+    <string name="add_item">กรุณาเพิ่มรายการก่อน</string>
+    <string name="item_name">ชื่อรายการ</string>
+    <string name="modifier">ส่วนขยาย</string>
+    <string name="add_modifier">เพิ่มตัวดัดแปลง</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">สั่งซื้อสินค้าสำเร็จ</string>
+    <string name="place_failed">ไม่สามารถสั่งซื้อได้</string>
+    <string name="print_bill_succ">พิมพ์ใบเรียกเก็บเงินสำเร็จ</string>
+    <string name="print_bill_failed">ไม่สามารถพิมพ์ใบเรียกเก็บเงิน</string>
+    <string name="network_errors">ไม่สามารถพิมพ์ใบเรียกเก็บเงินได้ในขณะนี้: ข้อผิดพลาดของเครือข่าย</string>
+    <string name="order_closed">ปิดคำสั่งซื้อโปรดเลือกตารางและแทนที่คำสั่งซื้ออีกครั้ง</string>
+    <string name="order_not_edited">ไม่สามารถแก้ไขคำสั่งซื้อได้เมื่ออยู่ระหว่างดำเนินการ กรุณาติดต่อแคชเชียร์เพื่อลองอีกครั้ง</string>
+    <string name="order_split_settled">มีการชำระบัญชีการแยกใบสั่ง</string>
+    <string name="order_split">การแยกคำสั่ง</string>
+    <string name="settled"> ถูกตัดสิน</string>
+    <string name="item_count">จำนวนรายการ:</string>
+    <string name="discount_">ส่วนลด: -</string>
+    <string name="group_all">กลุ่ม: ทั้งหมด</string>
+    <string name="print_bill">พิมพ์บิล</string>
+
+    <!-- Setting -->
+    <string name="system_reset">รีเซ็ตระบบ</string>
+    <string name="clean_data">คุณแน่ใจว่าจะล้างข้อมูลทั้งหมดหรือไม่</string>
+    <string name="logout_title">บริกรออกจากระบบ</string>
+    <string name="logout_content">คุณแน่ใจว่าจะออกจากระบบ?</string>
+    <string name="history">ประวัติการสั่งซื้อ</string>
+    <string name="bump_mobile">ชนกับแอพมือถือสำหรับผู้บริโภค</string>
+    <string name="connect_pos">เชื่อมต่อกับเซิร์ฟเวอร์ POS</string>
+    <string name="data_sync">ซิงค์ข้อมูล</string>
+    <string name="kot_notification">ประกาศ KOT</string>
+    <string name="zone_notification">ประกาศโซน</string>
+    <string name="reset">รีเซ็ต</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="version_">รุ่น</string>
+    <string name="lock_screen">ล็อกหน้าจอ</string>
+
+    <!-- other -->
+    <string name="relogin_pos">POS ได้ปิดเซสชันปัจจุบัน \nโปรดทำการล็อกอินอีกครั้งเมื่อเซสชันถัดไปเริ่มต้นขึ้น</string>
+    <string name="pairing_failed">การจับคู่ล้มเหลว: ข้อผิดพลาดของเครือข่าย</string>
+    <string name="empty_invalid">ค่าว่างไม่ถูกต้อง</string>
+    <string name="number_people">กรุณาใส่จำนวนคน</string>
+    <string name="note">บันทึก</string>
+    <string name="transfer_">  ได้รับการถ่ายโอนไปยังตาราง:</string>
+    <string name="order_belong">เลือกคำสั่งซื้อที่ไม่เกี่ยวข้อง</string>
+    <string name="clear">ชัดเจน</string>
+    <string name="enter">เข้าสู่</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="check">ตรวจสอบ</string>
+
+    <string name="At_least">เลือกอย่างน้อย</string>
+    <string name="items"> ส่วนขยาย</string>
+    <string name="at_only">เลือกเท่านั้น</string>
+    <string name="name_not_empty">ชื่อต้องไม่ว่างเปล่า</string>
+    <string name="price_not_empty">ราคาต้องไม่ว่างเปล่า</string>
+
+
+    <string name="edit">แก้ไข</string>
+    <string name="ip_changed_relogin">IP ของคุณมีการเปลี่ยนแปลง \nโปรดลงชื่อเข้าใช้อีกครั้ง</string>
+
+    <string name="devices_network">เครือข่าย</string>
+    <string name="devices_bluetooth">บลูทู ธ</string>
+    <string name="print_kot_succ">พิมพ์ KOT สำเร็จ</string>
+    <string name="print_kot_failed">พิมพ์ KOT ล้มเหลว</string>
+    <string name="print_down">พิมพ์บริการลง</string>
+    <string name="reconnect_print">คุณแน่ใจหรือไม่ว่าเชื่อมต่อบริการพิมพ์อีกครั้ง</string>
+
+</resources>

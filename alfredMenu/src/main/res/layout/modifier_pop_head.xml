@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <EditText
+        android:id="@+id/remark_et"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:imeOptions="actionDone"
+        android:background="@drawable/modifier_remark_shape"
+        android:inputType="text"
+        android:drawableLeft="@drawable/remark"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="@string/description"
+        android:drawablePadding="10dp"/>
+
+</RelativeLayout>

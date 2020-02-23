@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">版：</string>
+    <string name="exit_program">请再次点击返回退出</string>
+    <string name="revenue_center">收入中心</string>
+    <string name="loading">载入中</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">从\nrevenue中心的POS扫描二维码以获得KDS平板电脑配对。\n或向左滑动\n通过IP手动连接POS</string>
+    <string name="ipaddr_tips">设备配对\n设置POS IP地址</string>
+    <string name="connect">连</string>
+    <string name="check_ip">检查IP地址是否正确</string>
+    <string name="pairing_fails">配对失败，没有许可证</string>
+    <string name="employee_id">设备已配对\n输入您的员工ID</string>
+    <string name="select_kitchen">KDS配对\n请选择厨房\ KDS所属的厨房</string>
+    <string name="paired_failed">KDS设备未与Alfred POS配对</string>
+    <string name="cashier_login_tips1">输入员工ID</string>
+    <string name="cashier_login_tips2">输入密码</string>
+    <string name="logining">Logining</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">发送失败！</string>
+    <string name="other_pos_data">其他MainPos发送数据</string>
+    <string name="order_discarded">订单已被收银员丢弃。</string>
+    <string name="reconnect_pos">主POS断开连接。\n重新连接？</string>
+    <string name="dine_in">在用餐</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">未完成</string>
+    <string name="be_doing">做的</string>
+    <string name="update">更新</string>
+
+    <string name="chargeback">退款</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">PosId</string>
+    <string name="item_complete">完成</string>
+    <string name="kitchen_name">厨房名称</string>
+    <string name="reconnect_pos_">发送失败，您可以重新连接主要位置</string>
+    <string name="kot_in_progress">进行中</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">KOT历史</string>
+    <string name="kot_revert">还原</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">的OrderId</string>
+    <string name="pos">POS</string>
+    <string name="data">数据</string>
+    <string name="dish">碟</string>
+    <string name="undoing">撤消</string>
+
+    <!-- Setting -->
+    <string name="reset">所有数据都将被删除，\n您确定要重置KDS吗？</string>
+    <string name="cancel">取消</string>
+    <string name="ok">好</string>
+    <string name="reset_kds">重置KDS</string>
+    <string name="switch_account">切换帐户</string>
+    <string name="kot_history_">Kot历史</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">KOT提交失败</string>
+    <string name="relogin_pos">POS已关闭当前会话。\n请在下次会话开始时重新登录</string>
+
+    <!-- other -->
+    <string name="network_error">网络致命错误</string>
+    <string name="finished_items_number">请输入完成的菜肴数量</string>
+    <string name="max_number">MAX号是</string>
+    <string name="no_finished">没有。完成</string>
+    <string name="sending">发出</string>
+    <string name="reconn_pos">你应该重新连接pos！</string>
+    <string name="complete_all_item">确认所有订单都已完成？</string>
+    <string name="completed">已完成</string>
+    <string name="choose">选择</string>
+    <string name="please_choose_pos">请选择一个POS</string>
+</resources>

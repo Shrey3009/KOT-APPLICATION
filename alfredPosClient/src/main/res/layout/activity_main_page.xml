@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        >
+	<RelativeLayout
+	    android:id="@+id/rl_root"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white" >
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_alignParentTop="true"
+			android:id="@+id/view_top_line"
+			/>
+	    <com.alfredposclient.view.TopMenuView
+	        android:id="@+id/topMenuView"
+	        android:layout_width="match_parent"
+	        android:layout_height="61dp" />
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/topMenuView">
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" 
+	        	 >
+	
+	            <com.alfredposclient.view.MainPageOperatePanel
+	                android:id="@+id/operatePanel"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	            </com.alfredposclient.view.MainPageOperatePanel>
+	
+	            <com.alfredposclient.view.MainPageOrderView
+	                android:id="@+id/orderView"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_marginBottom="-5dp"/>
+	
+	            <com.alfredposclient.view.MainPageMenuView
+	                android:id="@+id/mainPageMenuView"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent">
+	            </com.alfredposclient.view.MainPageMenuView>
+	        </LinearLayout>
+	    </RelativeLayout>
+		<com.alfredposclient.view.MainPageSearchView
+	            android:id="@+id/search"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:visibility="gone" />
+	    <ImageView 
+		    android:id="@+id/iv_shadow"
+		    android:layout_below="@id/topMenuView"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/shadow"
+		    android:scaleType="fitXY"
+		    />
+	    
+	    <ImageView
+	        android:id="@+id/iv_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="100dp"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/logo" />
+	    <WebView
+	        android:id="@+id/web_tables"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:visibility="gone"/>
+		<!--<fragment
+			android:id="@+id/fl_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:name="com.alfredposclient.popupwindow.CloseOrderWindow"/>-->
+		<fragment
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/f_tables"
+			android:name="com.alfredposclient.Fragment.TableLayoutFragment"
+			/>
+
+
+	    
+	</RelativeLayout>
+
+	</FrameLayout>
+	<com.alfredposclient.view.SettingView
+		    android:id="@+id/settingView"
+		    android:layout_width="200dp"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="end">
+	</com.alfredposclient.view.SettingView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+
+        lintOptions {
+            abortOnError false
+        }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+
+//greendao {
+//    schemaVersion 1
+//}
+//repositories {
+//    maven {
+//        url 'https://maven.google.com'
+//    }
+//}
+
+dependencies {
+    api rootProject.ext.libSupportV4
+    api 'com.google.code.gson:gson:2.2.4'
+    api files('libs/commons-codec-1.9.jar')
+    api files('libs/mina-core-2.0.7.jar')
+    api files('libs/pinyin4j-2.5.0.jar')
+    api files('libs/slf4j-api-1.7.6.jar')
+    api files('libs/slf4j-simple-1.7.6.jar')
+    api files('libs/umeng-analytics-v5.4.2.jar')
+    api files('libs/universal-image-loader-1.9.2.jar')
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    api 'com.tencent.bugly:crashreport:latest.release'
+    //    compile files('libs/zxing.jar')
+    api files('libs/core-3.2.1.jar')
+    api 'io.reactivex:rxjava:1.1.5'
+    api 'io.reactivex:rxandroid:1.2.0'
+    api 'com.moonearly.utils:app:1.0.22'
+    //noinspection GradleCompatible
+    api 'com.android.support:recyclerview-v7:25.1.1'
+    //    compile 'org.greenrobot:greendao:3.2.0'
+    //    compile 'org.greenrobot:greendao-generator:3.2.0'
+    //    runtime(
+    //            [group: 'org.nanohttpd', name: 'nanohttpd-webserver', version: 'CURRENT_VERSION']
+    //    )
+    //    compile 'org.nanohttpd:nanohttpd-samples:2.3.1'
+    api 'com.android.support:multidex:1.0.0'
+
+    implementation 'com.bugsee:bugsee-android:1.14.12'
+
+}

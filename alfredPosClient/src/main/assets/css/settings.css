@@ -1,0 +1,260 @@
+	body {
+	  background-color: #f1f2f7;
+	  color:#767676;
+	}    
+    #window {
+        background-color: white;
+        overflow: hidden;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		position:absolute;
+		left:0px;
+		right:0px;
+		top:0px;
+		bottom:0px;		
+    }
+    #orderListBar, #billListBar, #bohSettListBar {
+      height:60px;
+    }
+    #orderListContent, #billListContent, #bohSettListContent,#settlementListContent {
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		margin-left: 0px!important;
+        border-right: 1px solid #333;
+    }
+    .floatLeft{
+        float: left;
+    }
+    
+    .merge-right {
+           margin-left: 0px !important;
+           margin-right:800px;
+    }	
+         
+    .maxCol {
+        width: 860px;
+        margin: 0 auto;
+        -webkit-transition: all 0ms;
+        -webkit-transform-origin: 0;
+    }
+
+    .maxCol .showCol {
+        display: table-cell;
+    }
+
+    .minCol {
+        min-width:428px!important;
+        -webkit-transition: all 0ms;
+        -webkit-transform-origin: 0;
+    }
+
+    .minCol .showCol {
+        display: none;
+    }
+
+    .minCol .col-md-2 {
+        width: 33.3%;
+    }
+    #orderDetailsContent, #billDetailsContent, #bohSettDetailsContent,#settlementDetailsContent{
+		top: 0px;
+		width: 800px;
+		height: 100%;
+		position: absolute;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		right: -800px;
+    }
+	.show-order-detail, .show-bill-detail, .show-bohsettlement-detail,.show-settlement-detail {
+		right: 0px !important;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}     
+    /*left scroll css */
+    #header {
+		left: 0;
+		width: 100%;
+		height: 45px;
+		background: #aaa;
+		color: #fff;
+		top: 20px;
+		padding: 10px 10px;
+		font-size: 18px;
+		padding-top: 10px;
+    }
+
+    #tableswrapper {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        /*height: 620px;*/
+        position: relative;
+    }
+
+    #tablesscroller {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    #tablesscroller ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    #tablesscroller li {
+		line-height: 40px;
+		font-size: 18px;
+		width: 100%;
+		color: #333;
+		padding: 4px 14px;
+		border-bottom: 1px solid #fff;
+    }
+
+    .orderlistitem {
+        display: inline-block;
+    }
+
+    /*right scroll css*/
+
+    #detailsHeader {
+        left: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        background: #1FB5AD;
+        top: 20px;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #tablesdetailswrapper {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0px;
+        background-color: #fefefe;
+        /*height: 620px;*/
+        position: relative;
+    }
+
+    #tablesdetailsscroller {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    #tablesdetailsscroller ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+
+    }
+
+    #tablesdetailsscroller li {
+		font-size: 14px;
+		width: 100%;
+		color: #333;
+		padding: 10px 15px 10px 15px;
+    }
+
+    .orderlistdetaiksitem, .bohSetListitem, .settlementlistdetaiksitem {
+        display: inline-block;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .orderlistdetaiksitem .qty {
+		font-size: 14px;
+		background-color: #eaeaea;
+		color: #333;
+		padding:6px 6px;
+    }
+    #orderListBar ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    #orderListBar li{
+        float: left;
+        padding: 10px 5px;
+    }
+    #billListBar ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    #billListBar li{
+        float: left;
+        padding: 10px 5px;
+    }
+    #settlementListBar ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    #settlementListBar li{
+        float: left;
+        padding: 10px 5px;
+    }
+    .bohSetListitem .qty {
+        font-size: 18px;
+        background-color: #fff;
+        color: #333;
+    }
+    #bohSettListBar ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    #bohSettListBar li{
+        float: left;
+        padding: 10px 5px;
+    }
+    
+    #billTables {
+     background-color:#f1f2f7;
+    }
+    
+    #wintitle {
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		text-align:center;    
+    }

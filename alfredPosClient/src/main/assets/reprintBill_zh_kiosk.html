@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <title>print bill</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.62, user-scalable=1, minimum-scale=0.62, maximum-scale=0.62"> -->
+    <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./css/bootstrap/bootstrap.min.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/main.css' type='text/css'/>
+    <link rel='stylesheet' href='./css/settings.css' type='text/css'/>      
+    <!--jquery-->
+    <script type="text/javascript" src='./js/lib/jquery/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='./js/lib/iscroll/iscroll.js'></script>
+    <script type="text/javascript" src='./js/lib/underscore/underscore.min.js'></script>
+    <script type="text/javascript" src='./js/lib/backbone/backbone.js'></script>
+    <script type="text/javascript" src='./js/lib/fastclick.js'></script>
+</head>
+<style>
+	@font-face{
+	   font-family:'Trajan Pro';
+	   src:url('file:///android_asset/fonts/TrajanProBold.otf');
+	}
+	.headbar {
+	  position:relative!important;
+	}
+</style>
+<body>
+<div id="window">
+    <div id="billListContent">
+        <div id="billListBar" class="headbar">
+            <div class="col-md-2">
+                <div id="backBtn" ></div>
+            </div>
+            <div class="col-md-10">
+                <div id="wintitle" class="title col-md-8">打印账单</div>
+                <div style="float: right;" id="billRight">
+                    <ul>
+                        <li >
+                            <button type="button" id="todaybillListBut" class="btn btn-default">
+                                <span>今天</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" id="allbillListBut" class="btn btn-default">
+                                <span>所有</span>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="text" style="width: 150px"  class="form-control searchbox" id="searchContent" placeholder="账单编号">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="billTables" class="maxCol">
+            <div id="header">
+                <div class="row">
+                    <div class="col-md-3">账单编号</div>
+                    <div class="col-md-4 showCol">合计</div>
+                    <div class="col-md-3 showCol">收银员</div>
+                </div>
+            </div>
+            <div id="tableswrapper">
+                <div id="tablesscroller">
+                    <ul id="reprintbillli">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="billDetailsContent">
+        <div class="headbar">
+            <div class="col-md-3" style="height: 100%; border-left: 1px solid #fff;">
+                <div id="closeBtn" style="padding-top: 16px; font-size: 24px">
+                    关闭
+                </div>
+            </div>
+            <div class="col-md-3 pull-right" style="height: 100%;">
+                <div id="printBillBtn" style="float:right;padding-top: 16px; font-size: 24px">
+                    <span class="glyphicon  glyphicon-print"></span>
+                </div>
+            </div>
+        </div>
+    <div id="billDetails">
+        <div id="detailsHeader">
+            <div class="col-md-12">
+              
+                <div class="col-md-3">项目名称</div>
+                <div class="col-md-2">价格</div>
+                <div class="col-md-1">数量</div>
+                <div class="col-md-2">小计</div>
+                <div class="col-md-2">合计</div>
+            </div>
+        </div>
+        <div id="tablesdetailswrapper">
+            <div id="tablesdetailsscroller">
+                <ul id="listdetails">
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/template" id="reprintbillListItem-template">
+    <div class="row " data="<%=tableName %>">
+        <div class="col-md-3"><%=orderId %></div>
+        <div class="col-md-4 showCol"><%=total %></div>
+        <div class="col-md-3 showCol">收银员</div>
+    </div>
+</script>
+<script type="text/template" id="reprintbilldetailsItem-template">
+        <div class="row">
+            <div class="col-md-3"><%=itemName %></div>
+            <div class="col-md-2"><%=price%></div>
+            <div class="col-md-1"><%=qty %></div>
+            <div class="col-md-2"><%=price * qty %></div>
+            <div class="col-md-2"><%=amount %></div>
+        </div>
+</script>
+
+<!--
+<script type="text/javascript" src='./js/app/dummy_data.js'></script>
+<script type="text/javascript" src='./js/app/android_dummy.js'></script>
+-->
+
+<script type="text/javascript" src='./js/app/models/reprintbilllist_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/reprintbilllist_collection.js'></script>
+<script type="text/javascript" src='./js/app/models/reprintbilldetails_model.js'></script>
+<script type="text/javascript" src='./js/app/collections/reprintbilldetails_collection.js'></script>
+<script type="text/javascript" src='./js/app/views/reprintbilldetails_view.js'></script>
+<script type="text/javascript" src='./js/app/views/reprintbilllist_view.js'></script>
+</body>
+</html>

@@ -1,0 +1,891 @@
+var orderlist = {"orders":[{"createTime":"1400638383745",
+	                            "id":1,
+	                            "orderNo":0,
+	                            "orderOriginId":1,
+	                            "orderStatus":10,
+	                            "persons":9,
+	                            "restId":19,
+	                            "revenueId":1,
+	                            "sessionStatus":0,
+	                            "tableId":41,
+	                            "updateTime":"1400638383745",
+	                            "userId":1
+                            },
+                            {"createTime":"1400638397777",
+                             "id":2,
+                             "orderNo":0,
+                             "orderOriginId":1,
+                             "orderStatus":10,
+                             "persons":9,
+                             "restId":19,
+                             "revenueId":1,
+                             "sessionStatus":0,
+                             "tableId":40,
+                             "updateTime":"1400638397777",
+                             "userId":1}
+                             ]
+                   };
+
+
+var orderDetails = {
+    "ItemDetail":[
+        {
+            "createTime":"1399539929000",
+            "id":35,
+            "imgUrl":"http://localhost:8080/upload/img/item/c027ecc0-176f-45d1-8a54-ebb23b1692aa.jpg",
+            "isActive":1,
+            "isPack":0,
+            "isTakeout":0,
+            "itemCategoryId":1,
+            "itemDesc":"lalalalalalala",
+            "itemMainCategoryId":1,
+            "itemName":"大白菜",
+            "itemTemplateId":12,
+            "itemType":"1",
+            "price":"15",
+            "printerId":27,
+            "restaurantId":19,
+            "revenueId":26,
+            "taxCategoryId":8,
+            "updateTime":"1400831319000",
+            "userId":59
+        },
+        {
+            "createTime":"1399546305000",
+            "id":39,
+            "imgUrl":"http://localhost:8080/upload/img/item/46f7c152-d1ab-4f71-9eb5-0c410a034226.jpg",
+            "isActive":1,
+            "isPack":0,
+            "isTakeout":0,
+            "itemCategoryId":4,
+            "itemDesc":"gghjkyukyk",
+            "itemMainCategoryId":2,
+            "itemName":"红烧牛肉",
+            "itemTemplateId":1,
+            "itemType":"1",
+            "price":"25.8",
+            "printerId":26,
+            "restaurantId":19,
+            "revenueId":26,
+            "taxCategoryId":87,
+            "updateTime":"1399546305000",
+            "userId":59
+        },
+        {
+            "createTime":"1399546306000",
+            "id":40,
+            "imgUrl":"http://localhost:8080/upload/img/item/80d804a8-9390-4b44-9f56-7411e3ccc56a.jpg",
+            "isActive":1,
+            "isPack":0,
+            "isTakeout":0,
+            "itemCategoryId":5,
+            "itemDesc":"水电费水电费根深蒂固发过",
+            "itemMainCategoryId":2,
+            "itemName":"孜然羊肉",
+            "itemTemplateId":13,
+            "itemType":"1",
+            "price":"123",
+            "printerId":26,
+            "restaurantId":19,
+            "revenueId":26,
+            "taxCategoryId":1,
+            "updateTime":"1399546306000",
+            "userId":59
+        },
+        {
+            "createTime":"1399546306000",
+            "id":41,
+            "imgUrl":"http://localhost:8080/upload/img/item/46f7c152-d1ab-4f71-9eb5-0c410a034226.jpg",
+            "isActive":1,
+            "isPack":0,
+            "isTakeout":0,
+            "itemCategoryId":33,
+            "itemDesc":"甜的咸的",
+            "itemMainCategoryId":2,
+            "itemName":"糖醋里脊",
+            "itemTemplateId":15,
+            "itemType":"1",
+            "price":"25.68",
+            "printerId":26,
+            "restaurantId":19,
+            "revenueId":26,
+            "updateTime":"1399546282000",
+            "userId":59
+        }
+    ],
+    "OrderDetails":[
+        {
+            "createTime":"1400823321798",
+            "discountPrice":"0",
+            "id":1,
+            "itemId":35,
+            "itemNum":1,
+            "itemPrice":"15",
+            "modifierPrice":"0",
+            "orderDetailStatus":10,
+            "orderId":1,
+            "orderOriginId":1,
+            "printStatus":0,
+            "reason":"",
+            "taxPrice":"0",
+            "updateTime":"1400823321798",
+            "userId":1
+        },
+        {
+            "createTime":"1400823327608",
+            "discountPrice":"0",
+            "id":2,
+            "itemId":39,
+            "itemNum":1,
+            "itemPrice":"25.8",
+            "modifierPrice":"0",
+            "orderDetailStatus":10,
+            "orderId":1,
+            "orderOriginId":1,
+            "printStatus":0,
+            "reason":"",
+            "taxPrice":"10.03",
+            "updateTime":"1400823327608",
+            "userId":1
+        },
+        {
+            "createTime":"1400823330940",
+            "discountPrice":"0",
+            "id":3,
+            "itemId":40,
+            "itemNum":1,
+            "itemPrice":"123",
+            "modifierPrice":"0",
+            "orderDetailStatus":10,
+            "orderId":1,
+            "orderOriginId":1,
+            "printStatus":0,
+            "reason":"",
+            "taxPrice":"0",
+            "updateTime":"1400823330940",
+            "userId":1
+        },
+        {
+            "createTime":"1400823334414",
+            "discountPrice":"0",
+            "id":4,
+            "itemId":41,
+            "itemNum":1,
+            "itemPrice":"25.68",
+            "modifierPrice":"0",
+            "orderDetailStatus":10,
+            "orderId":1,
+            "orderOriginId":1,
+            "printStatus":0,
+            "reason":"",
+            "taxPrice":"0",
+            "updateTime":"1400823334414",
+            "userId":1
+        }
+    ]
+};
+
+
+	//devices	              
+	var allprinters = [{"IP":"192.168.0.11","name":"printer","isCahierPrinter":0,"mac":"","device_id":68}];
+	
+	var allprintersAttached = [{"name":"EPSON T81",
+	                    		"mac":"mac",
+	                    		"ip": "192.168.0.11"}
+		               			];
+	               	
+	var waiterTablets = [{"name":"Android 1",
+	                    "ip":"192.168.1.2",
+	                    "connected": true,
+	                    "username":"Bob"},
+	                    {"name":"Android T82",
+	                    "ip":"192.168.1.4",
+	                    "username":null,
+	                    "connected": false}
+	                  ];
+	var kdsTablets = [{"name": "Bar",
+	                   "mac": "34:1a:43:45:09",
+	                   "IP": "192.55.76.0"},
+	                   {"name": "Kitchen1",
+	                    "mac": "34:1a:43:45:09",
+	                    "IP": "192.55.0.10"}];
+
+	var consumerTablets = [{"name":"Android 10",
+	                        "ip":"192.168.3.2",
+	                        "connected": false},
+	                       {"name":"Android T1",
+	                        "ip":"192.168.3.4",
+	                        "connected": false}
+	                      ];
+
+var params = {
+    "users":[
+        {
+            "companyId":14,
+            "createTime":"1399605761000",
+            "empId":111,
+            "firstName":"111111",
+            "id":72,
+            "lastName":"111111",
+            "password":"111111",
+            "status":1,
+            "type":13,
+            "updateTime":"1399607147000"
+        },
+        {
+            "companyId":14,
+            "createTime":"1399605880000",
+            "empId":222,
+            "firstName":"111111",
+            "id":73,
+            "lastName":"111111",
+            "password":"111111",
+            "status":1,
+            "type":10,
+            "updateTime":"1399607144000"
+        },
+        {
+            "companyId":14,
+            "createTime":"1399976079000",
+            "empId":3333,
+            "firstName":"",
+            "id":80,
+            "lastName":"",
+            "password":"111111",
+            "status":1,
+            "type":10,
+            "updateTime":"1399976079000"
+        }
+    ],
+    "kds":[
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":26,
+            "isCashdrawer":0,
+            "printerName":"Bar",
+            "restaurantId":19,
+            "updateTime":"1399262291000"            
+        },
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":27,
+            "isCashdrawer":0,
+            "printerName":"print2",
+            "restaurantId":19,
+            "updateTime":"1399262291000"
+        },
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":28,
+            "isCashdrawer":0,
+            "printerName":"print3",
+            "restaurantId":19,
+            "updateTime":"1399262291000"
+        }
+    ],    
+    "printers":[
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":26,
+            "isCashdrawer":0,
+            "printerName":"printer",
+            "restaurantId":19,
+            "updateTime":"1399262291000"
+        },
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":27,
+            "isCashdrawer":0,
+            "printerName":"print2",
+            "restaurantId":19,
+            "updateTime":"1399262291000"
+        },
+        {
+            "companyId":14,
+            "createTime":"1398509327000",
+            "id":28,
+            "isCashdrawer":0,
+            "printerName":"print3",
+            "restaurantId":19,
+            "updateTime":"1399262291000"
+        }
+    ],
+    "mainPosInfo":{
+      'IP':"192.168.0.1",
+      'revenue':"10",
+      'name': "Hall",
+      'mac': "90erdasfasdf"
+    }
+}
+
+
+
+var settlementListJson=[{"totalAmount":"286.30","placeName":"kk","paymentCreateTime":"2017-07-03 18:10:43","paymentId":0,"orderId":1,"tableId":37,"billNo":1,'userName':''}];
+
+
+
+var bohSettlementListJSON = [
+        {
+            "amount":"425.98",
+            "authorizedUserId":0,
+            "billNo":1,
+            "daysDue":1404291316261,
+            "id":1,
+            "nameOfPerson":"boss",
+            "orderId":2,
+            "paidDate":0,
+            "paymentId":2,
+            "paymentSettId":4,
+            "paymentType":0,
+            "phone":"13800000000",
+            "remarks":"Don't have the money",
+            "restaurantId":19,
+            "revenueId":26,
+            "status":0
+        },
+        {
+            "amount":"425.98",
+            "authorizedUserId":0,
+            "billNo":1,
+            "daysDue":1404291316261,
+            "id":1,
+            "nameOfPerson":"boss",
+            "orderId":2,
+            "paidDate":0,
+            "paymentId":2,
+            "paymentSettId":4,
+            "paymentType":0,
+            "phone":"13800000000",
+            "remarks":"Don't have the money",
+            "restaurantId":19,
+            "revenueId":26,
+            "status":0
+        },
+        {
+            "amount":"425.98",
+            "authorizedUserId":0,
+            "billNo":1,
+            "daysDue":1404291316261,
+            "id":1,
+            "nameOfPerson":"boss",
+            "orderId":2,
+            "paidDate":0,
+            "paymentId":2,
+            "paymentSettId":4,
+            "paymentType":0,
+            "phone":"13800000000",
+            "remarks":"Don't have the money",
+            "restaurantId":19,
+            "revenueId":26,
+            "status":0
+        }
+];
+
+
+var bohSettlementDetailsJSON = [
+    {
+        billNo: '001',
+        billId: '1',
+        tableId: 1,
+        restaurantName: '1',
+        discount: '1',
+        total: '1'
+    },
+    {
+    
+    
+    }
+];
+
+var bohremoteJSON = {"resultCode":1,
+					 "bohUnpaidList":[{
+            "id":8,
+            "restaurantId":50,
+            "revenueId":60,
+            "paymentId":1962,
+            "paymentSettId":2436,
+            "orderId":3999,
+            "billNo":1,
+            "nameOfPerson":"Bob",
+            "phone":"15962854122",
+            "remarks":"Don't have the money",
+            "authorizedUserId":144,
+            "amount":55,
+            "status":0,
+            "paymentType":0,
+            "paidDate":null,
+            "daysDue":1414500102000,
+            "sysCreateTime":1414500121000,
+            "sysUpdateTime":1414500121000,
+            "version":0
+        },
+        {
+            "id":9,
+            "restaurantId":50,
+            "revenueId":60,
+            "paymentId":1963,
+            "paymentSettId":2437,
+            "orderId":4000,
+            "billNo":4,
+            "nameOfPerson":"Bob",
+            "phone":"15962854122",
+            "remarks":"Don't have the money",
+            "authorizedUserId":144,
+            "amount":57.2,
+            "status":0,
+            "paymentType":0,
+            "paidDate":null,
+            "daysDue":1414498369000,
+            "sysCreateTime":1414500121000,
+            "sysUpdateTime":1414500121000,
+            "version":0
+        },
+        {
+            "id":10,
+            "restaurantId":50,
+            "revenueId":60,
+            "paymentId":1964,
+            "paymentSettId":2438,
+            "orderId":4001,
+            "billNo":2,
+            "nameOfPerson":"Bob",
+            "phone":"15962854122",
+            "remarks":"Don't have the money",
+            "authorizedUserId":144,
+            "amount":92.4,
+            "status":0,
+            "paymentType":0,
+            "paidDate":null,
+            "daysDue":1414498323000,
+            "sysCreateTime":1414500121000,
+            "sysUpdateTime":1414500121000,
+            "version":0
+        }]};
+
+window.printBillListJson=[
+{
+ "total":"425.98",
+ "placeName":"kk",
+ "orderNo":0,
+ "revenueId":26,
+ "tableId":41,
+ "orderId":1
+},{
+	"total":"286.38",
+	"placeName":"kk",
+	"orderNo":1,
+	"revenueId":26,
+	"tableId":39,
+	"orderId":2
+},{
+	"total":"296.30",
+	"placeName":"kkk",
+	"orderNo":2,
+	"revenueId":26,
+	"tableId":38,
+	"orderId":3}
+];
+
+window.printBillDetailsJson  =  [{"amount":"45.0",
+						 "itemName":"¥Û∞◊≤Às",
+						 "price":"45.00",
+						 "qty":"1"
+						},{"amount":"45.0",
+							"itemName":"¥Û∞◊≤Àkkk",
+							"price":"45.00",
+							"qty":"1"
+						},
+						{"amount":"25.8",
+						 "itemName":"∫Ï…’≈£»‚",
+						 "price":"25.80",
+						 "qty":"1"},
+						{"amount":"153.0",
+						 "itemName":"◊Œ»ª—Ú»‚lll",
+						 "price":"153.00",
+						 "qty":"1"},
+						{"amount":"40.8",
+						 "itemName":"Ã«¥◊¿Ôºπ",
+						  "price":"40.80",
+						  "qty":"1"},
+						{"amount":"10.0",
+						 "itemName":"lslls",
+						 "price":"10.00",
+						 "qty":"1"},
+						 {"amount":"88.88","itemName":"”ÕºÂª∆”„","price":"88.88","qty":"2"}
+						 ];
+
+var getJson={
+    "reportDaySales": {
+        "amex": "0.00",
+        "amexQty": 0,
+        "businessDate": 0,
+        "cash": "100",
+        "cashQty": 1,
+        "diner": "0.00",
+        "dinerQty": 0,
+        "discount": "0.00",
+        "discountAmt": "0.00",
+        "discountPer": "0.00",
+        "discountPerQty": 0,
+        "discountQty": 0,
+        "firstReceipt": 1,
+        "focBill": "0.00",
+        "focBillQty": 0,
+        "holdld": "0.00",
+        "holdldQty": 0,
+        "id": 5,
+        "itemSales": "153.32",
+        "itemSalesQty": 16,
+        "jbl": "0.00",
+        "jblQty": 0,
+        "lastReceipt": 1,
+        "mc": "0.00",
+        "mcQty": 0,
+        "nets": "0.00",
+        "netsQty": 0,
+        "nettSales": "170.04",
+        "openCount": 0,
+        "restaurantId": 0,
+        "restaurantName": "",
+        "revenueId": 0,
+        "revenueName": "",
+        "billVoid": "0.00",
+        "billVoidQty": 0,
+        "totalBills": 1,
+        "totalCard": "70.04",
+        "totalCardQty": 1,
+        "totalCash": "100",
+        "totalCashQty": 1,
+        "totalSales": "153.32",
+        "totalTax": "0.00",
+        "itemVoid": "0",
+        "itemVoidQty": 0,
+        "unionPay": "0.00",
+        "unionPayQty": 0,
+        "visa": "70.04",
+        "visaQty": 1
+},"reportDayTaxs": [
+        {
+            "businessDate": 0,
+            "daySalesId": 5,
+            "id": 13,
+            "taxAmount": "5.16",
+            "taxId": 9,
+            "taxName": "sss",
+            "taxPercentage": "0.12",
+            "taxQty": 1
+        },
+        {
+            "businessDate": 0,
+            "daySalesId": 5,
+            "id": 14,
+            "taxAmount": "5.78",
+            "taxId": 10,
+            "taxName": "66",
+            "taxPercentage": "0.12",
+            "taxQty": 1
+        },
+        {
+            "businessDate": 0,
+            "daySalesId": 5,
+            "id": 15,
+            "taxAmount": "5.78",
+            "taxId": 11,
+            "taxName": "7",
+            "taxPercentage": "0.12",
+            "taxQty": 1
+        }
+    ],"reportPluDayItems": [
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 1,
+            "itemCategoryName": "",
+            "itemCount": 1,
+            "itemDetailId": 35,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 1,
+            "itemMainCategoryName": "青菜类",
+            "itemName": "大白菜",
+            "itemPrice": "15.00",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 5,
+            "itemCategoryName": "羊肉",
+            "itemCount": 2,
+            "itemDetailId": 36,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 2,
+            "itemMainCategoryName": "肉",
+            "itemName": "孜然羊肉",
+            "itemPrice": "123.00",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 5,
+            "itemCategoryName": "羊肉",
+            "itemCount": 1,
+            "itemDetailId": 36,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 2,
+            "itemMainCategoryName": "肉",
+            "itemName": "孜然羊肉",
+            "itemPrice": "123.00",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 33,
+            "itemCategoryName": "猪肉",
+            "itemCount": 1,
+            "itemDetailId": 37,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 2,
+            "itemMainCategoryName": "肉",
+            "itemName": "糖醋里脊",
+            "itemPrice": "25.80",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 1,
+            "itemCategoryName": "",
+            "itemCount": 1,
+            "itemDetailId": 38,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 1,
+            "itemMainCategoryName": "青菜类",
+            "itemName": "大白菜s",
+            "itemPrice": "15.00",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 27,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 4,
+            "itemCategoryName": "牛肉",
+            "itemCount": 5,
+            "itemDetailId": 39,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 2,
+            "itemMainCategoryName": "肉",
+            "itemName": "红烧牛肉",
+            "itemPrice": "25.80",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 4,
+            "itemCategoryName": "牛肉",
+            "itemCount": 5,
+            "itemDetailId": 39,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 2,
+            "itemMainCategoryName": "肉",
+            "itemName": "红烧牛肉",
+            "itemPrice": "25.80",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 7,
+            "itemCategoryName": "黄鱼",
+            "itemCount": 1,
+            "itemDetailId": 42,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 3,
+            "itemMainCategoryName": "鱼",
+            "itemName": "油煎黄鱼1",
+            "itemPrice": "88.88",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        },
+        {
+            "billVoidPrice": "0.00",
+            "billVoidQty": 0,
+            "businessDate": 0,
+            "id": 1,
+            "itemCategoryId": 7,
+            "itemCategoryName": "黄鱼",
+            "itemCount": 1,
+            "itemDetailId": 42,
+            "itemFocPrice": "0.00",
+            "itemFocQty": 0,
+            "itemHoldPrice": "0.00",
+            "itemHoldQty": 0,
+            "itemMainCategoryId": 3,
+            "itemMainCategoryName": "鱼",
+            "itemName": "油煎黄鱼1",
+            "itemPrice": "88.88",
+            "itemVoidPrice": "0.00",
+            "itemVoidQty": 0,
+            "reportNo": 0,
+            "restaurantId": 19,
+            "restaurantName": "",
+            "revenueId": 26,
+            "revenueName": ""
+        }
+    ] ,"reportHourlys": [
+        {
+            "amountPrice": "253.92",
+            "amountQty": 1,
+            "businessDate": 0,
+            "revenueId": 0,
+            "id": 10,
+            "restaurantId": 0,
+            "hour": 11
+        }
+    ]
+};
+
+
+var dashboard = {"waiterAndSales":[],"cards":"605.38",
+                "cash":"1000.00",
+                "categoryItemList":[{"name":"牛肉","itemId":72,"qty":13},
+                	                {"name":"羊肉","itemId":69,"qty":7},
+                	                {"name":"绿叶菜","itemId":68,"qty":2},
+                	                {"name":"猪肉","itemId":70,"qty":2},
+                	                {"name":"黄鱼","itemId":71,"qty":1}],
+              "totalDetailInfos":[{"totalTax":"17.50","subTotal":"1587.88","totalAmount":"1605.38",
+                                   "totalDiscount":"0.00","businessDateStr":1404835200000},
+                                   {"totalTax":"17.50","subTotal":"1587.88","totalAmount":"1605.38",
+                                   "totalDiscount":"0.00","businessDateStr":1404865100000}],
+              "itemList":[{"name":"红烧牛肉","itemId":67,"qty":8},
+                          {"name":"孜然羊肉lll","itemId":69,"qty":7},
+                          {"name":"lslls","itemId":72,"qty":5},
+                          {"name":"糖醋里脊","itemId":70,"qty":2},
+                          {"name":"大白菜s","itemId":38,"qty":1}],
+              "totalChecks":"1605.38","others":"0.00","lunch":3,"itemSum":25,"dinner":0,"totalOrders":3,"breakfast":0};
+
+var sales_detail={"result":{"1434384000000":{"x":{"0":"123.94"}},
+                            "1422806400000":{"z":null}
+                           },
+                   "bizDateNow":1434384000000
+                 };
+     
+     
+//    "time":1415030400000,
+//    "nett":1230
+//}
+
+var voidplu ={"totalQty":"100",
+              "total": "200.00",
+              "bizDate":"0",
+              "plu":[{
+		            itemName:'t1',
+		            itemQty:'2',
+		            price:'1',
+		            amount:'100'},
+		            
+		            {itemName:'t2',
+		            itemQty:'2',
+		            price:'2',
+		            amount:'100'},
+
+		            {itemName:'t3',
+		            itemQty:'3',
+		            price:'3',
+		            amount:'100'}
+     ]   
+};

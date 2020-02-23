@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">الإصدار:</string>
+    <string name="exit_program">الرجاء النقر فوق "السابق" مرة أخرى للخروج</string>
+    <string name="revenue_center">مركز الإيرادات</string>
+    <string name="loading">جار التحميل</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">قم بمسح رمز الاستجابة السريعة من POS الخاص بـ \nمركز الإيرادات للحصول على إقران KDS tablet. \nأو مرر إلى اليسار و \nقم يدويًا بتوصيل POS عبر IP</string>
+    <string name="ipaddr_tips">إقران الجهاز \nقم بإعداد عنوان IP لنقاط البيع</string>
+    <string name="connect">الاتصال</string>
+    <string name="check_ip">تحقق من عنوان IP غير صحيح</string>
+    <string name="pairing_fails">فشل الاقتران ، لا تصريح</string>
+    <string name="employee_id">إقران الجهاز \nأدخل معرف الموظف الخاص بك</string>
+    <string name="select_kitchen">KDS مقترن \nالرجاء تحديد المطبخ \nالذي ينتمي إليه KDS</string>
+    <string name="paired_failed">جهاز KDS غير مقترن بـ Alfred POS</string>
+    <string name="cashier_login_tips1">أدخل معرف الموظف</string>
+    <string name="cashier_login_tips2">أدخل كلمة المرور</string>
+    <string name="logining">Logining</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">فشل إرسال!</string>
+    <string name="other_pos_data">MainPos الأخرى إرسال البيانات</string>
+    <string name="order_discarded">تم تجاهل الطلب من قِبل أمين الصندوق.</string>
+    <string name="reconnect_pos">POS الرئيسي غير متصل. \nأعد توصيله؟</string>
+    <string name="dine_in">تناول الطعام في</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">ناقص</string>
+    <string name="be_doing">أن تفعل</string>
+    <string name="update">تحديث</string>
+
+    <string name="chargeback">تحميل التكاليف</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">بوسيد</string>
+    <string name="item_complete">اكتمال</string>
+    <string name="kitchen_name">اسم المطبخ</string>
+    <string name="reconnect_pos_">إرسال فشل ، يمكنك إعادة الاتصال بالموقع الرئيسي</string>
+    <string name="kot_in_progress">في تقدم</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">تاريخ KOT</string>
+    <string name="kot_revert">العودة</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="pos">نقاط البيع</string>
+    <string name="data">البيانات</string>
+    <string name="dish">طبق</string>
+    <string name="undoing">خراب</string>
+
+    <!-- Setting -->
+    <string name="reset">ستتم إزالة جميع البيانات ، \nهل أنت متأكد من إعادة تعيين KDS؟</string>
+    <string name="cancel">إلغاء</string>
+    <string name="ok">حسنا</string>
+    <string name="reset_kds">إعادة ضبط KDS</string>
+    <string name="switch_account">تبديل الحساب</string>
+    <string name="kot_history_">كوت التاريخ</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">فشل تقديم KOT</string>
+    <string name="relogin_pos">قام POS بإغلاق الجلسة الحالية. \nيرجى إعادة تسجيل الدخول عند بدء الجلسة التالية</string>
+
+    <!-- other -->
+    <string name="network_error">خطأ فادح في الشبكة</string>
+    <string name="finished_items_number">الرجاء إدخال عدد الأطباق الجاهزة</string>
+    <string name="max_number">العدد الأقصى هو</string>
+    <string name="no_finished">لا. من الانتهاء</string>
+    <string name="sending">إرسال</string>
+    <string name="reconn_pos">يجب عليك إعادة الاتصال pos!</string>
+    <string name="complete_all_item">تأكيد اكتمال جميع الطلبات؟</string>
+    <string name="completed">منجز</string>
+    <string name="choose">حدد</string>
+    <string name="please_choose_pos">يرجى اختيار POS</string>
+</resources>

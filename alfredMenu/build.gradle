@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugsee'
+import com.android.build.gradle.api.BaseVariant
+
+bugsee {
+    appToken { BaseVariant variant ->
+        switch (variant.buildType.name) {
+            case 'release': '5cc128ed-939d-428a-9060-2813a324b2f2'
+                break
+            case 'debug': '2cecb9d3-e94e-44c9-a9ee-7cd1f11a51f2'
+                break
+        }
+    }
+}
+
+android {
+//    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.alfredmenu"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                // 修改apk文件名
+//                def fileName = "waiter.apk"
+//                output.outputFile = new File(output.outputFile.parent, fileName)
+//            }
+//        }
+//    }
+
+//    as3.0以上
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            // each 改为 all
+            def fileName = "menu.apk"
+            def outFile = output.outputFile
+            if (outFile != null && outFile.name.endsWith('.apk')) {
+                outputFileName = fileName
+                // output.outputFile 改为 outputFileName
+            }
+        }
+    }
+
+    //useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation project(':alfredBase')
+    implementation 'com.sunmi:DS_Lib:1.0.3'
+    implementation 'com.android.support:cardview-v7:21.0.0'
+//    implementation rootProject.ext.libSupportV4
+//    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+}

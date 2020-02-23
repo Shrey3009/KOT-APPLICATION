@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">Phiên bản:</string>
+    <string name="exit_program">Vui lòng nhấp lại lần nữa để thoát</string>
+    <string name="revenue_center">Trung tâm doanh thu</string>
+    <string name="loading">Tải</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">Quét mã QR từ POS của trung tâm \nrevenue để ghép nối máy tính bảng KDS. \nHo Trượt sang trái và \nKết nối POS bằng IP theo cách thủ công</string>
+    <string name="ipaddr_tips">Ghép nối thiết bị \nThiết lập địa chỉ IP POS</string>
+    <string name="connect">Kết nối</string>
+    <string name="check_ip">Kiểm tra địa chỉ IP không đúng</string>
+    <string name="pairing_fails">Ghép nối thất bại, không có giấy phép</string>
+    <string name="employee_id">Thiết bị được ghép nối \nNhập ID nhân viên của bạn</string>
+    <string name="select_kitchen">KDS Ghép nối \nVui lòng chọn bếp \nthat KDS thuộc về</string>
+    <string name="paired_failed">Thiết bị KDS không được ghép nối với Alfred POS</string>
+    <string name="cashier_login_tips1">Nhập ID nhân viên</string>
+    <string name="cashier_login_tips2">Nhập mật khẩu</string>
+    <string name="logining">Đăng nhập</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">Gửi thất bại!</string>
+    <string name="other_pos_data">MainPos khác gửi dữ liệu</string>
+    <string name="order_discarded">Đơn đặt hàng đã bị thu ngân.</string>
+    <string name="reconnect_pos">POS chính bị ngắt kết nối. \nKết nối lại?</string>
+    <string name="dine_in">Ăn trưa ở</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">Chưa xong</string>
+    <string name="be_doing">Đang làm</string>
+    <string name="update">Cập nhật</string>
+
+    <string name="chargeback">Bồi hoàn</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">Posid</string>
+    <string name="item_complete">hoàn thành</string>
+    <string name="kitchen_name">Tên bếp</string>
+    <string name="reconnect_pos_">Gửi thất bại, bạn có thể kết nối lại Pos chính</string>
+    <string name="kot_in_progress">trong tiến trình</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">LỊCH SỬ KOT</string>
+    <string name="kot_revert">hoàn nguyên</string>
+    <string name="kot_id">Đầu bếp</string>
+    <string name="order_id">Đặt hàng</string>
+    <string name="pos">POS</string>
+    <string name="data">Dữ liệu</string>
+    <string name="dish">Món ăn</string>
+    <string name="undoing">Hoàn tác</string>
+
+    <!-- Setting -->
+    <string name="reset">Tất cả dữ liệu sẽ bị xóa, bạn có chắc chắn đặt lại KDS không?</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="ok">được</string>
+    <string name="reset_kds">Đặt lại KDS</string>
+    <string name="switch_account">Chuyển tài khoản</string>
+    <string name="kot_history_">Lịch sử của Kot</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">Gửi KOT không thành công</string>
+    <string name="relogin_pos">POS đã đóng phiên hiện tại. \nVui lòng đăng nhập lại khi phiên tiếp theo bắt đầu</string>
+
+    <!-- other -->
+    <string name="network_error">Lỗi mạng nghiêm trọng</string>
+    <string name="finished_items_number">Vui lòng nhập số lượng món ăn đã hoàn thành</string>
+    <string name="max_number">Số MAX là</string>
+    <string name="no_finished">KHÔNG. HOÀN TẤT</string>
+    <string name="sending">Gửi</string>
+    <string name="reconn_pos">Bạn nên kết nối lại pos!</string>
+    <string name="complete_all_item">Xác nhận tất cả các đơn hàng đã hoàn thành?</string>
+    <string name="completed">Đã hoàn thành</string>
+    <string name="choose">chọn</string>
+    <string name="please_choose_pos">Vui lòng chọn POS</string>
+</resources>

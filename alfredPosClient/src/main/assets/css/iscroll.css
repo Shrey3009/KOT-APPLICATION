@@ -1,0 +1,409 @@
+#wrapper {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fefefe;
+    overflow: hidden;
+}
+
+#scroller {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#scroller li {
+    padding: 0 10px;
+    line-height: 40px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+#open {
+    position: absolute;
+    top: 0px;
+    float: left;
+    background: #333;
+    height: 80px;
+    width: 80px;
+    font-size: 42px;
+    padding: 16px;
+    color: #fff;
+}
+
+#modifieropen {
+    position: absolute;
+    top: 0px;
+    float: left;
+    background: #333;
+    height: 80px;
+    width: 120px;
+    font-size: 42px;
+    padding: 16px;
+    color: #fff;
+}
+
+#done {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    height: 80px;
+    width: 80px;
+    font-size: 42px;
+    padding: 16px;
+    color: #fff;
+}
+
+#listInfo {
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    left: -410px;
+    padding-left: 20px;
+}
+
+#modifierlistInfo {
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    left: -410px;
+    padding-left: 20px;
+}
+
+#listInfo div {
+    float: left;
+}
+
+#modifierlistInfo div {
+    float: left;
+}
+
+#listInfo .subcatitem {
+    height: 80px;
+    width: 100px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 80px;
+}
+
+#modifierlistInfo .subcatitem {
+    height: 80px;
+    width: 100px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 80px;
+}
+
+#tableswrapper {
+    /*
+    position: absolute;
+    top: 100px;
+    */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: #fefefe;
+    height: 580px;
+}
+
+#tablesscroller {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#tablesscroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#tablesscroller li {
+    line-height: 40px;
+    font-size: 18px;
+    width: 100%;
+    color: #333;
+    padding: 10px 8px;
+}
+
+#header {
+    /*
+        position: absolute;
+        top: 60px;
+    */
+    left: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #fefefe;
+    padding: 0;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#salesAnalysisWrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: #fefefe;
+
+}
+
+#salesAnalysisScroller {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#salesAnalysisScroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#salesAnalysisScroller li {
+    line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+    padding: 10px 8px;
+}
+
+.reportitem {
+    height: 30px;
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+#detailAnalysisWrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+#detailAnalysisScroller {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#detailAnalysisScroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#detailAnalysisScroller li {
+    line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+    padding: 10px 8px;
+}
+
+#detailAnalysisScroller .reportitem {
+    height: 30px;
+    display: inline-block;
+    background: transparent!important;
+}
+/*
+
+
+
+*/
+
+
+#summaryAnalysisWrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+#summaryAnalysisScroller {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#summaryAnalysisScroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#summaryAnalysisScroller li {
+    line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+    padding: 10px 8px;
+}
+
+/*
+
+*/
+
+
+/*
+
+*/
+#hourlySalesWrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+#hourlySalesScroller {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#hourlySalesScroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#hourlySalesScroller li {
+    line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+    padding: 10px 8px;
+}
+#hourlySalesScroller .reportitem {
+    height: 30px;
+    display: inline-block;
+    background: transparent!important;
+}

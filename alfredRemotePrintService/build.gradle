@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.alfred.remote.printservice"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+        }
+    }
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                // 修改apk文件名
+//                def fileName = "print.apk"
+//                output.outputFile = new File(output.outputFile.parent, fileName)
+//            }
+//        }
+//    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    // as3.0以上
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def flavor = variant.name
+            def versionName = variant.versionName
+            def date = new Date()
+            def formattedDate = date.format('yyyy-MM-dd')
+            if(variant.buildType.name == "release")
+            {
+                outputFileName = "C360EngageRemotePrintService.apk"
+                flavor = versionName
+            }
+            else if(variant.buildType.name == "debug")
+            {
+                outputFileName = "RemotePrintService_${flavor}_${versionName}_${formattedDate}.apk"
+                flavor = flavor + "_" + formattedDate
+            }
+            variant.outputs.each { output ->
+                output.versionNameOverride = flavor
+            }
+        }
+    }
+
+}
+dependencies {
+    //    compile project(':alfredTaskQueue')
+    implementation 'com.birbit:android-priority-jobqueue:2.0.1'
+    //    compile 'com.path:android-priority-jobqueue:1.1.2'
+    implementation 'io.reactivex:rxjava:1.1.5'
+    implementation project(':alfredBase')
+//    implementation rootProject.ext.libSupportV4
+//    implementation files('libs/ePOS-Print.jar')
+    implementation files('libs/wfsdk.jar')
+//    implementation 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    implementation files('libs/ePOS2.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}

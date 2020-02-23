@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:background="@drawable/shape"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:id="@+id/ll_printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_printer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/select_printer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_b" />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioGroup 
+                    android:id="@+id/rg_printerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <RadioButton 
+                    android:id="@+id/rb_TM_T81"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/printer_thermal_type"
+                    android:textColor="@color/black"
+                    android:checked="true"/>
+                
+                <RadioButton 
+                    android:id="@+id/rb_TM_U220"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/printer_dotmatrix_type"
+                    android:textColor="@color/black"/>
+                </RadioGroup>
+            </LinearLayout>
+
+			<TextView
+			    android:id="@+id/tv_print_ip" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:text="@string/printer_ipaddr"
+			    android:textColor="@color/black"
+			    android:textSize="@dimen/text_size_m"/>            
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_ip1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+
+                <EditText
+                    android:id="@+id/et_ip4"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_b" />
+            </LinearLayout>
+
+            <com.alfredbase.view.Numerickeyboard
+                android:id="@+id/ipkeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" >
+            </com.alfredbase.view.Numerickeyboard>
+            
+            <LinearLayout 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginTop="10dp"
+	    	    android:gravity="center"
+	    	    android:orientation="horizontal">
+            
+    	    <TextView
+		        android:id="@+id/tv_cancel"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:text="@string/cancel"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/text_size_b" />
+    	    
+    	    <TextView
+		        android:id="@+id/tv_enter"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:text="@string/save"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/text_size_b" />
+    	</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

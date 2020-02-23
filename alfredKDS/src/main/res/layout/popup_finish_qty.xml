@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_itemnum"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_itemnum_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/no_finished"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_itemnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_itemnum_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:maxLength="3"
+            android:minEms="4"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_itemnum_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_itemnum_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <com.alfredkds.view.MoneyKeyboard
+                android:id="@+id/paxKeyboard" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></com.alfredkds.view.MoneyKeyboard>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

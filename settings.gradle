@@ -1,0 +1,12 @@
+include ':alfredBase', ':galleryfinal', ':alfredSelfHelp', ':alfredCallNum'
+include ':alfredTaskQueue'
+include ':alfredPosClient'
+include ':alfredKDS'
+include ':alfredRemotePrintService'
+include ':alfredWaiter'
+include ':alfredMenu'
+
+println "In settings, gradle id is " + gradle.hashCode()
+println "Home Dir:" + gradle.gradleHomeDir
+println "User Home Dir:" + gradle.gradleUserHomeDir
+println "Parent: " + gradle.parent

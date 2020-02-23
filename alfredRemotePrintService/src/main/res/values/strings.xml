@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">C360Engage Remote Print Service</string>
+
+    <!-- BillPrint -->
+    <string name="bill_no_">Bill No.</string>
+    <string name="emp">Emp</string>
+    <string name="groupnum">Group Num</string>
+    <string name="pos">POS</string>
+    <string name="date">Date</string>
+    <string name="total_">Total : </string>
+    <string name="rounding_print">Rounding : </string>
+    <string name="promotion_print">Promotion : </string>
+    <string name="mastercard">MasterCard</string>
+    <string name="unionpay">UnionPay</string>
+    <string name="visa">VISA</string>
+    <string name="amex_">Amex</string>
+    <string name="jcb">JCB</string>
+    <string name="dinner_intern">Dinners</string>
+    <string name="hold_bill">Hold Bill</string>
+    <string name="com_credits">Company Credits</string>
+    <string name="house_charge">House Charge</string>
+    <string name="ent">ENT</string>
+    <string name="nets">NETS</string>
+    <string name="alipay">ALIPAY</string>
+    <string name="weixin">EZ-Link</string>
+    <string name="paypal">Diner App</string>
+    <string name="stored_card_use">Stored-Card Use</string>
+    <string name="deliveroo">Deliveroo</string>
+    <string name="ubereats">Grabeats</string>
+    <string name="foodpanda">Foodpanda</string>
+    <string name="stored_card_charge">Stored-Card Charge</string>
+    <string name="card_no">CardNo</string>
+    <string name="check_closed"> Check Closed </string>
+    <string name="thank_you_and_see_you">Thank you and see you again!</string>
+    <string name="powered_by_alfred">#C360Engage</string>
+    <string name="kg">KG</string>
+    
+    <!-- DaySalesReportPrint -->
+    <string name="item_sales">Item Sales</string>
+    <string name="stored_card_sales">Stored-Card Sales</string>
+    <string name="ent_items">ENT Items</string>
+    <string name="ent_bills">ENT Bills</string>
+    <string name="void_items">Void Items</string>
+    <string name="void_bills">Void Bills</string>
+    <string name="refund_bills">Refund Bills</string>
+    <string name="refund_taxes">Refund Taxes</string>
+    <string name="total_refund">Total Refund</string>
+    <string name="discount_on_per">Discount on %</string>
+    <string name="discount_on_pri">Discount on $</string>
+    <string name="take_away_sales">Takeaway sales</string>
+    <string name="take_away_tax">Takeaway tax</string>
+    <string name="take_away_qty">Takeaway item qty</string>
+    <string name="total_tax">Exclusive Tax</string>
+    <string name="rounding">Rounding</string>
+    <string name="promotion">Promotions</string>
+
+    <string name="gross_total">Gross Total Sales</string>
+
+    <string name="mc">MC</string>
+    <string name="amex">AMEX</string>
+    <string name="jbl">JBL</string>
+    <string name="diner">Diner</string>
+    <string name="boh">BOH</string>
+    <string name="total_card">TOTAL CARD</string>
+    <string name="total_nets">TOTAL NETS</string>
+    <string name="total_cash">TOTAL CASH</string>
+    <string name="total_boh">TOTAL BOH</string>
+    <string name="total_ent">TOTAL ENT</string>
+    <string name="vr_summary">VOID/REFUND SUMMARY</string>
+    <string name="total_void">Total Void</string>
+    <string name="disc_summary">DISCOUNTS SUMMARY</string>
+    <string name="tax_svc">TAX/SVC</string>
+    <string name="drawer">DRAWER</string>
+    <string name="expected_in_drawer">Expected in Drawer</string>
+    <string name="difference">Difference</string>
+    <string name="inclusive_tax">Inclusive Tax</string>
+    <string name="total_taxsvc">Total TAX/SVC</string>
+    <string name="variance">Variance</string>
+    <string name="total_of_bills">Total # of Bills</string>
+    <string name="total_of_paxs">Total Paxs</string>
+    <string name="avg_bills">Avg Bills</string>
+    <string name="avg_paxs">Avg Paxs</string>
+    <string name="monthly_sales">Monthly Sale Report</string>
+    <string name="monthly_plu">Monthly PLU Report</string>
+
+    <!-- Detail Analysis -->
+    <string name="modifier_analysis">Modifier Analysis</string>
+    <string name="op">Op</string>
+    <string name="report_no_">Report No.</string>
+    <string name="plu_name">PLU Name</string>
+    
+    <!-- Summary Analysis -->
+    <!-- Hourly Sales -->
+    <string name="hourly_sales">Hourly Sales</string>
+    <string name="promotion_sales">Promotion Sales</string>
+    <string name="promotion_name">Promo</string>
+    <string name="hour">Hour</string>
+    <string name="tran">Tran</string>
+    <!-- Void PLU -->
+    <string name="item_name">Item Name</string>
+    <!-- KOT -->
+    <string name="kot_no_">KOT No: </string>
+    <string name="date_">Date: </string>
+    <string name="void_">*** VOID ***</string>
+    <string name="kot_copy">KOT COPY</string>
+    <string name="table_name">Table Name:</string>
+    <string name="table_num">Table No.:</string>
+
+    <!-- WIFI printer -->
+    <string name="wifi_printer_connect_success">Connect the WIFI-printer successful</string>
+    <string name="wifi_printer_disconnect_success">Disconnect the WIFI-printer successful</string>
+    <string name="wifi_printer_send_failed">Send Data Failed,please reconnect</string>
+    <string name="wifi_printer_connect_error">Connect the WIFI-printer error</string>
+    <string name="wifi_printer_nopaper">The printer has no paper</string>
+    <string name="print_order_summary"> - Order Summary -</string>      
+    
+    <string name="monthly_start_date">Start Time</string>  
+    <string name="monthly_end_date">End Time</string>    
+</resources>

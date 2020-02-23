@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./css/swiper/idangerous.swiper.css">
+	<script type="text/javascript"src="./js/lib/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./js/lib/swiper/idangerous.swiper.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	
+	        var mySwiper = new Swiper('.swiper-container');
+	
+	        document.addEventListener('touchmove', function (e) {
+	            e.preventDefault();
+	        }, false);
+	    });
+	</script>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+        }
+
+        .red-slide {
+            background: #ca4040;
+        }
+
+        .blue-slide {
+            background: #4390ee;
+        }
+
+        .orange-slide {
+            background: #ff8604;
+        }
+
+        .green-slide {
+            background: #49a430;
+        }
+
+        .pink-slide {
+            background: #973e76;
+        }
+
+        .swiper-slide .title {
+            font-style: italic;
+            font-size: 42px;
+            margin-top: 80px;
+            margin-bottom: 0;
+            line-height: 45px;
+        }
+
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background: #222;
+            margin-right: 5px;
+            opacity: 0.8;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .swiper-visible-switch {
+            background: #aaa;
+        }
+
+        .swiper-active-switch {
+            background: #fff;
+        }</style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide red-slide">
+            <div style="background: #aaaaaa;padding: 20px">
+                <div><img src="..." style="float: left;"></div>
+            </div>
+            <div style="padding: 80px">
+                <div>The Way of Restaurants</div>
+                <div>Outght to be Run</div>
+                <div>
+                    <button type="button">
+                        <span>Set  up</span>
+                    </button>
+                    <button type="button">
+                        <span>Sign up</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide blue-slide">
+        </div>
+    </div>
+</div>
+</body>
+</html>

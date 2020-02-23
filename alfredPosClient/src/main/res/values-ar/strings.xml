@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C360Engage POS Client</string>
+    <!--translate-->
+    <string name="open_rest_tips">قبل فتح المطعم ، يرجى التأكد من أن جميع الأجهزة متصلة بهذا الجهاز.</string>
+    <string name="sync_tips">لم تتم تهيئة هذا الجهاز بعد مع بيانات المطعم في Alfred Cloud. يرجى تقديم معلومات الحساب التالية للمزامنة مع Alfred Cloud</string>
+    <string name="select_revenue_centre_info1">حدد أحد مراكز الإيرادات للمزامنة</string>
+    <string name="select_revenue_centre_info2">سوف تستغرق المزامنة حوالي دقيقة واحدة</string>
+    <string name="sync_complete">اكتمال المزامنة. POS جاهز لغرفة الطعام 1. يرجى تسجيل الدخول POS بحساب أمين الصندوق</string>
+    <string name="home_page_info">طريقة المطاعم يجب أن تكون قيد التشغيل</string>
+    <string name="cashier_login_tips1">أدخل معرف موظف الصندوق</string>
+    <string name="bill_manage">إدارة بيل</string>
+    <string name="boh_settlement">BOH تسوية</string>
+    <string name="dashboard">لوحة القيادة</string>
+    <string name="report">أبلغ عن</string>
+    <string name="system">النظام</string>
+    <string name="clock_in_out">الساعة داخل / خارج</string>
+    <string name="cash_in_out">النقدية في / خارج</string>
+    <string name="place">مكان</string>
+    <string name="name_of_the_place">اسم المكان</string>
+    <string name="small">صغير</string>
+    <string name="middle">وسط</string>
+    <string name="large">كبير</string>
+    <string name="table_number">رقم الطاولة</string>
+    <string name="staff">العاملين</string>
+    <string name="misc">متفرقات</string>
+    <string name="free">حر</string>
+    <string name="transfer">نقل</string>
+    <string name="weight">وزن</string>
+    <string name="weight_kg">الوزن (KG)</string>
+    <string name="discount_item">البند الخصم</string>
+    <string name="discount_w_category">الخصم حسب الفئة \n(يمكن تطبيقه مرة واحدة فقط)</string>
+    <string name="cannot_unseat">لا يمكن إلغاء هذا الجدول. \nتم طلب بعض القائمة.</string>
+    <string name="ask_transfer_table">هل أنت متأكد من نقل٪ 1 $ s إلى٪ 2 $ s؟</string>
+    <string name="adjustment">تعديل</string>
+    <string name="custom_payment">دفع مخصص</string>
+    <string name="amount_due">المبلغ المستحق</string>
+    <string name="authorize_by">إذن بواسطة</string>
+    <string name="leave_comments">ترك تعليقات</string>
+    <string name="guest_phone_number">رقم هاتف الضيف</string>
+    <string name="bill_number">رقم الفاتوره</string>
+    <string name="boh_amount">BOH المبلغ</string>
+    <string name="bill_date">تاريخ الفاتورة</string>
+    <string name="payment_type">نوع الدفع</string>
+    <string name="due_days">الأيام المستحقة</string>
+    <string name="please_scan_stored_qrcode">يرجى مسح رمز بطاقة QR المخزنة</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الكنية</string>
+    <string name="phone">هاتف</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="address">عنوان</string>
+    <string name="binding">ربط</string>
+    <string name="change_card">تغيير البطاقة</string>
+    <string name="query_balance">رصيد الاستعلام</string>
+    <string name="please_scan_new_old_stored_qrcode">يرجى مسح البطاقة الجديدة المخزنة ورقم البطاقة المخزنة القديم أو رقم هاتف المستخدم</string>
+    <string name="please_enter_old_stored_number">يرجى إدخال رقم البطاقة المخزنة القديم</string>
+    <string name="please_enter_user_phone_number">الرجاء إدخال رقم هاتف المستخدم</string>
+    <string name="please_scan_card_or_phone">يرجى مسح البطاقة المخزنة أو ملء رقم هاتف المستخدم</string>
+    <string name="kot_print">KOT طباعة</string>
+    <string name="kot_print_together">KOT طباعة معًا</string>
+    <string name="double_kot_print">ضعف KOT طباعة</string>
+    <string name="double_bill_prints">طباعة بيل مزدوجة</string>
+    <string name="double_close_bill_prints">ضعف إغلاق بيل المطبوعات</string>
+    <string name="print_order_summary">طباعة ملخص الطلب</string>
+    <string name="print_direction_up">طباعة تسمية الاتجاه UP</string>
+    <string name="credit_card_rounding">تقريب بطاقة الائتمان</string>
+    <string name="auto_go_to_table">الذهاب التلقائي إلى الجدول</string>
+    <string name="sync_data">مزامنة البيانات</string>
+    <string name="number_calling_setting_one_style">عدد الدعوة إعداد 1 نمط</string>
+    <string name="calling_header">استدعاء رأس</string>
+    <string name="calling_footer">استدعاء تذييل</string>
+    <string name="cancel_instead_of_void">الغاء بدلا من الفراغ</string>
+    <string name="monday">الإثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">يوم الجمعة</string>
+    <string name="saturday">يوم السبت</string>
+    <string name="sunday">الأحد</string>
+    <!--untranslate-->
+    <string name="set_up">اقامة</string>
+    <string name="user_id_style">هوية الموظف</string>
+    <string name="user_id">هوية الموظف</string>
+    <string name="password">كلمه السر</string>
+    <string name="biz_id_style">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Biz ID</string>
+    <string name="biz_id">Biz ID</string>
+    <string name="cashier_login_tips2">أدخل كلمة مرور أمين الصندوق</string>
+    <string name="logout">الخروج</string>
+    <string name="category_select">تحديد</string>
+    <string name="enter_employee_id">أدخل معرف الموظف</string>
+    <string name="version">الإصدار:</string>
+    <string name="warning">تحذير</string>
+    <string name="server">الخادم</string>
+    <string name="loading">جار التحميل</string>
+    <string name="exit_program">الرجاء النقر فوق "السابق" مرة أخرى للخروج</string>
+    <string name="drop_session_open">إسقاط الجلسة \nللبدء</string>
+    <string name="drop_session_close">تراجع عن \nللإغلاق</string>
+    <string name="manually_update">ألا تتلقى رسالة تحديث البيانات. \nهل تحتاج إلى تحديث البيانات يدويًا من backoffice؟</string>
+    <string name="day_symbol">عشر</string>
+    <!-- MainPage-TopMenuView -->
+    <string name="alfred">ALFRED</string>
+    <string name="number">0</string>
+    <!-- MainPage-Operate  -->
+    <string name="transfer_table">نقل \nTable</string>
+    <string name="hold_bill">عقد \nBill</string>
+    <string name="kiosk_hold">كشك وعقد</string>
+    <string name="open_item">مفتوحة \nitem</string>
+    <string name="edit_kot">تحرير \nkot</string>
+    <string name="app_dine_in">تناول الطعام في</string>
+    <!-- Close Bill -->
+    <string name="print_receipt">اطبع الايصال</string>
+    <string name="settled"> تسوية:</string>
+    <string name="item_count">عدد الأصناف</string>
+    <string name="rounding">التقريب</string>
+    <string name="cash_other">الآخرين</string>
+    <string name="exact">بالضبط $</string>
+    <string name="void_all">باطل كل شيء</string>
+    <!-- MainPageOrderView -->
+    <string name="disc">القرص</string>
+    <string name="sent_to_kitchen">تم إرسال جميع العناصر المطلوبة إلى المطبخ</string>
+    <string name="remove_item">أزل هذا البند؟</string>
+    <string name="item_complete">هذا البند قد اكتمل</string>
+    <string name="sure_take_away">هل أنت متأكد من الوجبات الجاهزة؟</string>
+    <string name="no_order_detail">لا يمكن وضع الترتيب الفارغ.</string>
+    <string name="network_connected">اتصال الإنترنت غير متوفر. يرجى الاتصال لمزامنة السحاب ..</string>
+    <!-- setting-window -->
+    <string name="reprint_bill">إعادة طبع بيل</string>
+    <string name="edit_settlement">تحرير التسوية</string>
+    <string name="card_loss">تقرير فقدت</string>
+    <string name="fill_card">ملء البطاقة</string>
+    <string name="cash_inout">النقد \ نين / OUT</string>
+    <string name="sunmi_screen">SUNMI نائب الشاشة</string>
+    <!-- setting -->
+    <string name="update_msg">يرجى تحديث الرسالة</string>
+    <string name="receive">تسلم</string>
+    <string name="_message">رسالة</string>
+    <string name="update_successful">التحديث ناجح</string>
+    <string name="no_update">لا تحديث</string>
+    <string name="no_sync_date">لا يمكن مزامنة البيانات عند فتح جلسة</string>
+    <string name="print_report_when_session">X تقرير</string>
+    <string name="print_cash_close">كاش دبليو إغلاق طباعة</string>
+    <string name="print_bill_set">طباعة بيل</string>
+    <string name="print_lable">تسمية الطباعة</string>
+    <string name="include_plu_void">تشمل بلاو الفراغ</string>
+    <string name="password_update_successfully">تحديث كلمة المرور بنجاح.</string>
+    <string name="employee_no_exist">الموظف غير موجود في backoffice.</string>
+    <string name="color_picker_tip">نصيحة: المس حلقة اللون أو شريط الألوان لتحديد قيمة اللون</string>
+    <string name="color_select">اختيار اللون</string>
+    <!-- syncdate -->
+    <string name="binding_to_already">يحتوي مركز الإيرادات على جهاز POS آخر متصل. من أجل استخدام الجهاز الحالي ، يرجى توصيل الجهاز الموجود في Alfred Cloud BackOffice والمحاولة مرة أخرى.</string>
+    <string name="be_bound_already">تم توصيل الجهاز بمركز دخل آخر. يرجى توصيله في Alfred Cloud BackOffice والمحاولة مرة أخرى.</string>
+    <string name="sync_date_warning_tips">إعداد مركز الإيرادات غير كامل. يرجى التحقق مما يلي في Aflred Backoffice:</string>
+    <string name="users">المستخدمين</string>
+    <string name="tables">الجداول</string>
+    <string name="printer_printergroup">الطابعة أو مجموعة الطابعات</string>
+    <string name="product_categories">فئات المنتجات</string>
+    <string name="login_info_error">لا يمكن أن يكون معرف الموظف وكلمة المرور ومعرف Biz فارغًا</string>
+    <!-- login -->
+    <string name="login_required">فقط أمين الصندوق أو مدير يمكن تسجيل الدخول!</string>
+    <string name="invalid_employee">موظف غير صالح!</string>
+    <!-- openRestaruant -->
+    <string name="session_time_out">الدورة الحالية تعمل أكثر من 12 ساعة!</string>
+    <string name="save_print_sales">حفظ وطباعة المبيعات</string>
+    <string name="whether_close_restaurant">هل أنت متأكد من إغلاق المطعم لإيقاف الخدمة اليوم؟</string>
+    <string name="operation_on">عملية جرا</string>
+    <string name="is_going_to_start">سوف تبدأ!</string>
+    <string name="bill_not_closed">هناك بعض الفواتير لم تغلق بعد.</string>
+    <string name="cashier_printer">لم يتم تعيين طابعة لأمين الصندوق.</string>
+    <string name="printing_close_report">طباعة تقرير وثيق</string>
+    <!-- MainPage -->
+    <string name="sending_to_kitchen">إرسال إلى المطبخ</string>
+    <string name="place_before_print">يرجى وضع النظام أولا!</string>
+    <string name="setting_printer">الطابعة ليست جاهزة ، \nيرجى الانتقال إلى إعداد> الأجهزة> \ ن الطابعة لتعيين طابعة كاشير الصحيحة!</string>
+    <string name="bill_printing">مشروع القانون هو الطباعة</string>
+    <string name="no_items">لا توجد عناصر في قائمة الطلب!</string>
+    <string name="receipt_printing">إيصال الطباعة</string>
+    <string name="table_transfer">نقل الجدول</string>
+    <string name="table_transfer_from">*** نقل من٪ s ***</string>
+    <string name="to">إلى</string>
+    <string name="no_set_kds_printer">لم يتم تعيين KDS أو أجهزة الطابعة للمطابخ</string>
+    <string name="place_order_failed">فشل ترتيب المكان</string>
+    <string name="no_set_item_print">القائمة: *٪ s * لم تقم بتعيين الطابعة</string>
+    <string name="print_bill_">يرجى طباعة الفاتورة</string>
+    <string name="assign_items_to_group">يرجى تعيين العناصر إلى مجموعة.</string>
+    <string name="not_complete_order">لم يكمل النظام.</string>
+    <string name="the_table">الطاولة</string>
+    <string name="occupied_time">  تم شغلها لمدة 2 ساعة في عقد الإيجار</string>
+    <string name="pos_notification">ألفريد نقاط البيع الإخطار</string>
+    <string name="alfred_pos">ألفريد POS</string>
+    <string name="online_order">طلب الشراء عبر الإنترنت</string>
+    <string name="the_most_selections">٪ d التحديدات على الأكثر</string>
+    <string name="table_dining">تم احتلال الطاولة</string>
+    <string name="items"> التعديل</string>
+    <string name="at_only">اختر فقط</string>
+    <!-- html -->
+    <string name="no_sales_print">لا توجد بيانات مبيعات لطباعتها</string>
+    <string name="no_printer_devices">لا توجد أجهزة طابعة</string>
+    <string name="cash_not_empty">النقدية لا يمكن أن تكون فارغة</string>
+    <string name="save_success">حفظ النجاح</string>
+    <string name="id_error">خطأ معرف !!!</string>
+    <string name="not_operations">لا يمكن إجراء العمليات</string>
+    <string name="kds_paired">جهاز KDS واحد مقترن</string>
+    <string name="waiter_paired">جهاز نادل واحد مقترن</string>
+    <string name="printing">طبع</string>
+    <!-- App -->
+    <string name="print_down">خدمة الطباعة لأسفل</string>
+    <string name="reconnect_print">هل أنت متأكد من إعادة الاتصال بخدمة الطباعة الفريد؟</string>
+    <!-- MainPosHttpServer -->
+    <string name="internal_error">خطأ داخلي</string>
+    <string name="device_invalid">الجهاز غير صالح</string>
+    <string name="login_failed">فشل تسجيل الدخول</string>
+    <string name="sync_data_failed">فشل مزامنة البيانات</string>
+    <!-- CloseOrderWindow -->
+    <string name="ref_id_not_empty">معرف المرجع غير فارغ</string>
+    <string name="close_payment_reminder">لا يمكن استخدام وضع الدفع المحدد مع طريقة الدفع الأخرى</string>
+    <string name="card_no_not_empty">لا يمكن أن تكون البطاقة فارغة</string>
+    <string name="card_no_for_four">بطاقة رقم لأربعة</string>
+    <string name="card_no_not_correct">رقم البطاقة غير صحيح</string>
+    <string name="cvv_not_empty">لا يمكن أن يكون CVV فارغًا</string>
+    <string name="cvv_for_three">CVV لمدة ثلاثة</string>
+    <string name="exp_not_empty">لا يمكن أن يكون تاريخ انتهاء الصلاحية فارغًا</string>
+    <string name="exp_format">تنسيق تاريخ انتهاء الصلاحية لـ 00/00</string>
+    <string name="cash_settlement">التسوية النقدية</string>
+    <string name="part_settlement">جزء تسوية</string>
+    <string name="totle_paid">مجموع المبالغ المدفوعة</string>
+    <!--<string name="change">Change</string>-->
+    <string name="visa_settlement">تسوية التأشيرة</string>
+    <string name="amount_paid">المبلغ المدفوع</string>
+    <string name="card_no">لا بطاقة</string>
+    <string name="exp_date">تاريخ إنتهاء الصلاحية</string>
+    <string name="cvv">CVV</string>
+    <string name="net_settlement">تسوية صافي</string>
+    <string name="wechat_settlement">WeChat تسوية</string>
+    <string name="alipay_settlement">تسوية Alipay</string>
+    <string name="amount_auth_by">المبلغ المصادقة بواسطة</string>
+    <!-- other - window -->
+    <string name="switch_account">تبديل الحساب</string>
+    <string name="name_not_empty">الاسم لا يمكن أن يكون فارغا</string>
+    <string name="price_not_empty">لا يمكن أن يكون السعر فارغًا</string>
+    <string name="order_split_">ترتيب الانقسام</string>
+    <string name="_settled">  واستقر</string>
+    <string name="invalid_ip">عنوان IP غير صالح</string>
+    <string name="enter_people">الرجاء إدخال عدد من الناس</string>
+    <string name="active_five_hours">نشط 5 ساعات</string>
+    <string name="switch_user">تغير المستخدم</string>
+    <string name="lock_screen">اقفل الشاشة</string>
+    <string name="refresh">تحديث</string>
+    <string name="split_bill_win_title">تفاصيل الفاتورة</string>
+    <string name="split_print_all">كامل بيل طباعة</string>
+    <string name="slipt_print">انقسام طباعة</string>
+    <!-- REPORT PRINT -->
+    <!-- other -->
+    <string name="table_name">اسم الطاولة</string>
+    <string name="close_cash">أغلق ث</string>
+    <string name="bill_on_hold">فاتورة على عقد</string>
+    <string name="company">شركة</string>
+    <string name="house_charge">رسوم المنزل</string>
+    <string name="close_split_bills">أغلق سبليت بيلز</string>
+    <string name="event_voucher">قسيمة الحدث</string>
+    <string name="voucher_ten">قسيمة بقيمة 10 دولارات</string>
+    <string name="voucher_five">قسيمة بقيمة 5 دولارات</string>
+    <string name="order_first">لا يمكن تطبيق الخصم!</string>
+    <string name="no_cashier_printer">لا طابعة أمين الصندوق حتى الآن</string>
+    <string name="discard_current_order">هل أنت متأكد من تجاهل الطلب الحالي؟</string>
+    <string name="unseat_table">هل أنت متأكد من إلغاء الجدول؟ \nلن يتم تسجيل العناصر الفارغة في التقارير.</string>
+
+    <!-- Clock in/Out -->
+    <string name="clock_out_btn">على مدار الساعة من</string>
+
+    <!-- Online Order -->
+    <string name="online_order_type">نوع الطلب</string>
+    <string name="online_order_status">حالة الطلب</string>
+    <string name="online_order_time">خلق الوقت</string>
+    <string name="check">التحقق من</string>
+    <string name="paid">دفع</string>
+    <string name="making">صناعة</string>
+    <string name="confirmed">وافقت</string>
+
+    <string name="prepared">أعدت</string>
+    <string name="preparing">في تقدم</string>
+    <string name="finish">إنهاء</string>
+    <string name="new_order">طلب جديد</string>
+    <string name="preparing_order">في التقدم / أعد</string>
+    <string name="completed_order">منجز</string>
+    <string name="receving_order">يتسلم</string>
+
+    <string name="index">فهرس</string>
+    <string name="welcome">أهلا بك</string>
+    <string name="add_table_num">إضافة رقم الجدول</string>
+    <string name="input_table_num">يرجى إدخال رقم الجدول</string>
+
+    <!--Zun-->
+    <string name="assign">تعيين</string>
+    <string name="manually_add">إضافة يدويا</string>
+    <string name="waiter_">نادل</string>
+
+
+    <string name="devices_network">شبكة الاتصال</string>
+
+    <string name="devices_bluetooth">تقنية البلوتوث</string>
+
+    <string name="revenue_center">مركز الإيرادات</string>
+    <string name="ipaddr_tips">إقران الجهاز \nقم بإعداد عنوان IP لنقاط البيع</string>
+    <string name="connect">الاتصال</string>
+
+    <string name="january">كانون الثاني</string>
+    <string name="february">شهر فبراير</string>
+    <string name="march">مارس</string>
+    <string name="april">أبريل</string>
+    <string name="may">قد</string>
+    <string name="june">يونيو</string>
+    <string name="july">يوليو</string>
+    <string name="august">أغسطس</string>
+    <string name="september">سبتمبر</string>
+    <string name="october">شهر اكتوبر</string>
+    <string name="november">شهر نوفمبر</string>
+    <string name="december">ديسمبر</string>
+
+    <string name="welcome_to">مرحبا بك في</string>
+    <string name="please_clock_in">يرجى الساعة في</string>
+    <string name="printer_app_name">C360Engage Remote Print Service</string>
+    <string name="ask_delete_place">هل أنت متأكد من حذف هذا المكان؟</string>
+
+    <string name="days">أيام</string>
+    <string name="day">يوم</string>
+    <string name="split_pay">انشق، مزق</string>
+    <string name="all_pay">الكل</string>
+    <string name="at_least">اختيار الأقل</string>
+    <string name="please_input_amount">يرجى إدخال المبلغ!</string>
+    <string name="operation_irreversible">هذه العملية لا رجعة فيها ، هل أنت متأكد؟</string>
+    <string name="table_name_used">اسم الجدول قيد الاستخدام بالفعل. يرجى استخدام اسم آخر.</string>
+    <string name="please_select_empty_table">يرجى اختيار جدول فارغ</string>
+
+    <string name="turning_on_training_mode">تشغيل وضع التدريب</string>
+    <string name="turning_on_training_mode_desc">لأول مرة للمستخدمين ، سوف تظهر الإعدادات في وضع التشغيل في الأعلى</string>
+
+    <string name="ok">حسنا</string>
+    <string name="add">أكثر</string>
+    <string name="cancel">ألغها</string>
+    <string name="sign_in">دخول</string>
+    <string name="sync">مزامنة</string>
+    <string name="waiting_list">قائمة الانتظار</string>
+    <string name="queue">الطابور</string>
+    <string name="assign_table">تعيين\nالجدول</string>
+    <string name="summary">ملخص</string>
+
+    <string name="add_queue">إضافة قائمة انتظار جديدة</string>
+    <string name="queue_name">اسم قائمة الانتظار</string>
+    <string name="ask_save_edit_content">هل تريد حفظ المحتوى المحرر؟</string>
+    <string name="ask_delete_queue">هل أنت متأكد من حذف قائمة الانتظار هذه؟</string>
+    <string name="name_used">الاسم مستخدم بالفعل ، جرب آخر</string>
+
+
+</resources>

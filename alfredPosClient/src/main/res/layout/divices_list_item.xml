@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:id="@+id/ll_auto_add"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="@drawable/device_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/devices_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textSize="16dp"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/devices_item_ip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/tv_device_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/devices_item_unbund_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/device_unbund_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            tools:text="解绑"
+            android:textColor="@color/devices_red"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_manually_add"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="@drawable/device_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+            <ImageView
+                android:id="@+id/devices_item_add_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_add"
+                android:layout_centerInParent="true"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/devices_item_add_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/device_unbund_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/manually_add_printer"
+            android:textColor="@color/devices_red"
+            android:textSize="14sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

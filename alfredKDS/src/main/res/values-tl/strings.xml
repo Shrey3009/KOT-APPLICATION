@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">C360Engage KDS</string>
+    <string name="version">Bersyon:</string>
+    <string name="exit_program">Mangyaring mag-click muli upang lumabas</string>
+    <string name="revenue_center">Revenue Centre</string>
+    <string name="loading">Naglo-load</string>
+
+    <!-- before login -->
+    <string name="scanqr_tips">I-scan ang QR code mula sa POS ng \nrevenue center upang makakuha ng KDS tablet na ipinares. \nOr Slide sa kaliwa At \nManunekta na kumunekta sa POS sa pamamagitan ng IP</string>
+    <string name="ipaddr_tips">Device Pairing \nSet up POS IP Address</string>
+    <string name="connect">Ikonekta</string>
+    <string name="check_ip">Hindi tama ang tsek ang IP address</string>
+    <string name="pairing_fails">Nabigo ang pagpapares, walang permiso</string>
+    <string name="employee_id">Naipares ang device \nIpasok ang iyong Employee ID</string>
+    <string name="select_kitchen">KDS Paired \nPlease piliin ang kusina \na ang KDS ay kabilang sa</string>
+    <string name="paired_failed">Ang KDS Device ay hindi ipinares sa Alfred POS</string>
+    <string name="cashier_login_tips1">Ipasok ang Employee ID</string>
+    <string name="cashier_login_tips2">Ilagay ang password</string>
+    <string name="logining">Logining</string>
+
+    <!-- KitchOrder -->
+    <string name="send_failed">Ipadala Nabigo!</string>
+    <string name="other_pos_data">Ang iba pang mga MainPos ay nagpapadala ng data</string>
+    <string name="order_discarded">Ang order ay naalis sa pamamagitan ng cashier.</string>
+    <string name="reconnect_pos">Ang Main POS ay naka-disconnect. \nIsa-ugnay muli ito?</string>
+    <string name="dine_in">Kumain sa</string>
+    <!--//0未发送、1待完成、2更新、3已完成、4已退单、-1已删除-->
+
+    <string name="unfinished">Hindi pa natapos</string>
+    <string name="be_doing">Magagawa mo</string>
+    <string name="update">I-update</string>
+
+    <string name="chargeback">Chargeback</string>
+
+
+    <!--be doing ;-->
+
+    <!-- Summary -->
+    <string name="pos_id">PosId</string>
+    <string name="item_complete">kumpleto</string>
+    <string name="kitchen_name">Pangalan ng Kusina</string>
+    <string name="reconnect_pos_">Ipadala Nabigong, maaari kang kumonekta muli sa Main Pos</string>
+    <string name="kot_in_progress">nasa progreso</string>
+
+    <!-- KotHistory -->
+    <string name="kot_history">KOT KASAYSAYAN</string>
+    <string name="kot_revert">bumalik</string>
+    <string name="kot_id">KotId</string>
+    <string name="order_id">OrderId</string>
+    <string name="pos">POS</string>
+    <string name="data">Data</string>
+    <string name="dish">Ulam</string>
+    <string name="undoing">Pag-undo</string>
+
+    <!-- Setting -->
+    <string name="reset">Ang lahat ng data ay aalisin, sigurado ka bang i-reset ang KDS?</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="ok">OK</string>
+    <string name="reset_kds">I-reset ang KDS</string>
+    <string name="switch_account">Lumipat ng Account</string>
+    <string name="kot_history_">Kot Kasaysayan</string>
+
+    <!-- KdsHttpServer -->
+    <string name="kot_submit_failed">Nabigo ang KOT</string>
+    <string name="relogin_pos">Isinara ng POS ang kasalukuyang sesyon. \nMangyaring i-relogin kapag nagsisimula ang susunod na sesyon</string>
+
+    <!-- other -->
+    <string name="network_error">Network Fatal Error</string>
+    <string name="finished_items_number">Mangyaring Ipasok ang Numero ng Mga Tapos na Mga Gawa</string>
+    <string name="max_number">Ang MAX number ay</string>
+    <string name="no_finished">HINDI. NG Tapos na</string>
+    <string name="sending">Nagpapadala</string>
+    <string name="reconn_pos">Dapat kang makipag-ugnay muli sa pos!</string>
+    <string name="complete_all_item">Kumpirmahin ang lahat ng mga order ay nakumpleto?</string>
+    <string name="completed">Nakumpleto</string>
+    <string name="choose">pumili</string>
+    <string name="please_choose_pos">Mangyaring pumili ng POS</string>
+</resources>

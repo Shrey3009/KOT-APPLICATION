@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- com.alfredselfhelp.global -->
+    <string name="app_name">AlfredMenu</string>
+    <string name="version">版：</string>
+    <string name="exit_program">请再次点击返回退出</string>
+    <string name="revenue_center">收入中心</string>
+    <string name="warn">警告</string>
+    <string name="loading">载入中</string>
+
+    <!-- before login -->
+    <string name="scan_qr_remind">从\nrevenue中心的POS扫描二维码以获得KDS平板电脑配对。\n或向左滑动\n通过IP手动连接POS</string>
+    <string name="set_ipaddr">设备配对\n设置POS IP地址</string>
+    <string name="connect">连</string>
+    <string name="invalid_ip">无效的主POS IP或设备不在同一网络中。请检查</string>
+    <string name="invalid_ip_">您设置的IP地址无效</string>
+    <string name="link">必须链接</string>
+    <string name="select_revenue_center">您有资格在这些收入中心服务</string>
+    <string name="logining">Logining</string>
+    <string name="waiter_login_tips1">设备配对\n输入服务员员工ID</string>
+    <string name="waiter_login_tips2">\n输入密码</string>
+
+    <!-- TablePage,MainPage,ModifierDetail,Instruction -->
+    <string name="title">标题</string>
+    <string name="menu">菜单</string>
+    <string name="detail">详情</string>
+    <string name="add_item">请先添加项目</string>
+    <string name="item_name">项目名称</string>
+    <string name="modifier">修改</string>
+    <string name="add_modifier">添加修饰符</string>
+
+    <!-- OrderDetailPage,OrderDetailTotal -->
+    <string name="place_succ">成功下订单</string>
+    <string name="place_failed">无法下订单</string>
+    <string name="print_bill_succ">打印帐单成功</string>
+    <string name="print_bill_failed">打印帐单失败</string>
+    <string name="network_errors">此刻无法打印账单：网络错误</string>
+    <string name="order_closed">订单已关闭，请选择表格并再次更换订单。</string>
+    <string name="order_not_edited">正在处理时无法编辑订单。请联系收银员再试一次。</string>
+    <string name="order_split_settled">订单拆分已结算</string>
+    <string name="order_split">订单拆分</string>
+    <string name="settled"> 已经解决了</string>
+    <string name="item_count">项目数量：</string>
+    <string name="discount_">折扣：-</string>
+    <string name="group_all">组：所有</string>
+    <string name="print_bill">打印比尔</string>
+
+    <!-- Setting -->
+    <string name="system_reset">系统重置</string>
+    <string name="clean_data">你确定要清理所有数据吗？</string>
+    <string name="logout_title">服务员退出</string>
+    <string name="logout_content">你确定要退出吗？</string>
+    <string name="history">订单历史</string>
+    <string name="bump_mobile">与消费者手机APP碰面</string>
+    <string name="connect_pos">连接到POS服务器</string>
+    <string name="data_sync">数据同步</string>
+    <string name="kot_notification">KOT通知</string>
+    <string name="zone_notification">区域通知</string>
+    <string name="reset">重启</string>
+    <string name="logout">登出</string>
+    <string name="version_">版</string>
+    <string name="lock_screen">锁屏</string>
+
+    <!-- other -->
+    <string name="relogin_pos">POS已关闭当前会话。 \n请在下次会话开始时重新登录</string>
+    <string name="pairing_failed">配对失败：网络错误</string>
+    <string name="empty_invalid">空值无效</string>
+    <string name="number_people">请输入人数</string>
+    <string name="note">注意</string>
+    <string name="transfer_">  已转移到表：</string>
+    <string name="order_belong">选择订单\n所属的人</string>
+    <string name="clear">明确</string>
+    <string name="enter">输入</string>
+    <string name="cancel">取消</string>
+    <string name="check">校验</string>
+
+    <string name="At_least">选择最少</string>
+    <string name="items"> 修改</string>
+    <string name="at_only">只选择</string>
+    <string name="name_not_empty">名称不能为空</string>
+    <string name="price_not_empty">价格不能为空</string>
+
+
+    <string name="edit">编辑</string>
+    <string name="ip_changed_relogin">您的IP已更改。\n请重新登录</string>
+
+    <string name="devices_network">网络</string>
+    <string name="devices_bluetooth">蓝牙</string>
+    <string name="print_kot_succ">打印KOT成功</string>
+    <string name="print_kot_failed">打印KOT失败</string>
+    <string name="print_down">打印服务</string>
+    <string name="reconnect_print">您确定要重新连接打印服务吗？</string>
+
+
+</resources>

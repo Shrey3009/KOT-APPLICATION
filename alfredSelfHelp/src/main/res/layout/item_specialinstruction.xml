@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/inst_listview_selector"
+    android:gravity="center_vertical">
+    
+    <TextView
+        android:id="@+id/tv_inst_name" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_inst_delete"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/instruction"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView
+        android:id="@+id/iv_inst_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_inst_item_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"/>
+
+</RelativeLayout>
